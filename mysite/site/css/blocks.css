@@ -1,0 +1,58 @@
+/* CSS for Assignment 02 - Cascading Style Sheets */
+
+/* Center the DJ4E link at the top */
+#dj4e {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#dj4e a {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+#dj4e a:hover {
+    background-color: #0056b3;
+}
+
+/* Style for all quote boxes */
+#one, #two, #three, #four {
+    position: fixed;
+    width: 25%;
+    padding: 5px;
+    margin: 5px;
+    border: 5px solid;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* Position boxes at corners */
+#one {
+    top: 0;
+    left: 0;
+    border-color: yellow;
+}
+
+#two {
+    top: 0;
+    right: 0;
+    border-color: green;
+}
+
+#three {
+    bottom: 0;
+    left: 0;
+    border-color: yellow;
+}
+
+#four {
+    bottom: 0;
+    right: 0;
+    border-color: blue;
+}
