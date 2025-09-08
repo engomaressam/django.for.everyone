@@ -18,8 +18,14 @@ class AutoAdmin(admin.ModelAdmin):
     list_display = ('nickname', 'make', 'owner', 'mileage', 'updated_at', 'update_link')
     list_filter = ('make',)
     search_fields = ('nickname', 'comments')
+    exclude = ('owner',)
 
     def update_link(self, obj):
         url = reverse('admin:autos_auto_change', args=[obj.pk])
         return format_html('<a href="{}">Update</a>', url)
     update_link.short_description = 'Update'
+
+    def save_model(self, request, obj, form, change):
+        if not change:
+            obj.owner = request.user
+        super().save_model(request, obj, form, change)
