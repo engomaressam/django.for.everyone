@@ -15,6 +15,11 @@ class MakeAdmin(admin.ModelAdmin):
 
 @admin.register(Auto)
 class AutoAdmin(admin.ModelAdmin):
-    list_display = ('nickname', 'make', 'owner', 'mileage', 'updated_at')
+    list_display = ('nickname', 'make', 'owner', 'mileage', 'updated_at', 'update_link')
     list_filter = ('make',)
     search_fields = ('nickname', 'comments')
+
+    def update_link(self, obj):
+        url = reverse('admin:autos_auto_change', args=[obj.pk])
+        return format_html('<a href="{}">Update</a>', url)
+    update_link.short_description = 'Update'
