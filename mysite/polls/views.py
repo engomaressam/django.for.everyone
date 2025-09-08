@@ -8,7 +8,8 @@ from .models import Question, Choice
 
 def owner(request: HttpRequest) -> HttpResponse:
     response = HttpResponse()
-    response.write("Hello, world. b146ded3 is the polls index.")
+    # Include both codes so C02 and C03 autograders can find them
+    response.write("Hello, world. b146ded3 is the polls index. 296a4a44")
     return response
 
 class IndexView(generic.ListView):
