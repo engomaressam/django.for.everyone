@@ -5,7 +5,7 @@ from django.urls import reverse
 from .models import Make, Auto
 
 
-@login_required
+@login_required(login_url='/accounts/login/')
 def index(request: HttpRequest) -> HttpResponse:
     makes = Make.objects.all().count()
     autos = Auto.objects.filter(owner=request.user)
