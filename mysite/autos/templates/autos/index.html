@@ -21,7 +21,9 @@
   {% if autos %}
   <ul>
     {% for a in autos %}
-      <li>{{ a.nickname }} ({{ a.make.name }})</li>
+      <li>{{ a.nickname }} ({{ a.make.name }})
+        - <a href="/admin/autos/auto/{{ a.id }}/change/">Update</a>
+      </li>
     {% endfor %}
   </ul>
   {% else %}
