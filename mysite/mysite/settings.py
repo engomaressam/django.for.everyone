@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'main',
     'hello',
     'autos',
+    'cats',
 ]
 
 MIDDLEWARE = [

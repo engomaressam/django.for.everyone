@@ -1,3 +1,16 @@
 <!DOCTYPE html>
-<html><head><meta name="dj4e" content="296a4a440e3b55ea2556f652bb30dc98"><meta name="dj4e-code" content="42175732579050"><title>Edit Breed</title></head><body>
-<h1>Edit Breed</h1><form method="post">{% csrf_token %}{{ form.as_p }}<button type="submit">Submit</button></form></body></html>
+<html>
+<head>
+    <meta name="dj4e" content="296a4a440e3b55ea2556f652bb30dc98">
+    <meta name="dj4e-code" content="42175732579050">
+    <title>Edit Breed</title>
+</head>
+<body>
+    <h1>Edit Breed</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

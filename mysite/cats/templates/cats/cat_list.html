@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="dj4e" content="296a4a440e3b55ea2556f652bb30dc98">
+    <meta name="dj4e-code" content="42175732579050">
+    <title>Cats</title>
+</head>
+<body>
+    <h1>Cats</h1>
+    <p>Breeds: {{ breed_count }}</p>
+    {% if cat_list %}
+        <ul>
+            {% for c in cat_list %}
+                <li>{{ c.nickname }} ({{ c.breed }})</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No cats.</p>
+    {% endif %}
+    <p>
+        <a href="{% url 'cats:cat_create' %}">Add a cat</a> | 
+        <a href="{% url 'cats:breed_list' %}">View breeds</a> | 
+        <a href="{% url 'cats:breed_create' %}">Add a breed</a>
+    </p>
+</body>
+</html>

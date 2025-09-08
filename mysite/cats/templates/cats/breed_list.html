@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="dj4e" content="296a4a440e3b55ea2556f652bb30dc98">
+    <meta name="dj4e-code" content="42175732579050">
+    <title>Breeds</title>
+</head>
+<body>
+    <h1>Breeds</h1>
+    {% if object_list %}
+        <ul>
+            {% for b in object_list %}
+                <li>{{ b.name }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No breeds.</p>
+    {% endif %}
+    <p>
+        <a href="{% url 'cats:breed_create' %}">Add a breed</a> | 
+        <a href="{% url 'cats:all' %}">Back to cats</a>
+    </p>
+</body>
+</html>
