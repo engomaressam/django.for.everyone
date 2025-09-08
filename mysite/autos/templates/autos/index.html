@@ -22,7 +22,7 @@
   <ul>
     {% for a in autos %}
       <li>{{ a.nickname }} ({{ a.make.name }})
-        - <a href="/admin/autos/auto/{{ a.id }}/change/">Update</a>
+        - <a href="{% url 'autos:auto_update' a.id %}">Update</a>
       </li>
     {% endfor %}
   </ul>

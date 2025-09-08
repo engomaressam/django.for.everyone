@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="dj4e" content="296a4a440e3b55ea2556f652bb30dc98">
+  <meta name="dj4e-code" content="42175732579050">
+  <title>Update Auto</title>
+</head>
+<body>
+  <h1>Update Auto</h1>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
