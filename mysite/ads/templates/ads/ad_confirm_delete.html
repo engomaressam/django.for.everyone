@@ -1,0 +1,15 @@
+{% extends "base_bootstrap.html" %}
+
+{% block title %}Delete Ad{% endblock %}
+
+{% block content %}
+<h1>Delete Ad</h1>
+
+<p>Are you sure you want to delete the ad: <strong>{{ ad.title }}</strong>?</p>
+
+<form method="post">
+    {% csrf_token %}
+    <input type="submit" value="Yes, delete." class="btn btn-danger">
+    <a href="{% url 'ads:ad_detail' ad.id %}" class="btn btn-secondary">Cancel</a>
+</form>
+{% endblock %}

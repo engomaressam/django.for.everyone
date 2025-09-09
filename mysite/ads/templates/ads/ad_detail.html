@@ -1,0 +1,22 @@
+{% extends "base_bootstrap.html" %}
+
+{% block title %}{{ ad.title }}{% endblock %}
+
+{% block content %}
+<h1>{{ ad.title }}</h1>
+{% if ad.price %}<p><strong>Price:</strong> ${{ ad.price }}</p>{% endif %}
+<p><strong>Description:</strong></p>
+<p>{{ ad.text }}</p>
+<p><strong>Posted by:</strong> {{ ad.owner.username }}</p>
+<p><strong>Created:</strong> {{ ad.created_at }}</p>
+<p><strong>Updated:</strong> {{ ad.updated_at }}</p>
+
+{% if ad.owner == user %}
+<p>
+    <a href="{% url 'ads:ad_update' ad.id %}">Edit</a> |
+    <a href="{% url 'ads:ad_delete' ad.id %}">Delete</a>
+</p>
+{% endif %}
+
+<p><a href="{% url 'ads:all' %}">Back to Ads</a></p>
+{% endblock %}

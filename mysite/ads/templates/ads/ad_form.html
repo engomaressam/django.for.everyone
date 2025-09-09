@@ -1,0 +1,14 @@
+{% extends "base_bootstrap.html" %}
+
+{% block title %}{% if object %}Edit Ad{% else %}Create Ad{% endif %}{% endblock %}
+
+{% block content %}
+<h1>{% if object %}Edit Ad{% else %}Create Ad{% endif %}</h1>
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Submit" class="btn btn-primary">
+    <a href="{% url 'ads:all' %}" class="btn btn-secondary">Cancel</a>
+</form>
+{% endblock %}
