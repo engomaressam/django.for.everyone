@@ -23,8 +23,6 @@
 <p>No ads available.</p>
 {% endif %}
 
-{% if user.is_authenticated %}
 <p><a href="{% url 'ads:ad_create' %}">Create Ad</a></p>
-{% endif %}
 
 {% endblock %}
