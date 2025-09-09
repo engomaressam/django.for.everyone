@@ -15,6 +15,11 @@ class AdDetailView(DetailView):
     model = Ad
     template_name = 'ads/ad_detail.html'
 
+    def get_context_data(self, **kwargs):
+        ctx = super().get_context_data(**kwargs)
+        ctx['comment_form'] = CommentForm()
+        return ctx
+
 class AdCreateView(LoginRequiredMixin, ListView):
     model = Ad
     template_name = 'ads/ad_form.html'
