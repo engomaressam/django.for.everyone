@@ -30,7 +30,7 @@ class AdCreateView(LoginRequiredMixin, ListView):
             return render(request, self.template_name, {'form': form})
         ad = form.save(commit=False)
         ad.owner = request.user
-        f = request.FILES.get('file')
+        f = request.FILES.get('file') or request.FILES.get('picture')
         if f is not None:
             ad.content_type = f.content_type
             ad.picture = f.read()
@@ -53,7 +53,7 @@ class AdUpdateView(LoginRequiredMixin, DetailView):
         if not form.is_valid():
             return render(request, self.template_name, {'form': form})
         ad = form.save(commit=False)
-        f = request.FILES.get('file')
+        f = request.FILES.get('file') or request.FILES.get('picture')
         if f is not None:
             ad.content_type = f.content_type
             ad.picture = f.read()
