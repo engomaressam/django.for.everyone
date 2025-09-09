@@ -11,6 +11,10 @@ class AdListView(ListView):
     model = Ad
     template_name = 'ads/ad_list.html'
 
+    def get_queryset(self):
+        qs = super().get_queryset()
+        return qs.order_by('-updated_at', '-created_at')
+
 class AdDetailView(DetailView):
     model = Ad
     template_name = 'ads/ad_detail.html'
