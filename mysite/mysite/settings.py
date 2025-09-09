@@ -136,4 +136,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Login settings for autos assignment
 LOGIN_URL = '/accounts/login/'
-LOGIN_REDIRECT_URL = '/autos/'
+LOGIN_REDIRECT_URL = '/ads/'
