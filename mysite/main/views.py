@@ -1,6 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import redirect
 from django.contrib.auth import logout
+from django.contrib.auth.views import LoginView
 
 
 def index(request):
@@ -27,3 +28,10 @@ def logout_get(request):
     """Allow GET logout for the grader, then redirect to ads list."""
     logout(request)
     return redirect('/ads/')
+
+
+class ForceRedirectLoginView(LoginView):
+    template_name = 'registration/login.html'
+
+    def get_success_url(self):
+        return '/ads/'

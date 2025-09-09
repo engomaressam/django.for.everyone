@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.contrib.auth import views as auth_views
-from main.views import logout_get
+from main.views import logout_get, ForceRedirectLoginView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -27,6 +27,6 @@ urlpatterns = [
     path('autos/', include('autos.urls')),
     path('cats/', include('cats.urls')),
     path('ads/', include('ads.urls')),
-    path('accounts/login/', auth_views.LoginView.as_view(template_name='registration/login.html'), name='login'),
+    path('accounts/login/', ForceRedirectLoginView.as_view(), name='login'),
     path('accounts/logout/', logout_get, name='logout'),
 ]
