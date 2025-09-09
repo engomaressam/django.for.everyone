@@ -5,6 +5,15 @@
 {% block content %}
 <h1>{{ ad.title }}</h1>
 {% if ad.price %}<p><strong>Price:</strong> ${{ ad.price }}</p>{% endif %}
+
+{% if ad.picture %}
+<p>
+  <a href="{% url 'ads:ad_picture' ad.id %}">
+    <img src="{% url 'ads:ad_picture' ad.id %}" style="max-width: 400px; height: auto;" alt="ad image">
+  </a>
+</p>
+{% endif %}
+
 <p><strong>Description:</strong></p>
 <p>{{ ad.text }}</p>
 <p><strong>Posted by:</strong> {{ ad.owner.username }}</p>
@@ -16,6 +25,29 @@
     <a href="{% url 'ads:ad_update' ad.id %}">Edit</a> |
     <a href="{% url 'ads:ad_delete' ad.id %}">Delete</a>
 </p>
+{% endif %}
+
+<h3>Comments</h3>
+<ul>
+  {% for comment in ad.comment_set.all %}
+  <li>
+    {{ comment.text }} — {{ comment.owner.username }}
+    {% if comment.owner == user %}
+      (<a href="{% url 'ads:ad_comment_delete' comment.id %}">delete</a>)
+    {% endif %}
+  </li>
+  {% empty %}
+  <li>No comments (yet)</li>
+  {% endfor %}
+</ul>
+
+{% if user.is_authenticated %}
+<h4>Add a comment</h4>
+<form method="post" action="{% url 'ads:ad_comment_create' ad.id %}">
+  {% csrf_token %}
+  {{ comment_form.as_p }}
+  <input type="submit" value="Submit">
+</form>
 {% endif %}
 
 <p><a href="{% url 'ads:all' %}">Back to Ads</a></p>

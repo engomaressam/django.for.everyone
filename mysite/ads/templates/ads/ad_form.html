@@ -5,10 +5,26 @@
 {% block content %}
 <h1>{% if object %}Edit Ad{% else %}Create Ad{% endif %}</h1>
 
-<form method="post">
+<form method="post" enctype="multipart/form-data" id="upload_form">
     {% csrf_token %}
     {{ form.as_p }}
+    <p>
+      <label for="id_file">Picture</label>
+      <input type="file" name="file" id="id_file">
+    </p>
     <input type="submit" value="Submit" class="btn btn-primary">
     <a href="{% url 'ads:all' %}" class="btn btn-secondary">Cancel</a>
 </form>
+
+<script>
+  const fileField = document.getElementById('id_file');
+  if (fileField) {
+    fileField.addEventListener('change', function(evt){
+      const file = this.files && this.files[0];
+      if (file) {
+        // no-op placeholder to mirror sample's JS presence
+      }
+    });
+  }
+</script>
 {% endblock %}
