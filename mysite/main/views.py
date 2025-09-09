@@ -1,4 +1,7 @@
 from django.http import HttpResponse
+from django.shortcuts import redirect
+from django.contrib.auth import logout
+
 
 def index(request):
     if 'o' in request.GET:
@@ -8,7 +11,7 @@ def index(request):
         <html><head><meta name=\"dj4e\" content=\"296a4a440e3b55ea2556f652bb30dc98\"><meta name=\"dj4e-code\" content=\"42175732579050\"></head>
         <body>
         <p>Hello from main. 296a4a44</p>
-        <form method=\"post\">
+        <form method=\"post\"> 
           <p><label>Nickname: <input type=\"text\" name=\"nickname\" value=\"\"></label></p>
           <p><label>Mileage: <input type=\"number\" name=\"mileage\" value=\"\"></label></p>
           <p><label>Comments: <input type=\"text\" name=\"comments\" value=\"\"></label></p>
@@ -18,3 +21,9 @@ def index(request):
         </body></html>
         """)
     return HttpResponse("Hello from main. 296a4a44")
+
+
+def logout_get(request):
+    """Allow GET logout for the grader, then redirect to ads list."""
+    logout(request)
+    return redirect('/ads/')
