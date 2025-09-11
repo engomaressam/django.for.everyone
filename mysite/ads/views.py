@@ -20,7 +20,18 @@ class AdListView(ListView):
         if search:
             qs = qs.filter(title__icontains=search) | qs.filter(text__icontains=search) | qs.filter(tags__name__icontains=search)
             qs = qs.distinct()
-        return qs.order_by('-updated_at', '-created_at')
+        qs = qs.order_by('-updated_at', '-created_at')
+
+        # Mark each ad with is_fav for the current user so templates can toggle deterministically
+        user = self.request.user
+        if user.is_authenticated:
+            fav_ids = set(Fav.objects.filter(user=user).values_list('ad_id', flat=True))
+            for ad in qs:
+                ad.is_fav = ad.id in fav_ids
+        else:
+            for ad in qs:
+                ad.is_fav = False
+        return qs
 
     def get_context_data(self, **kwargs):
         ctx = super().get_context_data(**kwargs)

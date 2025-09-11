@@ -27,7 +27,7 @@
         by {{ ad.owner.username }}
 
         <!-- Show a single toggle link so the state switches from favorite -> unfavorite -->
-        {% if ad.id in favorites %}
+        {% if ad.is_fav %}
           ( <a href="ad/{{ ad.id }}/unfavorite">unfavorite</a>
             <a href="/ads/ad/{{ ad.id }}/unfavorite">unfavorite</a> )
         {% else %}
