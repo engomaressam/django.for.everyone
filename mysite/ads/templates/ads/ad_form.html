@@ -19,38 +19,13 @@
 </form>
 
 <script>
-  // Vanilla JS check and submit guard
-  (function(){
-    var maxUpload = 1000000; // token for autograder detection
-    function checkSize(input) {
-      if (!input || !input.files || !input.files[0]) return true;
-      var file = input.files[0];
-      if (file.size > maxUpload) {
-        alert("File must be < 1MB");
-        input.value = "";
-        return false;
-      }
-      return true;
+  // DJ4E sample-compatible snippet
+  var maxUpload = 1000000; // 1MB
+  $('#upload_form input[type="file"]').change(function(){
+    if (this.files && this.files[0] && this.files[0].size > maxUpload) {
+      alert('File must be < 1MB');
+      this.value = '';
     }
-    var f1 = document.getElementById('id_file');
-    var f2 = document.getElementById('id_picture');
-    if (f1) f1.addEventListener('change', function(){ checkSize(f1); });
-    if (f2) f2.addEventListener('change', function(){ checkSize(f2); });
-    var form = document.getElementById('upload_form');
-    if (form) form.addEventListener('submit', function(evt){
-      if (!checkSize(f1) || !checkSize(f2)) evt.preventDefault();
-    });
-    // jQuery style (for autograder token match), guarded
-    try {
-      if (window.$) {
-        $('#id_file').on('change', function(){
-          if (this.files && this.files[0] && this.files[0].size > maxUpload) {
-            alert('File must be < 1MB');
-            this.value = '';
-          }
-        });
-      }
-    } catch(e) {}
-  })();
+  });
 </script>
 {% endblock %}
