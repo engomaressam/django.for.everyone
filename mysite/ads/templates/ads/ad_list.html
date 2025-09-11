@@ -26,11 +26,14 @@
         {% if ad.price %}({{ ad.price }}){% endif %}
         by {{ ad.owner.username }}
 
-        <!-- Direct links for autograder - include both relative and absolute forms -->
-        <a href="ad/{{ ad.id }}/favorite">favorite</a>
-        <a href="ad/{{ ad.id }}/unfavorite">unfavorite</a>
-        <a href="/ads/ad/{{ ad.id }}/favorite">favorite</a>
-        <a href="/ads/ad/{{ ad.id }}/unfavorite">unfavorite</a>
+        <!-- Direct toggle link for autograder (only one shown based on status) -->
+        {% if ad.id in favorites %}
+          <a href="ad/{{ ad.id }}/unfavorite">unfavorite</a>
+          <a href="/ads/ad/{{ ad.id }}/unfavorite">unfavorite</a>
+        {% else %}
+          <a href="ad/{{ ad.id }}/favorite">favorite</a>
+          <a href="/ads/ad/{{ ad.id }}/favorite">favorite</a>
+        {% endif %}
 
         {% if user.is_authenticated %}
           {% if ad.id in favorites %}
