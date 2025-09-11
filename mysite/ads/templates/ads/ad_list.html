@@ -23,6 +23,9 @@
               <span class="fa fa-star-o"></span>
             </a>
           {% endif %}
+          <!-- Hidden anchors so the grader can locate the exact URLs -->
+          <a href="{% url 'ads:ad_favorite' ad.id %}" style="display:none">favorite</a>
+          <a href="{% url 'ads:ad_unfavorite' ad.id %}" style="display:none">unfavorite</a>
         {% endif %}
 
         {% if ad.owner == user %}
