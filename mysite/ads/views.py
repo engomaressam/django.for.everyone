@@ -123,24 +123,29 @@ class CommentDeleteView(LoginRequiredMixin, DeleteView):
         qs = super().get_queryset()
         return qs.filter(owner=self.request.user)
 
-class AdFavoriteBaseView(LoginRequiredMixin, View):
+@method_decorator(csrf_exempt, name='dispatch')
+class AddFavoriteView(LoginRequiredMixin, View):
+    def get(self, request, pk=None):
+        ad = get_object_or_404(Ad, id=pk)
+        Fav.objects.get_or_create(user=request.user, ad=ad)
+        return redirect('ads:all')
+    
     def post(self, request, pk=None):
         ad = get_object_or_404(Ad, id=pk)
-        return ad
-
-@method_decorator(csrf_exempt, name='dispatch')
-class AddFavoriteView(AdFavoriteBaseView):
-    def post(self, request, pk=None):
-        ad = super().post(request, pk)
         Fav.objects.get_or_create(user=request.user, ad=ad)
         if request.headers.get('x-requested-with') == 'XMLHttpRequest':
             return JsonResponse({'status': 'ok'})
         return redirect('ads:all')
 
 @method_decorator(csrf_exempt, name='dispatch')
-class DeleteFavoriteView(AdFavoriteBaseView):
+class DeleteFavoriteView(LoginRequiredMixin, View):
+    def get(self, request, pk=None):
+        ad = get_object_or_404(Ad, id=pk)
+        Fav.objects.filter(user=request.user, ad=ad).delete()
+        return redirect('ads:all')
+    
     def post(self, request, pk=None):
-        ad = super().post(request, pk)
+        ad = get_object_or_404(Ad, id=pk)
         Fav.objects.filter(user=request.user, ad=ad).delete()
         if request.headers.get('x-requested-with') == 'XMLHttpRequest':
             return JsonResponse({'status': 'ok'})
