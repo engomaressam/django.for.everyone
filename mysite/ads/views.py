@@ -24,9 +24,12 @@ class AdListView(ListView):
 
     def get_context_data(self, **kwargs):
         ctx = super().get_context_data(**kwargs)
-        if self.request.user.is_authenticated:
-            rows = Fav.objects.filter(user=self.request.user).values('ad_id')
-            ctx['favorites'] = [row['ad_id'] for row in rows]
+        user = self.request.user
+        if user.is_authenticated:
+            # Build a simple list of ad ids this user has favorited
+            ctx['favorites'] = list(
+                Fav.objects.filter(user=user).values_list('ad_id', flat=True)
+            )
         else:
             ctx['favorites'] = []
         return ctx
