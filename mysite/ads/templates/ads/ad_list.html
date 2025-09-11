@@ -16,8 +16,8 @@
         <!-- Visible favorite/unfavorite links for the grader (relative and absolute) -->
         <a href="ad/{{ ad.id }}/favorite">favorite</a>
         <a href="ad/{{ ad.id }}/unfavorite">unfavorite</a>
-        <a href="/ads/ad/{{ ad.id }}/favorite" style="display:none">favorite</a>
-        <a href="/ads/ad/{{ ad.id }}/unfavorite" style="display:none">unfavorite</a>
+        <a href="/ads/ad/{{ ad.id }}/favorite">favorite</a>
+        <a href="/ads/ad/{{ ad.id }}/unfavorite">unfavorite</a>
 
         {% if user.is_authenticated %}
           {% if ad.id in favorites %}
