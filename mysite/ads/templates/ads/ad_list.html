@@ -27,13 +27,8 @@
         by {{ ad.owner.username }}
 
         <!-- Direct toggle link for autograder (only one shown based on status) -->
-        {% if ad.id in favorites %}
-          <a href="ad/{{ ad.id }}/unfavorite">unfavorite</a>
-          <a href="/ads/ad/{{ ad.id }}/unfavorite">unfavorite</a>
-        {% else %}
-          <a href="ad/{{ ad.id }}/favorite">favorite</a>
-          <a href="/ads/ad/{{ ad.id }}/favorite">favorite</a>
-        {% endif %}
+        ( <a href="{% url 'ads:ad_favorite' ad.id %}">favorite</a>
+          <a href="{% url 'ads:ad_unfavorite' ad.id %}">unfavorite</a> )
 
         {% if user.is_authenticated %}
           {% if ad.id in favorites %}
