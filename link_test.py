@@ -35,6 +35,7 @@ def login(session):
     # Get login page
     response = session.get(LOGIN_URL)
     csrf_token = get_csrf_token(response.text)
+    csrftoken_cookie = response.cookies.get('csrftoken')
     
     if not csrf_token:
         debug_print("Error: No CSRF token found")
@@ -47,12 +48,20 @@ def login(session):
         'csrfmiddlewaretoken': csrf_token
     }
     
-    response = session.post(LOGIN_URL, data=login_data, allow_redirects=True)
+    # Ensure headers include Referer and CSRF
+    headers = {
+        'Referer': LOGIN_URL,
+        'Origin': BASE_URL,
+    }
+    if csrftoken_cookie:
+        headers['X-CSRFToken'] = csrftoken_cookie
+    
+    response = session.post(LOGIN_URL, data=login_data, headers=headers, allow_redirects=True)
     debug_print(f"Login response status: {response.status_code}")
     
     # Check if login was successful by looking for logout link
     soup = BeautifulSoup(response.text, 'html.parser')
-    logout_link = soup.find('a', string='Logout')
+    logout_link = soup.find('a', string=re.compile('Logout', re.IGNORECASE))
     
     if logout_link:
         debug_print("Login successful - found 'Logout' link")
@@ -113,9 +122,8 @@ def check_unfavorite_links(session, ad_id):
     
     # Check different patterns of unfavorite links
     patterns = [
-        f'href=".*?ad/{ad_id}/unfavorite"',
-        f'href=".*?/ads/ad/{ad_id}/unfavorite"',
-        f'href=".*?unfavorite.*?{ad_id}"',
+        rf'/ads/ad/{ad_id}/unfavorite',
+        rf'ad/{ad_id}/unfavorite',
     ]
     
     for pattern in patterns:
