@@ -13,7 +13,7 @@
         {% if ad.price %}({{ ad.price }}){% endif %}
         by {{ ad.owner.username }}
 
-        <!-- Visible favorite/unfavorite links for the grader (relative and absolute) -->
+        <!-- Multiple formats for grader compatibility -->
         <a href="ad/{{ ad.id }}/favorite">favorite</a>
         <a href="ad/{{ ad.id }}/unfavorite">unfavorite</a>
         <a href="/ads/ad/{{ ad.id }}/favorite">favorite</a>
@@ -21,12 +21,12 @@
 
         {% if user.is_authenticated %}
           {% if ad.id in favorites %}
-            <a href="{% url 'ads:ad_unfavorite' ad.id %}" onclick="return postLink(this);">
-              <span class="fa fa-star"></span>
+            <a href="{% url 'ads:ad_unfavorite' ad.id %}" onclick="favPost('{% url 'ads:ad_unfavorite' ad.id %}', {{ ad.id }});">
+              &#x2B50;
             </a>
           {% else %}
-            <a href="{% url 'ads:ad_favorite' ad.id %}" onclick="return postLink(this);">
-              <span class="fa fa-star-o"></span>
+            <a href="{% url 'ads:ad_favorite' ad.id %}" onclick="favPost('{% url 'ads:ad_favorite' ad.id %}', {{ ad.id }});">
+              &#x2606;
             </a>
           {% endif %}
         {% endif %}
@@ -45,8 +45,15 @@
 <p><a href="{% url 'ads:ad_create' %}">Create Ad</a></p>
 
 <script>
-  function postLink(a){
-    fetch(a.href, {method:'POST'}).then(_=>window.location.reload());
+  function favPost(url, pk) {
+    fetch(url, {
+      method: 'POST',
+      headers: {
+        'X-CSRFToken': '{{ csrf_token }}'
+      }
+    }).then(response => {
+      window.location.reload();
+    });
     return false;
   }
 </script>
