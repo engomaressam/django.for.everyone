@@ -6,6 +6,8 @@ from django.http import HttpResponse, JsonResponse
 from .models import Ad, Comment, Fav
 from .owner import OwnerDeleteView
 from .forms import CreateForm, CommentForm
+from django.utils.decorators import method_decorator
+from django.views.decorators.csrf import csrf_exempt
 
 class AdListView(ListView):
     model = Ad
@@ -126,6 +128,7 @@ class AdFavoriteBaseView(LoginRequiredMixin, View):
         ad = get_object_or_404(Ad, id=pk)
         return ad
 
+@method_decorator(csrf_exempt, name='dispatch')
 class AddFavoriteView(AdFavoriteBaseView):
     def post(self, request, pk=None):
         ad = super().post(request, pk)
@@ -134,6 +137,7 @@ class AddFavoriteView(AdFavoriteBaseView):
             return JsonResponse({'status': 'ok'})
         return redirect('ads:all')
 
+@method_decorator(csrf_exempt, name='dispatch')
 class DeleteFavoriteView(AdFavoriteBaseView):
     def post(self, request, pk=None):
         ad = super().post(request, pk)
