@@ -28,12 +28,14 @@
 
         {% if user.is_authenticated %}
           {% if ad.id in favorites %}
-            ( <a href="{% url 'ads:ad_unfavorite' ad.id %}">unfavorite</a> )
+            <a href="{% url 'ads:ad_unfavorite' ad.id %}">unfavorite</a>
+            <a href="ad/{{ ad.id }}/unfavorite">unfavorite</a>
             <a href="{% url 'ads:ad_unfavorite' ad.id %}" onclick="favPost('{% url 'ads:ad_unfavorite' ad.id %}', {{ ad.id }}); return false;">
               &#x2B50;
             </a>
           {% else %}
-            ( <a href="{% url 'ads:ad_favorite' ad.id %}">favorite</a> )
+            <a href="{% url 'ads:ad_favorite' ad.id %}">favorite</a>
+            <a href="ad/{{ ad.id }}/favorite">favorite</a>
             <a href="{% url 'ads:ad_favorite' ad.id %}" onclick="favPost('{% url 'ads:ad_favorite' ad.id %}', {{ ad.id }}); return false;">
               &#x2606;
             </a>
