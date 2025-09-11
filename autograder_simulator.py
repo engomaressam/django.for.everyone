@@ -41,6 +41,9 @@ class AutograderSimulator:
             return False
         
         csrf_token = self.get_csrf_token(soup)
+        if not csrf_token:
+            self.log("ERROR: No CSRF token found", "ERROR")
+            return False
         
         # Submit login form
         login_data = {
@@ -49,14 +52,29 @@ class AutograderSimulator:
             'csrfmiddlewaretoken': csrf_token
         }
         
-        response = self.session.post(login_url, data=login_data)
+        response = self.session.post(login_url, data=login_data, allow_redirects=True)
+        
+        # Debug authentication status
+        self.log(f"Login response status: {response.status_code}")
+        self.log(f"Final URL after login: {response.url}")
         
         if "Your username and password didn't match" in response.text:
             self.log("ERROR: Login failed", "ERROR")
             return False
         
-        self.log("Login successful")
-        return True
+        # Check if we're actually logged in by looking for logout link
+        soup = BeautifulSoup(response.text, 'html.parser')
+        logout_link = soup.find('a', href=re.compile(r'.*logout.*'))
+        
+        if logout_link:
+            self.log("Login successful - found logout link")
+            return True
+        else:
+            self.log("WARNING: Login may have failed - no logout link found")
+            # Save login response for debugging
+            with open('login_response.html', 'w', encoding='utf-8') as f:
+                f.write(response.text)
+            return False
     
     def get_ads_list(self):
         """Get the ads list page"""

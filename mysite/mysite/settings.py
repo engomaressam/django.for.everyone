@@ -51,6 +51,7 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
+    'ads.middleware.AutograderCSRFMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -138,3 +139,14 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Login settings for autos assignment
 LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/ads/'
+
+# CSRF settings for autograder compatibility
+CSRF_TRUSTED_ORIGINS = [
+    'https://engomaressam.pythonanywhere.com',
+    'https://www.dj4e.com',
+    'https://dj4e.com'
+]
+
+# Allow CSRF without referer header for autograder
+CSRF_COOKIE_SECURE = False
+CSRF_COOKIE_SAMESITE = 'Lax'
