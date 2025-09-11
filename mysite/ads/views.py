@@ -15,6 +15,11 @@ class AdListView(ListView):
 
     def get_queryset(self):
         qs = super().get_queryset()
+        # Simple search across title, text, and tags
+        search = self.request.GET.get('search')
+        if search:
+            qs = qs.filter(title__icontains=search) | qs.filter(text__icontains=search) | qs.filter(tags__name__icontains=search)
+            qs = qs.distinct()
         return qs.order_by('-updated_at', '-created_at')
 
     def get_context_data(self, **kwargs):
@@ -61,6 +66,8 @@ class AdCreateView(LoginRequiredMixin, ListView):
             ad.content_type = f.content_type
             ad.picture = f.read()
         ad.save()
+        # Save tags after instance is saved
+        form.save_m2m()
         return redirect('ads:all')
 
 class AdUpdateView(LoginRequiredMixin, DetailView):
@@ -84,6 +91,7 @@ class AdUpdateView(LoginRequiredMixin, DetailView):
             ad.content_type = f.content_type
             ad.picture = f.read()
         ad.save()
+        form.save_m2m()
         return redirect('ads:all')
 
 class AdDeleteView(OwnerDeleteView):

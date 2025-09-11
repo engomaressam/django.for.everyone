@@ -7,7 +7,7 @@ class CreateForm(forms.ModelForm):
 
     class Meta:
         model = Ad
-        fields = ['title', 'price', 'text', 'picture']
+        fields = ['title', 'price', 'text', 'picture', 'tags']
 
 class CommentForm(forms.ModelForm):
     class Meta:

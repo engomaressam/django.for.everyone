@@ -20,6 +20,17 @@
 <p><strong>Created:</strong> {{ ad.created_at }}</p>
 <p><strong>Updated:</strong> {{ ad.updated_at }}</p>
 
+{% if ad.tags.all %}
+<p>
+  <strong>Tags:</strong>
+  {% for t in ad.tags.all %}
+    <span class="badge bg-secondary">{{ t.name }}</span>
+  {% empty %}
+    <span>none</span>
+  {% endfor %}
+</p>
+{% endif %}
+
 {% if ad.owner == user %}
 <p>
     <a href="{% url 'ads:ad_update' ad.id %}">Edit</a> |

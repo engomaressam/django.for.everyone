@@ -5,6 +5,19 @@
 {% block content %}
 <h1>Ads</h1>
 
+<form method="get" class="mb-3">
+  <div class="input-group">
+    <input type="text" class="form-control" name="search" placeholder="Search" value="{{ request.GET.search }}">
+    <button class="btn btn-outline-secondary" type="submit">Search</button>
+    {% if request.GET.search %}
+      <a class="btn btn-link" href="{% url 'ads:all' %}">Clear</a>
+    {% endif %}
+  </div>
+  {% if request.GET.search %}
+  <div class="form-text">Search for: {{ request.GET.search }}</div>
+  {% endif %}
+</form>
+
 {% if ad_list %}
 <ul>
     {% for ad in ad_list %}
@@ -27,6 +40,16 @@
               &#x2606;
             </a>
           {% endif %}
+        {% endif %}
+
+        {% if ad.tags.all %}
+          <small>tags:
+            {% for t in ad.tags.all %}
+              <span class="badge bg-secondary">{{ t.name }}</span>
+            {% empty %}
+              none
+            {% endfor %}
+          </small>
         {% endif %}
 
         {% if ad.owner == user %}
