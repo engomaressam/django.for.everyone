@@ -20,7 +20,7 @@
 
 <script>
   // DJ4E sample-compatible snippet
-  var maxUpload = 1000000; // 1MB
+  maxUpload = 1000000; // 1MB
   $('#upload_form input[type="file"]').change(function(){
     if (this.files && this.files[0] && this.files[0].size > maxUpload) {
       alert('File must be < 1MB');

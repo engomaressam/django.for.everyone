@@ -15,11 +15,11 @@
 
         {% if user.is_authenticated %}
           {% if ad.id in favorites %}
-            <a href="#" onclick="return favPost('{% url 'ads:ad_unfavorite' ad.id %}', this);">
+            <a href="{% url 'ads:ad_unfavorite' ad.id %}" onclick="return postLink(this);">
               <span class="fa fa-star"></span>
             </a>
           {% else %}
-            <a href="#" onclick="return favPost('{% url 'ads:ad_favorite' ad.id %}', this);">
+            <a href="{% url 'ads:ad_favorite' ad.id %}" onclick="return postLink(this);">
               <span class="fa fa-star-o"></span>
             </a>
           {% endif %}
@@ -39,8 +39,8 @@
 <p><a href="{% url 'ads:ad_create' %}">Create Ad</a></p>
 
 <script>
-  function favPost(url, link) {
-    fetch(url, {method: 'POST'}).then(_ => { window.location.reload(); });
+  function postLink(a){
+    fetch(a.href, {method:'POST'}).then(_=>window.location.reload());
     return false;
   }
 </script>
