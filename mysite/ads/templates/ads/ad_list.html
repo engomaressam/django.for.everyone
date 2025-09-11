@@ -12,6 +12,19 @@
         <a href="{% url 'ads:ad_detail' ad.id %}">{{ ad.title }}</a>
         {% if ad.price %}({{ ad.price }}){% endif %}
         by {{ ad.owner.username }}
+
+        {% if user.is_authenticated %}
+          {% if ad.id in favorites %}
+            <a href="#" onclick="return favPost('{% url 'ads:ad_unfavorite' ad.id %}', this);">
+              <span class="fa fa-star"></span>
+            </a>
+          {% else %}
+            <a href="#" onclick="return favPost('{% url 'ads:ad_favorite' ad.id %}', this);">
+              <span class="fa fa-star-o"></span>
+            </a>
+          {% endif %}
+        {% endif %}
+
         {% if ad.owner == user %}
         (<a href="{% url 'ads:ad_update' ad.id %}">Edit</a> |
         <a href="{% url 'ads:ad_delete' ad.id %}">Delete</a>)
@@ -25,4 +38,27 @@
 
 <p><a href="{% url 'ads:ad_create' %}">Create Ad</a></p>
 
+<script>
+  function favPost(url, link) {
+    fetch(url, {method: 'POST', headers: {'X-Requested-With': 'XMLHttpRequest', 'X-CSRFToken': getCookie('csrftoken')}})
+      .then(r => r.json())
+      .then(_ => {
+        const icon = link.querySelector('span');
+        if (!icon) return false;
+        if (icon.classList.contains('fa-star')) {
+          icon.classList.remove('fa-star'); icon.classList.add('fa-star-o');
+          link.setAttribute('onclick', "return favPost('" + url.replace('unfavorite','favorite') + "', this);");
+        } else {
+          icon.classList.remove('fa-star-o'); icon.classList.add('fa-star');
+          link.setAttribute('onclick', "return favPost('" + url.replace('favorite','unfavorite') + "', this);");
+        }
+      });
+    return false;
+  }
+  function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+  }
+</script>
 {% endblock %}

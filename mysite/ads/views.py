@@ -1,9 +1,9 @@
-from django.views.generic import ListView, DetailView, DeleteView
+from django.views.generic import ListView, DetailView, DeleteView, View
 from django.urls import reverse_lazy
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.http import HttpResponse
-from .models import Ad, Comment
+from django.http import HttpResponse, JsonResponse
+from .models import Ad, Comment, Fav
 from .owner import OwnerDeleteView
 from .forms import CreateForm, CommentForm
 
@@ -14,6 +14,15 @@ class AdListView(ListView):
     def get_queryset(self):
         qs = super().get_queryset()
         return qs.order_by('-updated_at', '-created_at')
+
+    def get_context_data(self, **kwargs):
+        ctx = super().get_context_data(**kwargs)
+        if self.request.user.is_authenticated:
+            rows = Fav.objects.filter(user=self.request.user).values('ad_id')
+            ctx['favorites'] = [row['ad_id'] for row in rows]
+        else:
+            ctx['favorites'] = []
+        return ctx
 
 class AdDetailView(DetailView):
     model = Ad
@@ -111,3 +120,24 @@ class CommentDeleteView(LoginRequiredMixin, DeleteView):
     def get_queryset(self):
         qs = super().get_queryset()
         return qs.filter(owner=self.request.user)
+
+class AdFavoriteBaseView(LoginRequiredMixin, View):
+    def post(self, request, pk=None):
+        ad = get_object_or_404(Ad, id=pk)
+        return ad
+
+class AddFavoriteView(AdFavoriteBaseView):
+    def post(self, request, pk=None):
+        ad = super().post(request, pk)
+        Fav.objects.get_or_create(user=request.user, ad=ad)
+        if request.headers.get('x-requested-with') == 'XMLHttpRequest':
+            return JsonResponse({'status': 'ok'})
+        return redirect('ads:all')
+
+class DeleteFavoriteView(AdFavoriteBaseView):
+    def post(self, request, pk=None):
+        ad = super().post(request, pk)
+        Fav.objects.filter(user=request.user, ad=ad).delete()
+        if request.headers.get('x-requested-with') == 'XMLHttpRequest':
+            return JsonResponse({'status': 'ok'})
+        return redirect('ads:all')
