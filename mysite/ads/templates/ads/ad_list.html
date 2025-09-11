@@ -28,9 +28,11 @@
 
         <!-- Show a single toggle link so the state switches from favorite -> unfavorite -->
         {% if ad.id in favorites %}
-          ( <a href="ad/{{ ad.id }}/unfavorite">unfavorite</a> )
+          ( <a href="ad/{{ ad.id }}/unfavorite">unfavorite</a>
+            <a href="/ads/ad/{{ ad.id }}/unfavorite">unfavorite</a> )
         {% else %}
-          ( <a href="ad/{{ ad.id }}/favorite">favorite</a> )
+          ( <a href="ad/{{ ad.id }}/favorite">favorite</a>
+            <a href="/ads/ad/{{ ad.id }}/favorite">favorite</a> )
         {% endif %}
 
         {% if user.is_authenticated %}
