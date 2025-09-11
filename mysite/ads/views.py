@@ -19,6 +19,12 @@ class AdDetailView(DetailView):
     model = Ad
     template_name = 'ads/ad_detail.html'
 
+    def dispatch(self, request, *args, **kwargs):
+        try:
+            return super().dispatch(request, *args, **kwargs)
+        except Exception:
+            return redirect('ads:all')
+
     def get_context_data(self, **kwargs):
         ctx = super().get_context_data(**kwargs)
         ctx['comment_form'] = CommentForm()
