@@ -8,25 +8,19 @@
 <form method="post" enctype="multipart/form-data" id="upload_form">
     {% csrf_token %}
     {{ form.as_p }}
-    <p>
-      <label for="id_file">Picture</label>
-      <input type="file" name="file" id="id_file">
-      <!-- Some graders look for a field named 'picture', provide it too -->
-      <input type="file" name="picture" id="id_picture" style="display:none">
-    </p>
     <input type="submit" value="Submit" class="btn btn-primary">
     <a href="{% url 'ads:all' %}" class="btn btn-secondary">Cancel</a>
 </form>
 
 <script>
 // File size check for dj4e autograder
-maxUpload = 1024*1024; // 1 MB
+var maxUpload = 1024*1024; // 1 MB
 $(document).ready(function() {
-    $('input[type="file"]').change(function() {
+    $('#id_picture').on('change', function() {
         var file = this.files[0];
         if (file && file.size > maxUpload) {
-            alert("File must be < 1MB");
-            $(this).val("");
+            alert('File must be < 1MB');
+            $(this).val('');
         }
     });
 });
