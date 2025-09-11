@@ -1,0 +1,4171 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://python-social-auth.readthedocs.io/en/latest/configuration/django.html
+Subject: Django Framework - Python Social Auth
+Date: Thu, 11 Sep 2025 15:02:13 +0300
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--SyvZrJuMJQk0mnBkmdEiuqZufT44G9gy9prYi72FBz----"
+
+
+------MultipartBoundary--SyvZrJuMJQk0mnBkmdEiuqZufT44G9gy9prYi72FBz----
+Content-Type: text/html
+Content-ID: <frame-7DEA9BC9C376C94EF4AD650C433FF563@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://python-social-auth.readthedocs.io/en/latest/configuration/django.html
+
+<!DOCTYPE html><html class=3D"" lang=3D"en" data-content_root=3D"../" data-=
+readthedocs-tool=3D"sphinx" data-readthedocs-tool-theme=3D"furo"><head><met=
+a http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8"><link =
+rel=3D"stylesheet" type=3D"text/css" href=3D"cid:css-760f157c-6b0b-4fca-8ed=
+6-31a0bb6ed8b5@mhtml.blink" /><link rel=3D"stylesheet" type=3D"text/css" hr=
+ef=3D"cid:css-94c3ad8f-14c1-48df-b5f5-6fec14ecc2dc@mhtml.blink" /><link rel=
+=3D"stylesheet" type=3D"text/css" href=3D"cid:css-9a7b4679-cbbd-47af-9dae-c=
+2cecf6be8c2@mhtml.blink" />
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width,initial-scale=
+=3D1">
+    <meta name=3D"color-scheme" content=3D"light dark"><meta name=3D"viewpo=
+rt" content=3D"width=3Ddevice-width, initial-scale=3D1">
+<link rel=3D"index" title=3D"Index" href=3D"https://python-social-auth.read=
+thedocs.io/en/latest/genindex.html"><link rel=3D"search" title=3D"Search" h=
+ref=3D"https://python-social-auth.readthedocs.io/en/latest/search.html"><li=
+nk rel=3D"copyright" title=3D"Copyright" href=3D"https://python-social-auth=
+.readthedocs.io/en/latest/copyright.html"><link rel=3D"next" title=3D"Flask=
+ Framework" href=3D"https://python-social-auth.readthedocs.io/en/latest/con=
+figuration/flask.html"><link rel=3D"prev" title=3D"Configuration" href=3D"h=
+ttps://python-social-auth.readthedocs.io/en/latest/configuration/settings.h=
+tml">
+        <link rel=3D"prefetch" href=3D"https://python-social-auth.readthedo=
+cs.io/en/latest/_static/logo.svg" as=3D"image">
+
+    <!-- Generated with Sphinx 8.2.3 and Furo 2025.07.19 -->
+        <title>Django Framework - Python Social Auth</title>
+      <link rel=3D"stylesheet" type=3D"text/css" href=3D"https://python-soc=
+ial-auth.readthedocs.io/en/latest/_static/pygments.css?v=3D03e43079">
+    <link rel=3D"stylesheet" type=3D"text/css" href=3D"https://python-socia=
+l-auth.readthedocs.io/en/latest/_static/styles/furo.css?v=3D25af2a20">
+    <link rel=3D"stylesheet" type=3D"text/css" href=3D"https://python-socia=
+l-auth.readthedocs.io/en/latest/_static/styles/furo-extensions.css?v=3D8dab=
+3a3b">
+   =20
+   =20
+
+
+<meta name=3D"readthedocs-project-slug" content=3D"python-social-auth"><met=
+a name=3D"readthedocs-version-slug" content=3D"latest"><meta name=3D"readth=
+edocs-resolver-filename" content=3D"/configuration/django.html"><meta name=
+=3D"readthedocs-http-status" content=3D"200"></head>
+  <body data-theme=3D"auto">
+   =20
+   =20
+   =20
+
+<svg xmlns=3D"http://www.w3.org/2000/svg" style=3D"display: none;">
+  <symbol id=3D"svg-toc" viewBox=3D"0 0 24 24">
+    <title>Contents</title>
+    <svg stroke=3D"currentColor" fill=3D"currentColor" stroke-width=3D"0" v=
+iewBox=3D"0 0 1024 1024">
+      <path d=3D"M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 =
+0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v=
+-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v5=
+6c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0=
+-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.=
+4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115=
+.4 505.1a8.74 8.74 0 0 0 0 13.8z"></path>
+    </svg>
+  </symbol>
+  <symbol id=3D"svg-menu" viewBox=3D"0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns=3D"http://www.w3.org/2000/svg" viewBox=3D"0 0 24 24" fill=3D=
+"none" stroke=3D"currentColor" stroke-width=3D"2" stroke-linecap=3D"round" =
+stroke-linejoin=3D"round" class=3D"feather-menu">
+      <line x1=3D"3" y1=3D"12" x2=3D"21" y2=3D"12"></line>
+      <line x1=3D"3" y1=3D"6" x2=3D"21" y2=3D"6"></line>
+      <line x1=3D"3" y1=3D"18" x2=3D"21" y2=3D"18"></line>
+    </svg>
+  </symbol>
+  <symbol id=3D"svg-arrow-right" viewBox=3D"0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns=3D"http://www.w3.org/2000/svg" viewBox=3D"0 0 24 24" fill=3D=
+"none" stroke=3D"currentColor" stroke-width=3D"2" stroke-linecap=3D"round" =
+stroke-linejoin=3D"round" class=3D"feather-chevron-right">
+      <polyline points=3D"9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id=3D"svg-sun" viewBox=3D"0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns=3D"http://www.w3.org/2000/svg" viewBox=3D"0 0 24 24" fill=3D=
+"none" stroke=3D"currentColor" stroke-width=3D"1" stroke-linecap=3D"round" =
+stroke-linejoin=3D"round" class=3D"feather-sun">
+      <circle cx=3D"12" cy=3D"12" r=3D"5"></circle>
+      <line x1=3D"12" y1=3D"1" x2=3D"12" y2=3D"3"></line>
+      <line x1=3D"12" y1=3D"21" x2=3D"12" y2=3D"23"></line>
+      <line x1=3D"4.22" y1=3D"4.22" x2=3D"5.64" y2=3D"5.64"></line>
+      <line x1=3D"18.36" y1=3D"18.36" x2=3D"19.78" y2=3D"19.78"></line>
+      <line x1=3D"1" y1=3D"12" x2=3D"3" y2=3D"12"></line>
+      <line x1=3D"21" y1=3D"12" x2=3D"23" y2=3D"12"></line>
+      <line x1=3D"4.22" y1=3D"19.78" x2=3D"5.64" y2=3D"18.36"></line>
+      <line x1=3D"18.36" y1=3D"5.64" x2=3D"19.78" y2=3D"4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id=3D"svg-moon" viewBox=3D"0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns=3D"http://www.w3.org/2000/svg" viewBox=3D"0 0 24 24" fill=3D=
+"none" stroke=3D"currentColor" stroke-width=3D"1" stroke-linecap=3D"round" =
+stroke-linejoin=3D"round" class=3D"icon-tabler-moon">
+      <path stroke=3D"none" d=3D"M0 0h24v24H0z" fill=3D"none"></path>
+      <path d=3D"M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0=
+ 1 1 -8.313 -12.454z"></path>
+    </svg>
+  </symbol>
+  <symbol id=3D"svg-sun-with-moon" viewBox=3D"0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns=3D"http://www.w3.org/2000/svg" viewBox=3D"0 0 24 24" fill=3D=
+"none" stroke=3D"currentColor" stroke-width=3D"1" stroke-linecap=3D"round" =
+stroke-linejoin=3D"round" class=3D"icon-custom-derived-from-feather-sun-and=
+-tabler-moon">
+      <path style=3D"opacity: 50%" d=3D"M 5.411 14.504 C 5.471 14.504 5.532=
+ 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.58=
+6 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 =
+18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.4=
+11 14.504 Z"></path>
+      <line x1=3D"14.5" y1=3D"3.25" x2=3D"14.5" y2=3D"1.25"></line>
+      <line x1=3D"14.5" y1=3D"15.85" x2=3D"14.5" y2=3D"17.85"></line>
+      <line x1=3D"10.044" y1=3D"5.094" x2=3D"8.63" y2=3D"3.68"></line>
+      <line x1=3D"19" y1=3D"14.05" x2=3D"20.414" y2=3D"15.464"></line>
+      <line x1=3D"8.2" y1=3D"9.55" x2=3D"6.2" y2=3D"9.55"></line>
+      <line x1=3D"20.8" y1=3D"9.55" x2=3D"22.8" y2=3D"9.55"></line>
+      <line x1=3D"10.044" y1=3D"14.006" x2=3D"8.63" y2=3D"15.42"></line>
+      <line x1=3D"19" y1=3D"5.05" x2=3D"20.414" y2=3D"3.636"></line>
+      <circle cx=3D"14.5" cy=3D"9.55" r=3D"3.6"></circle>
+    </svg>
+  </symbol>
+  <symbol id=3D"svg-moon-with-sun" viewBox=3D"0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns=3D"http://www.w3.org/2000/svg" viewBox=3D"0 0 24 24" fill=3D=
+"none" stroke=3D"currentColor" stroke-width=3D"1" stroke-linecap=3D"round" =
+stroke-linejoin=3D"round" class=3D"icon-custom-derived-from-feather-sun-and=
+-tabler-moon">
+      <path d=3D"M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18=
+ 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C=
+ 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7=
+.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"></path>
+      <line style=3D"opacity: 50%" x1=3D"18" y1=3D"3.705" x2=3D"18" y2=3D"2=
+.5"></line>
+      <line style=3D"opacity: 50%" x1=3D"18" y1=3D"11.295" x2=3D"18" y2=3D"=
+12.5"></line>
+      <line style=3D"opacity: 50%" x1=3D"15.316" y1=3D"4.816" x2=3D"14.464"=
+ y2=3D"3.964"></line>
+      <line style=3D"opacity: 50%" x1=3D"20.711" y1=3D"10.212" x2=3D"21.563=
+" y2=3D"11.063"></line>
+      <line style=3D"opacity: 50%" x1=3D"14.205" y1=3D"7.5" x2=3D"13.001" y=
+2=3D"7.5"></line>
+      <line style=3D"opacity: 50%" x1=3D"21.795" y1=3D"7.5" x2=3D"23" y2=3D=
+"7.5"></line>
+      <line style=3D"opacity: 50%" x1=3D"15.316" y1=3D"10.184" x2=3D"14.464=
+" y2=3D"11.036"></line>
+      <line style=3D"opacity: 50%" x1=3D"20.711" y1=3D"4.789" x2=3D"21.563"=
+ y2=3D"3.937"></line>
+      <circle style=3D"opacity: 50%" cx=3D"18" cy=3D"7.5" r=3D"2.169"></cir=
+cle>
+    </svg>
+  </symbol>
+  <symbol id=3D"svg-pencil" viewBox=3D"0 0 24 24">
+    <svg xmlns=3D"http://www.w3.org/2000/svg" viewBox=3D"0 0 24 24" fill=3D=
+"none" stroke=3D"currentColor" stroke-width=3D"1" stroke-linecap=3D"round" =
+stroke-linejoin=3D"round" class=3D"icon-tabler-pencil-code">
+      <path d=3D"M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4"><=
+/path>
+      <path d=3D"M13.5 6.5l4 4"></path>
+      <path d=3D"M20 21l2 -2l-2 -2"></path>
+      <path d=3D"M17 17l-2 2l2 2"></path>
+    </svg>
+  </symbol>
+  <symbol id=3D"svg-eye" viewBox=3D"0 0 24 24">
+    <svg xmlns=3D"http://www.w3.org/2000/svg" viewBox=3D"0 0 24 24" fill=3D=
+"none" stroke=3D"currentColor" stroke-width=3D"1" stroke-linecap=3D"round" =
+stroke-linejoin=3D"round" class=3D"icon-tabler-eye-code">
+      <path stroke=3D"none" d=3D"M0 0h24v24H0z" fill=3D"none"></path>
+      <path d=3D"M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path>
+      <path d=3D"M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -=
+4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008"></path>
+      <path d=3D"M20 21l2 -2l-2 -2"></path>
+      <path d=3D"M17 17l-2 2l2 2"></path>
+    </svg>
+  </symbol>
+</svg>
+
+<input type=3D"checkbox" class=3D"sidebar-toggle" name=3D"__navigation" id=
+=3D"__navigation">
+<input type=3D"checkbox" class=3D"sidebar-toggle" name=3D"__toc" id=3D"__to=
+c">
+<label class=3D"overlay sidebar-overlay" for=3D"__navigation">
+  <div class=3D"visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class=3D"overlay toc-overlay" for=3D"__toc">
+  <div class=3D"visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+<a class=3D"skip-to-content muted-link" href=3D"https://python-social-auth.=
+readthedocs.io/en/latest/configuration/django.html#furo-main-content">Skip =
+to content</a>
+
+
+
+<div class=3D"page">
+  <header class=3D"mobile-header">
+    <div class=3D"header-left">
+      <label class=3D"nav-overlay-icon" for=3D"__navigation">
+        <div class=3D"visually-hidden">Toggle site navigation sidebar</div>
+        <i class=3D"icon"><svg><use href=3D"#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class=3D"header-center">
+      <a href=3D"https://python-social-auth.readthedocs.io/en/latest/index.=
+html"><div class=3D"brand">Python Social Auth</div></a>
+    </div>
+    <div class=3D"header-right">
+      <div class=3D"theme-toggle-container theme-toggle-header">
+        <button class=3D"theme-toggle">
+          <div class=3D"visually-hidden">Toggle Light / Dark / Auto color t=
+heme</div>
+          <svg class=3D"theme-icon-when-auto-light"><use href=3D"#svg-sun-w=
+ith-moon"></use></svg>
+          <svg class=3D"theme-icon-when-auto-dark"><use href=3D"#svg-moon-w=
+ith-sun"></use></svg>
+          <svg class=3D"theme-icon-when-dark"><use href=3D"#svg-moon"></use=
+></svg>
+          <svg class=3D"theme-icon-when-light"><use href=3D"#svg-sun"></use=
+></svg>
+        </button>
+      </div>
+      <label class=3D"toc-overlay-icon toc-header-icon" for=3D"__toc">
+        <div class=3D"visually-hidden">Toggle table of contents sidebar</di=
+v>
+        <i class=3D"icon"><svg><use href=3D"#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class=3D"sidebar-drawer">
+    <div class=3D"sidebar-container">
+     =20
+      <div class=3D"sidebar-sticky"><a class=3D"sidebar-brand" href=3D"http=
+s://python-social-auth.readthedocs.io/en/latest/index.html">
+  <div class=3D"sidebar-logo-container">
+    <img class=3D"sidebar-logo" src=3D"https://python-social-auth.readthedo=
+cs.io/en/latest/_static/logo.svg" alt=3D"Logo" width=3D"208" height=3D"208"=
+>
+  </div>
+ =20
+  <span class=3D"sidebar-brand-text">Python Social Auth</span>
+ =20
+</a><form class=3D"sidebar-search-container" method=3D"get" action=3D"https=
+://python-social-auth.readthedocs.io/en/latest/search.html" role=3D"search"=
+>
+  <input class=3D"sidebar-search" placeholder=3D"Search" name=3D"q" aria-la=
+bel=3D"Search">
+ =20
+ =20
+</form>
+<div id=3D"searchbox"></div><div class=3D"sidebar-scroll"><div class=3D"sid=
+ebar-tree">
+  <ul class=3D"current">
+<li class=3D"toctree-l1"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/intro.html">Introduction</a></li>
+<li class=3D"toctree-l1"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/maintainers.html">Maintainers</a>=
+</li>
+<li class=3D"toctree-l1"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/installing.html">Installation</a>=
+</li>
+<li class=3D"toctree-l1 current has-children"><a class=3D"reference interna=
+l" href=3D"https://python-social-auth.readthedocs.io/en/latest/configuratio=
+n/index.html">Configuration</a><input checked=3D"" class=3D"toctree-checkbo=
+x" id=3D"toctree-checkbox-1" name=3D"toctree-checkbox-1" role=3D"switch" ty=
+pe=3D"checkbox"><label for=3D"toctree-checkbox-1"><div class=3D"visually-hi=
+dden">Toggle navigation of Configuration</div><i class=3D"icon"><svg><use h=
+ref=3D"#svg-arrow-right"></use></svg></i></label><ul class=3D"current">
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/configuration/settings.html">Conf=
+iguration</a></li>
+<li class=3D"toctree-l2 current current-page"><a class=3D"current reference=
+ internal" href=3D"https://python-social-auth.readthedocs.io/en/latest/conf=
+iguration/django.html#">Django Framework</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/configuration/flask.html">Flask F=
+ramework</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/configuration/pyramid.html">Pyram=
+id Framework</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/configuration/cherrypy.html">Cher=
+ryPy Framework</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/configuration/webpy.html">Webpy F=
+ramework</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/configuration/porting_from_dsa.ht=
+ml">Porting from django-social-auth</a></li>
+</ul>
+</li>
+<li class=3D"toctree-l1"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/pipeline.html">Pipeline</a></li>
+<li class=3D"toctree-l1"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/pipeline.html#extending-the-pipel=
+ine">Extending the Pipeline</a></li>
+<li class=3D"toctree-l1"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/strategies.html">Strategies</a></=
+li>
+<li class=3D"toctree-l1"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/storage.html">Storage</a></li>
+<li class=3D"toctree-l1"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/exceptions.html">Exceptions</a></=
+li>
+<li class=3D"toctree-l1 has-children"><a class=3D"reference internal" href=
+=3D"https://python-social-auth.readthedocs.io/en/latest/backends/index.html=
+">Backends</a><input class=3D"toctree-checkbox" id=3D"toctree-checkbox-2" n=
+ame=3D"toctree-checkbox-2" role=3D"switch" type=3D"checkbox"><label for=3D"=
+toctree-checkbox-2"><div class=3D"visually-hidden">Toggle navigation of Bac=
+kends</div><i class=3D"icon"><svg><use href=3D"#svg-arrow-right"></use></sv=
+g></i></label><ul>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/implementation.html">Add=
+ing a new backend</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/email.html">Email Auth</=
+a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/username.html">Username =
+Auth</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/oauth.html">OAuth</a></l=
+i>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/openid.html">OpenID</a><=
+/li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/saml.html">SAML</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/amazon.html">Amazon</a><=
+/li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/angel.html">Angel List</=
+a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/aol.html">AOL</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/apple.html">AppleID</a><=
+/li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/appsfuel.html">Appsfuel<=
+/a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/arcgis.html">ArcGIS</a><=
+/li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/auth0_openidconnect.html=
+">Auth0 OpenID Connect</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/azuread.html">Microsoft =
+Azure Active Directory</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/battlenet.html">Battle.n=
+et</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/beats.html">Beats</a></l=
+i>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/behance.html">Behance</a=
+></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/belgium_eid.html">Belgiu=
+m EID</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/bitbucket.html">Bitbucke=
+t</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/bitbucket_datacenter_oau=
+th2.html">Bitbucket Data Center OAuth2</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/box.html">Box.net</a></l=
+i>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/bungie.html">Bungie</a><=
+/li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/cas.html">CAS (OpenID Co=
+nnect via Apereo CAS)</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/changetip.html">ChangeTi=
+p</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/clef.html">Clef</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/coinbase.html">Coinbase<=
+/a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/cognito.html">Cognito</a=
+></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/coursera.html">Coursera<=
+/a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/dailymotion.html">DailyM=
+otion</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/digitalocean.html">Digit=
+alOcean</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/discogs.html">Discogs</a=
+></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/discourse.html">Discours=
+e</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/disqus.html">Disqus</a><=
+/li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/docker.html">Docker</a><=
+/li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/douban.html">Douban</a><=
+/li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/dribbble.html">Dribbble<=
+/a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/drip.html">Drip</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/dropbox.html">Dropbox</a=
+></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/edmodo.html">Edmodo</a><=
+/li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/etsy.html">Etsy OAuth2</=
+a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/eventbrite.html">Eventbr=
+ite OAuth</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/eveonline.html">EVE Onli=
+ne Single Sign-On (SSO)</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/evernote.html">Evernote =
+OAuth</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/facebook.html">Facebook<=
+/a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/facebook_limited_login.h=
+tml">Facebook Limited Login</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/fedora.html">Fedora</a><=
+/li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/fitbit.html">Fitbit</a><=
+/li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/flat.html">Flat</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/flickr.html">Flickr</a><=
+/li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/foursquare.html">Foursqu=
+are</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/github.html">GitHub</a><=
+/li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/github_enterprise.html">=
+GitHub Enterprise</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/gitlab.html">GitLab</a><=
+/li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/gitea.html">Gitea</a></l=
+i>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/google.html">Google</a><=
+/li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/grafana.html">Grafana</a=
+></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/instagram.html">Instagra=
+m</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/itembase.html">Itembase<=
+/a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/jawbone.html">Jawbone</a=
+></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/justgiving.html">Just Gi=
+ving</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/kakao.html">Kakao</a></l=
+i>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/keycloak.html">Keycloak =
+- Open Source Red Hat SSO</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/khanacademy.html">Khan A=
+cademy</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/kick.html">Kick</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/lastfm.html">Last.fm</a>=
+</li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/launchpad.html">Launchpa=
+d</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/lifescience.html">Lifesc=
+ience AAI</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/line.html">Line.me</a></=
+li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/linkedin.html">LinkedIn<=
+/a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/livejournal.html">LiveJo=
+urnal</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/live.html">MSN Live Conn=
+ect</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/loginradius.html">LoginR=
+adius</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/lyft.html">Lyft</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/mailchimp.html">MailChim=
+p</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/mailru.html">Mail.ru OAu=
+th</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/mapmyfitness.html">MapMy=
+Fitness</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/mediawiki.html">MediaWik=
+i OAuth1 backend</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/meetup.html">Meetup</a><=
+/li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/mendeley.html">Mendeley<=
+/a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/microsoftgraph.html">Mic=
+rosoft Graph</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/mineid.html">MineID</a><=
+/li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/mixcloud.html">Mixcloud =
+OAuth2</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/moves.html">Moves</a></l=
+i>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/naszaklasa.html">NationB=
+uilder</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/nationbuilder.html">Nati=
+onBuilder</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/naver.html">Naver</a></l=
+i>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/nfdi.html">NFDI (OpenID =
+Connect)</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/ngpvan_actionid.html">NG=
+P VAN ActionID</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/odnoklassnikiru.html">Od=
+noklassniki.ru</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/okta.html">Okta</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/openstreetmap.html">Open=
+StreetMap (Legacy OAuth 1.0a)</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/openstreetmap_oauth2.htm=
+l">OpenStreetMap OAuth 2</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/oidc.html">OIDC (OpenID =
+Connect)</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/orbi.html">Orbi</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/orcid.html">ORCID</a></l=
+i>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/osso.html">Osso - Open S=
+ource SAML SSO</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/patreon.html">Patreon</a=
+></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/persona.html">Mozilla Pe=
+rsona</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/pinterest.html">Pinteres=
+t</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/pixelpin.html">PixelPin<=
+/a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/pocket.html">Pocket</a><=
+/li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/podio.html">Podio</a></l=
+i>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/qiita.html">Qiita</a></l=
+i>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/qq.html">QQ</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/quizlet.html">Quizlet</a=
+></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/rdio.html">Rdio</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/readability.html">Readab=
+ility</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/reddit.html">Reddit</a><=
+/li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/runkeeper.html">RunKeepe=
+r</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/salesforce.html">Salesfo=
+rce</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/seznam.html">Seznam</a><=
+/li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/shimmering.html">Shimmer=
+ing Verify</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/shopify.html">Shopify</a=
+></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/simplelogin.html">Simple=
+Login</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/sketchfab.html">Sketchfa=
+b</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/skyrock.html">Skyrock</a=
+></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/slack.html">Slack</a></l=
+i>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/soundcloud.html">SoundCl=
+oud</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/spotify.html">Spotify</a=
+></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/suse.html">SUSE</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/stackoverflow.html">Stac=
+koverflow</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/steam.html">Steam OpenID=
+</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/stocktwits.html">StockTw=
+its</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/strava.html">Strava</a><=
+/li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/stripe.html">Stripe</a><=
+/li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/taobao.html">Taobao OAut=
+h</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/thisismyjam.html">ThisIs=
+MyJam</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/trello.html">Trello</a><=
+/li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/tripit.html">TripIt</a><=
+/li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/tumblr.html">Tumblr</a><=
+/li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/twilio.html">Twilio</a><=
+/li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/twitch.html">Twitch</a><=
+/li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/twitter.html">Twitter</a=
+></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/twitter_oauth2.html">Twi=
+tter API v2</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/udata.html">Udata</a></l=
+i>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/uber.html">Uber</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/untappd.html">Untappd</a=
+></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/upwork.html">Upwork</a><=
+/li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/vault.html">Hashicorp Va=
+ult</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/vend.html">Vend</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/vimeo.html">Vimeo</a></l=
+i>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/vk.html">VK.com (former =
+Vkontakte)</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/weibo.html">Weibo OAuth<=
+/a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/withings.html">Withings<=
+/a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/wunderlist.html">Wunderl=
+ist</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/xing.html">XING</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/yahoo.html">Yahoo</a></l=
+i>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/yammer.html">Yammer</a><=
+/li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/backends/zotero.html">Zotero</a><=
+/li>
+</ul>
+</li>
+<li class=3D"toctree-l1"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/developer_intro.html">Beginner=E2=
+=80=99s Guide</a></li>
+<li class=3D"toctree-l1"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/logging_out.html">Disconnect and =
+Logging Out</a></li>
+<li class=3D"toctree-l1"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/tests.html">Testing python-social=
+-auth</a></li>
+<li class=3D"toctree-l1"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/use_cases.html">Use Cases</a></li=
+>
+<li class=3D"toctree-l1"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/thanks.html">Thanks</a></li>
+<li class=3D"toctree-l1"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/copyright.html">Copyrights and Li=
+cence</a></li>
+<li class=3D"toctree-l1"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/genindex.html">Index</a></li>
+<li class=3D"toctree-l1"><a class=3D"reference internal" href=3D"https://py=
+thon-social-auth.readthedocs.io/en/latest/py-modindex.html">Module Index</a=
+></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+     =20
+    </div>
+  </aside>
+  <div class=3D"main">
+    <div class=3D"content">
+      <div class=3D"article-container">
+        <a href=3D"https://python-social-auth.readthedocs.io/en/latest/conf=
+iguration/django.html#" class=3D"back-to-top muted-link">
+          <svg xmlns=3D"http://www.w3.org/2000/svg" viewBox=3D"0 0 24 24">
+            <path d=3D"M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.4=
+2 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class=3D"content-icon-container">
+          <div class=3D"view-this-page">
+  <a class=3D"muted-link" href=3D"https://python-social-auth.readthedocs.io=
+/en/latest/_sources/configuration/django.rst.txt" title=3D"View this page">
+    <svg><use href=3D"#svg-eye"></use></svg>
+    <span class=3D"visually-hidden">View this page</span>
+  </a>
+</div>
+<div class=3D"theme-toggle-container theme-toggle-content">
+            <button class=3D"theme-toggle">
+              <div class=3D"visually-hidden">Toggle Light / Dark / Auto col=
+or theme</div>
+              <svg class=3D"theme-icon-when-auto-light"><use href=3D"#svg-s=
+un-with-moon"></use></svg>
+              <svg class=3D"theme-icon-when-auto-dark"><use href=3D"#svg-mo=
+on-with-sun"></use></svg>
+              <svg class=3D"theme-icon-when-dark"><use href=3D"#svg-moon"><=
+/use></svg>
+              <svg class=3D"theme-icon-when-light"><use href=3D"#svg-sun"><=
+/use></svg>
+            </button>
+          </div>
+          <label class=3D"toc-overlay-icon toc-content-icon" for=3D"__toc">
+            <div class=3D"visually-hidden">Toggle table of contents sidebar=
+</div>
+            <i class=3D"icon"><svg><use href=3D"#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role=3D"main" id=3D"furo-main-content">
+          <section id=3D"django-framework">
+<h1>Django Framework<a class=3D"headerlink" href=3D"https://python-social-a=
+uth.readthedocs.io/en/latest/configuration/django.html#django-framework" ti=
+tle=3D"Link to this heading">=C2=B6</a></h1>
+<p>Django framework has a little more support since this application was de=
+rived
+from <a class=3D"reference external" href=3D"https://github.com/omab/django=
+-social-auth">django-social-auth</a>. Here are some details on configuring =
+this
+application on Django.</p>
+<section id=3D"installing">
+<h2>Installing<a class=3D"headerlink" href=3D"https://python-social-auth.re=
+adthedocs.io/en/latest/configuration/django.html#installing" title=3D"Link =
+to this heading">=C2=B6</a></h2>
+<p>From <a class=3D"reference external" href=3D"http://pypi.python.org/pypi=
+/social-auth-app-django/">pypi</a>:</p>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span>$ pip install social-auth-app-django
+</pre></div>
+</div>
+<p>And for <a class=3D"reference external" href=3D"http://mongoengine.org/"=
+>MongoEngine</a> ORM:</p>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span>$ pip install social-auth-app-django-mongoengine
+</pre></div>
+</div>
+</section>
+<section id=3D"register-the-application">
+<h2>Register the application<a class=3D"headerlink" href=3D"https://python-=
+social-auth.readthedocs.io/en/latest/configuration/django.html#register-the=
+-application" title=3D"Link to this heading">=C2=B6</a></h2>
+<p>The <a class=3D"reference external" href=3D"https://github.com/python-so=
+cial-auth/social-app-django">Django built-in app</a> comes with two ORMs, o=
+ne for default Django ORM and
+another for <a class=3D"reference external" href=3D"http://mongoengine.org/=
+">MongoEngine</a> ORM.</p>
+<p>Add the application to <code class=3D"docutils literal notranslate"><spa=
+n class=3D"pre">INSTALLED_APPS</span></code> setting, for default ORM:</p>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"n">INSTALLED_APPS</span> <span class=3D"o">=3D<=
+/span> <span class=3D"p">(</span>
+    <span class=3D"o">...</span>
+    <span class=3D"s1">'social_django'</span><span class=3D"p">,</span>
+    <span class=3D"o">...</span>
+<span class=3D"p">)</span>
+</pre></div>
+</div>
+<p>And for <a class=3D"reference external" href=3D"http://mongoengine.org/"=
+>MongoEngine</a> ORM:</p>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"n">INSTALLED_APPS</span> <span class=3D"o">=3D<=
+/span> <span class=3D"p">(</span>
+    <span class=3D"o">...</span>
+    <span class=3D"s1">'social_django_mongoengine'</span><span class=3D"p">=
+,</span>
+    <span class=3D"o">...</span>
+<span class=3D"p">)</span>
+</pre></div>
+</div>
+<p>Also ensure to define the <a class=3D"reference external" href=3D"http:/=
+/mongoengine.org/">MongoEngine</a> storage setting:</p>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"n">SOCIAL_AUTH_STORAGE</span> <span class=3D"o"=
+>=3D</span> <span class=3D"s1">'social_django_mongoengine.models.DjangoStor=
+age'</span>
+</pre></div>
+</div>
+</section>
+<section id=3D"database">
+<h2>Database<a class=3D"headerlink" href=3D"https://python-social-auth.read=
+thedocs.io/en/latest/configuration/django.html#database" title=3D"Link to t=
+his heading">=C2=B6</a></h2>
+<p>When using PostgreSQL, it=E2=80=99s recommended to use the built-in <cit=
+e>JSONB</cite>
+field to store the extracted <code class=3D"docutils literal notranslate"><=
+span class=3D"pre">extra_data</span></code>. To enable it define the settin=
+g:</p>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"n">SOCIAL_AUTH_JSONFIELD_ENABLED</span> <span c=
+lass=3D"o">=3D</span> <span class=3D"kc">True</span>
+</pre></div>
+</div>
+<p>(For Django 1.7 and higher) you need to sync the database to create need=
+ed
+models once you added <code class=3D"docutils literal notranslate"><span cl=
+ass=3D"pre">social_django</span></code> to your installed apps:</p>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"o">./</span><span class=3D"n">manage</span><spa=
+n class=3D"o">.</span><span class=3D"n">py</span> <span class=3D"n">migrate=
+</span>
+</pre></div>
+</div>
+</section>
+<section id=3D"authentication-backends">
+<h2>Authentication backends<a class=3D"headerlink" href=3D"https://python-s=
+ocial-auth.readthedocs.io/en/latest/configuration/django.html#authenticatio=
+n-backends" title=3D"Link to this heading">=C2=B6</a></h2>
+<p>Add desired authentication backends to Django=E2=80=99s <a class=3D"refe=
+rence external" href=3D"http://docs.djangoproject.com/en/dev/ref/settings/?=
+from=3Dolddocs#authentication-backends">AUTHENTICATION_BACKENDS</a>
+setting:</p>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"n">AUTHENTICATION_BACKENDS</span> <span class=
+=3D"o">=3D</span> <span class=3D"p">(</span>
+    <span class=3D"s1">'social_core.backends.open_id.OpenIdAuth'</span><spa=
+n class=3D"p">,</span>
+    <span class=3D"s1">'social_core.backends.google.GoogleOAuth2'</span><sp=
+an class=3D"p">,</span>
+    <span class=3D"s1">'social_core.backends.twitter.TwitterOAuth'</span><s=
+pan class=3D"p">,</span>
+    <span class=3D"o">...</span>
+    <span class=3D"s1">'django.contrib.auth.backends.ModelBackend'</span><s=
+pan class=3D"p">,</span>
+<span class=3D"p">)</span>
+</pre></div>
+</div>
+<p>Take into account that backends <strong>must</strong> be defined in <a c=
+lass=3D"reference external" href=3D"http://docs.djangoproject.com/en/dev/re=
+f/settings/?from=3Dolddocs#authentication-backends">AUTHENTICATION_BACKENDS=
+</a>
+or Django won=E2=80=99t pick them when trying to authenticate the user.</p>
+<p>Don=E2=80=99t miss <code class=3D"docutils literal notranslate"><span cl=
+ass=3D"pre">django.contrib.auth.backends.ModelBackend</span></code> if usin=
+g <code class=3D"docutils literal notranslate"><span class=3D"pre">django.c=
+ontrib.auth</span></code>
+application or users won=E2=80=99t be able to login by username / password =
+method.</p>
+<p>For more documentation about setting backends to specific social applica=
+tions, please see the <a class=3D"reference internal" href=3D"https://pytho=
+n-social-auth.readthedocs.io/en/latest/backends/index.html"><span class=3D"=
+doc">Backends</span></a>.</p>
+</section>
+<section id=3D"urls-entries">
+<span id=3D"django-urls"></span><h2>URLs entries<a class=3D"headerlink" hre=
+f=3D"https://python-social-auth.readthedocs.io/en/latest/configuration/djan=
+go.html#urls-entries" title=3D"Link to this heading">=C2=B6</a></h2>
+<p>Add URLs entries:</p>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"n">urlpatterns</span> <span class=3D"o">=3D</sp=
+an> <span class=3D"n">patterns</span><span class=3D"p">(</span><span class=
+=3D"s1">''</span><span class=3D"p">,</span>
+    <span class=3D"o">...</span>
+    <span class=3D"n">path</span><span class=3D"p">(</span><span class=3D"s=
+2">""</span><span class=3D"p">,</span> <span class=3D"n">include</span><spa=
+n class=3D"p">(</span><span class=3D"s1">'social_django.urls'</span><span c=
+lass=3D"p">,</span> <span class=3D"n">namespace</span><span class=3D"o">=3D=
+</span><span class=3D"s2">"social"</span><span class=3D"p">)),</span>
+    <span class=3D"o">...</span>
+<span class=3D"p">)</span>
+</pre></div>
+</div>
+<p>In case you need a custom namespace, this setting is also needed:</p>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"n">SOCIAL_AUTH_URL_NAMESPACE</span> <span class=
+=3D"o">=3D</span> <span class=3D"s1">'social'</span>
+</pre></div>
+</div>
+<div class=3D"admonition hint">
+<p class=3D"admonition-title">Hint</p>
+<p>In case you include the namespace from another namespace, you need to ad=
+just
+the configuration accordingly to include the parent namespace:</p>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"n">SOCIAL_AUTH_URL_NAMESPACE</span> <span class=
+=3D"o">=3D</span> <span class=3D"s1">'accounts:social'</span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id=3D"requiring-post-only-login">
+<h2>Requiring POST only login<a class=3D"headerlink" href=3D"https://python=
+-social-auth.readthedocs.io/en/latest/configuration/django.html#requiring-p=
+ost-only-login" title=3D"Link to this heading">=C2=B6</a></h2>
+<p>By default login url <code class=3D"docutils literal notranslate"><span =
+class=3D"pre">social:begin</span></code> uses <code class=3D"docutils liter=
+al notranslate"><span class=3D"pre">GET</span></code> request if you would =
+like to require <code class=3D"docutils literal notranslate"><span class=3D=
+"pre">POST</span></code> only (for example to comply with SOC audits) loggi=
+ng in then please use:</p>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"n">SOCIAL_AUTH_REQUIRE_POST</span> <span class=
+=3D"o">=3D</span> <span class=3D"kc">True</span>
+</pre></div>
+</div>
+</section>
+<section id=3D"templates">
+<h2>Templates<a class=3D"headerlink" href=3D"https://python-social-auth.rea=
+dthedocs.io/en/latest/configuration/django.html#templates" title=3D"Link to=
+ this heading">=C2=B6</a></h2>
+<p>Example of google-oauth2 backend usage in template:</p>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"o">&lt;</span><span class=3D"n">a</span> <span =
+class=3D"n">href</span><span class=3D"o">=3D</span><span class=3D"s2">"{</s=
+pan><span class=3D"si">% u</span><span class=3D"s2">rl "</span><span class=
+=3D"n">social</span><span class=3D"p">:</span><span class=3D"n">begin</span=
+><span class=3D"s2">" "</span><span class=3D"n">google</span><span class=3D=
+"o">-</span><span class=3D"n">oauth2</span><span class=3D"s2">" %}"</span><=
+span class=3D"o">&gt;</span><span class=3D"n">Google</span><span class=3D"o=
+">&lt;/</span><span class=3D"n">a</span><span class=3D"o">&gt;</span>
+</pre></div>
+</div>
+</section>
+<section id=3D"template-context-processors">
+<h2>Template Context Processors<a class=3D"headerlink" href=3D"https://pyth=
+on-social-auth.readthedocs.io/en/latest/configuration/django.html#template-=
+context-processors" title=3D"Link to this heading">=C2=B6</a></h2>
+<p>There=E2=80=99s a context processor that will add backends and associati=
+ons data to
+template context:</p>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"n">TEMPLATES</span> <span class=3D"o">=3D</span=
+> <span class=3D"p">[</span>
+    <span class=3D"p">{</span>
+        <span class=3D"o">...</span>
+        <span class=3D"s1">'OPTIONS'</span><span class=3D"p">:</span> <span=
+ class=3D"p">{</span>
+            <span class=3D"o">...</span>
+            <span class=3D"s1">'context_processors'</span><span class=3D"p"=
+>:</span> <span class=3D"p">[</span>
+                <span class=3D"o">...</span>
+                <span class=3D"s1">'social_django.context_processors.backen=
+ds'</span><span class=3D"p">,</span>
+                <span class=3D"s1">'social_django.context_processors.login_=
+redirect'</span><span class=3D"p">,</span>
+                <span class=3D"o">...</span>
+            <span class=3D"p">]</span>
+        <span class=3D"p">}</span>
+    <span class=3D"p">}</span>
+<span class=3D"p">]</span>
+</pre></div>
+</div>
+<p><code class=3D"docutils literal notranslate"><span class=3D"pre">backend=
+s</span></code> context processor will load a <code class=3D"docutils liter=
+al notranslate"><span class=3D"pre">backends</span></code> key in the conte=
+xt with
+three entries on it:</p>
+<dl class=3D"simple">
+<dt><code class=3D"docutils literal notranslate"><span class=3D"pre">associ=
+ated</span></code></dt><dd><p>It=E2=80=99s a list of <code class=3D"docutil=
+s literal notranslate"><span class=3D"pre">UserSocialAuth</span></code> ins=
+tances related with the currently
+logged in user. Will be empty if there=E2=80=99s no current user.</p>
+</dd>
+<dt><code class=3D"docutils literal notranslate"><span class=3D"pre">not_as=
+sociated</span></code></dt><dd><p>A list of available backend names not ass=
+ociated with the current user yet.
+If there=E2=80=99s no user logged in, it will be a list of all available ba=
+ckends.</p>
+</dd>
+<dt><code class=3D"docutils literal notranslate"><span class=3D"pre">backen=
+ds</span></code></dt><dd><p>A list of all available backend names.</p>
+</dd>
+</dl>
+</section>
+<section id=3D"personalized-configuration">
+<h2>Personalized Configuration<a class=3D"headerlink" href=3D"https://pytho=
+n-social-auth.readthedocs.io/en/latest/configuration/django.html#personaliz=
+ed-configuration" title=3D"Link to this heading">=C2=B6</a></h2>
+<p>You can add (or remove) several features on the social auth pipeline.</p=
+>
+<p>By default there are some pipelines on social_django:</p>
+<p><code class=3D"docutils literal notranslate"><span class=3D"pre">social_=
+details</span></code> - Get the information we can about the user and retur=
+n it in a simple
+format to create the user instance later. On some cases the details are
+already part of the auth response from the provider, but sometimes this
+could hit a provider API.</p>
+<p><code class=3D"docutils literal notranslate"><span class=3D"pre">social_=
+uid</span></code> - Get the social uid from whichever service we=E2=80=99re=
+ authing thru. The uid is
+the unique identifier of the given user in the provider.</p>
+<p><code class=3D"docutils literal notranslate"><span class=3D"pre">auth_al=
+lowed</span></code> - Verifies that the current auth process is valid withi=
+n the current
+project, this is where emails and domains whitelists are applied (if
+defined).</p>
+<p><code class=3D"docutils literal notranslate"><span class=3D"pre">social_=
+user</span></code> - Checks if the current social-account is already associ=
+ated in the site.</p>
+<p><code class=3D"docutils literal notranslate"><span class=3D"pre">get_use=
+rname</span></code>- Make up a username for this person, appends a random s=
+tring at the end if
+there=E2=80=99s any collision.</p>
+<p><code class=3D"docutils literal notranslate"><span class=3D"pre">create_=
+user</span></code> - Create a user account if we haven=E2=80=99t found one =
+yet.</p>
+<p><code class=3D"docutils literal notranslate"><span class=3D"pre">associa=
+te_user</span></code> - Create the record that associated the social accoun=
+t with this user.</p>
+<p><code class=3D"docutils literal notranslate"><span class=3D"pre">extra_d=
+ata</span></code> - Populate the extra_data field in the social record with=
+ the values
+specified by settings (and the default ones like access_token, etc).</p>
+<p><code class=3D"docutils literal notranslate"><span class=3D"pre">user_de=
+tails</span></code> - Update the user record with any changed info from the=
+ auth service.</p>
+<p>Some other pipelines are available for use as well, but are not included=
+ by default:</p>
+<p><code class=3D"docutils literal notranslate"><span class=3D"pre">associa=
+te_by_email</span></code> - Associate current auth with a user with the sam=
+e email address in the DB.
+Obs: This pipeline entry is not 100% secure unless you know that the provid=
+ers
+enabled enforce email verification on their side, otherwise a user can
+attempt to take over another user account by using the same (not validated)
+email address on some provider.</p>
+<p>Usage example:</p>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"n">SOCIAL_AUTH_PIPELINE</span> <span class=3D"o=
+">=3D</span> <span class=3D"p">(</span>
+    <span class=3D"s1">'social_core.pipeline.social_auth.social_details'</s=
+pan><span class=3D"p">,</span>
+    <span class=3D"s1">'social_core.pipeline.social_auth.social_uid'</span>=
+<span class=3D"p">,</span>
+    <span class=3D"s1">'social_core.pipeline.social_auth.social_user'</span=
+><span class=3D"p">,</span>
+    <span class=3D"s1">'social_core.pipeline.user.get_username'</span><span=
+ class=3D"p">,</span>
+    <span class=3D"s1">'social_core.pipeline.social_auth.associate_by_email=
+'</span><span class=3D"p">,</span>
+    <span class=3D"s1">'social_core.pipeline.user.create_user'</span><span =
+class=3D"p">,</span>
+    <span class=3D"s1">'social_core.pipeline.social_auth.associate_user'</s=
+pan><span class=3D"p">,</span>
+    <span class=3D"s1">'social_core.pipeline.social_auth.load_extra_data'</=
+span><span class=3D"p">,</span>
+    <span class=3D"s1">'social_core.pipeline.user.user_details'</span><span=
+ class=3D"p">,</span>
+<span class=3D"p">)</span>
+</pre></div>
+</div>
+</section>
+<section id=3D"orms">
+<h2>ORMs<a class=3D"headerlink" href=3D"https://python-social-auth.readthed=
+ocs.io/en/latest/configuration/django.html#orms" title=3D"Link to this head=
+ing">=C2=B6</a></h2>
+<p>As detailed above the built-in Django application supports default ORM a=
+nd
+<a class=3D"reference external" href=3D"http://mongoengine.org/">MongoEngin=
+e</a> ORM.</p>
+<p>When using <a class=3D"reference external" href=3D"http://mongoengine.or=
+g/">MongoEngine</a> make sure you=E2=80=99ve followed the instructions for
+<a class=3D"reference external" href=3D"http://mongoengine-odm.readthedocs.=
+org/en/latest/django.html">MongoEngine Django integration</a>, as you=E2=80=
+=99re now utilizing that user model. The
+<cite>MongoEngine_</cite> backend was developed and tested with version 0.6=
+.10 of
+<cite>MongoEngine_</cite>.</p>
+<p>Alternate storage models implementations currently follow a tight patter=
+n of
+models that behave near or identical to Django ORM models. It is currently
+not decoupled from this pattern by any abstraction layer. If you would like
+to implement your own alternate, please see the <code class=3D"docutils lit=
+eral notranslate"><span class=3D"pre">social_django.models</span></code> an=
+d
+<code class=3D"docutils literal notranslate"><span class=3D"pre">social_dja=
+ngo_mongoengine.models</span></code> modules for guidance.</p>
+</section>
+<section id=3D"json-field-support">
+<h2>JSON field support<a class=3D"headerlink" href=3D"https://python-social=
+-auth.readthedocs.io/en/latest/configuration/django.html#json-field-support=
+" title=3D"Link to this heading">=C2=B6</a></h2>
+<p>Django 3.1 introduces <cite>JSONField</cite> support for all backends an=
+d adds a
+deprecation warning.</p>
+<p>These are the related settings to enabling this integration:</p>
+<ul>
+<li><p><cite>SOCIAL_AUTH_JSONFIELD_ENABLED</cite> (boolean)</p>
+<p>Same behavior, setting name updated to match <cite>JSONField</cite> bein=
+g supported by
+all systems:</p>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"n">SOCIAL_AUTH_POSTGRES_JSONFIELD</span> <span =
+class=3D"o">=3D</span> <span class=3D"kc">True</span>  <span class=3D"c1">#=
+ Before</span>
+<span class=3D"n">SOCIAL_AUTH_JSONFIELD_ENABLED</span> <span class=3D"o">=
+=3D</span> <span class=3D"kc">True</span>  <span class=3D"c1"># After</span=
+>
+</pre></div>
+</div>
+</li>
+<li><p><cite>SOCIAL_AUTH_JSONFIELD_CUSTOM</cite> (import path)
+Allows specifying an import string. This gives better control to setting a
+custom JSONField.</p>
+<p>For django systems &lt; 3.1 (technically &lt;4), you can set the old <ci=
+te>JSONField</cite>
+to maintain behavior with earlier social-app-django releases:</p>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"n">SOCIAL_AUTH_JSONFIELD_CUSTOM</span> <span cl=
+ass=3D"o">=3D</span> <span class=3D"s1">'django.contrib.postgres.fields.JSO=
+NField'</span>
+</pre></div>
+</div>
+<p>For sites running or upgrading to django 3.1+, then can set this so the =
+new
+value:</p>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"n">SOCIAL_AUTH_JSONFIELD_CUSTOM</span> <span cl=
+ass=3D"o">=3D</span> <span class=3D"s1">'django.db.models.JSONField'</span>
+</pre></div>
+</div>
+</li>
+<li><p>Deprecating setting: <cite>SOCIAL_AUTH_POSTGRES_JSONFIELD</cite> (bo=
+ol)
+Rename this to <cite>SOCIAL_AUTH_JSONFIELD_ENABLED</cite>. The setting will=
+ be deprecated
+in a future release.</p></li>
+</ul>
+</section>
+<section id=3D"exceptions-middleware">
+<h2>Exceptions Middleware<a class=3D"headerlink" href=3D"https://python-soc=
+ial-auth.readthedocs.io/en/latest/configuration/django.html#exceptions-midd=
+leware" title=3D"Link to this heading">=C2=B6</a></h2>
+<p>A base middleware is provided that handles <code class=3D"docutils liter=
+al notranslate"><span class=3D"pre">SocialAuthBaseException</span></code> b=
+y
+providing a message to the user via the Django messages framework, and then
+responding with a redirect to a URL defined in one of the middleware method=
+s.</p>
+<p>The middleware is at <code class=3D"docutils literal notranslate"><span =
+class=3D"pre">social_django.middleware.SocialAuthExceptionMiddleware</span>=
+</code>.
+Any method can be overridden, but for simplicity these two are recommended:=
+</p>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"n">get_message</span><span class=3D"p">(</span>=
+<span class=3D"n">request</span><span class=3D"p">,</span> <span class=3D"n=
+">exception</span><span class=3D"p">)</span>
+<span class=3D"n">get_redirect_uri</span><span class=3D"p">(</span><span cl=
+ass=3D"n">request</span><span class=3D"p">,</span> <span class=3D"n">except=
+ion</span><span class=3D"p">)</span>
+</pre></div>
+</div>
+<p>By default, the message is the exception message and the URL for the red=
+irect
+is the location specified by the <code class=3D"docutils literal notranslat=
+e"><span class=3D"pre">LOGIN_ERROR_URL</span></code> setting.</p>
+<p>If a valid backend was detected by <code class=3D"docutils literal notra=
+nslate"><span class=3D"pre">strategy()</span></code> decorator, it will be
+available at <code class=3D"docutils literal notranslate"><span class=3D"pr=
+e">request.strategy.backend</span></code> and <code class=3D"docutils liter=
+al notranslate"><span class=3D"pre">process_exception()</span></code> will
+use it to build a backend-dependent redirect URL but fallback to default if=
+ not
+defined.</p>
+<p>Exception processing is disabled if any of this settings is defined with=
+ a
+<code class=3D"docutils literal notranslate"><span class=3D"pre">True</span=
+></code> value:</p>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"o">&lt;</span><span class=3D"n">backend</span> =
+<span class=3D"n">name</span><span class=3D"o">&gt;</span><span class=3D"n"=
+>_SOCIAL_AUTH_RAISE_EXCEPTIONS</span> <span class=3D"o">=3D</span> <span cl=
+ass=3D"kc">True</span>
+<span class=3D"n">SOCIAL_AUTH_RAISE_EXCEPTIONS</span> <span class=3D"o">=3D=
+</span> <span class=3D"kc">True</span>
+<span class=3D"n">RAISE_EXCEPTIONS</span> <span class=3D"o">=3D</span> <spa=
+n class=3D"kc">True</span>
+<span class=3D"n">DEBUG</span> <span class=3D"o">=3D</span> <span class=3D"=
+kc">True</span>
+</pre></div>
+</div>
+<p>The redirect destination will get two <code class=3D"docutils literal no=
+translate"><span class=3D"pre">GET</span></code> parameters:</p>
+<dl class=3D"simple">
+<dt><code class=3D"docutils literal notranslate"><span class=3D"pre">messag=
+e</span> <span class=3D"pre">=3D</span> <span class=3D"pre">''</span></code=
+></dt><dd><p>Message from the exception raised, in some cases it=E2=80=99s =
+the message returned
+by the provider during the auth process.</p>
+</dd>
+<dt><code class=3D"docutils literal notranslate"><span class=3D"pre">backen=
+d</span> <span class=3D"pre">=3D</span> <span class=3D"pre">''</span></code=
+></dt><dd><p>Backend name that was used, if it was a valid backend.</p>
+</dd>
+</dl>
+<p>The middleware will attempt to use the Django built-in <cite>messages</c=
+ite>
+application to store the exception message, and tag it with
+<cite>social-auth</cite> and the backend name. If the application is not en=
+abled,
+or a <cite>MessageFailure</cite> error happens, the app will default to the=
+ URL
+format described above.</p>
+</section>
+<section id=3D"django-admin">
+<h2>Django Admin<a class=3D"headerlink" href=3D"https://python-social-auth.=
+readthedocs.io/en/latest/configuration/django.html#django-admin" title=3D"L=
+ink to this heading">=C2=B6</a></h2>
+<p>The default application (not the <a class=3D"reference external" href=3D=
+"http://mongoengine.org/">MongoEngine</a> one) contains an <code class=3D"d=
+ocutils literal notranslate"><span class=3D"pre">admin.py</span></code>
+module that will be auto-discovered by the usual mechanism.</p>
+<p>But, by the nature of the application which depends on the existence of =
+a user
+model, it=E2=80=99s easy to fall in a recursive import ordering making the =
+application
+fail to load. This happens because the admin module will build a set of fie=
+lds
+to populate the <code class=3D"docutils literal notranslate"><span class=3D=
+"pre">search_fields</span></code> property to search for related users in t=
+he
+administration UI, but this requires the user model to be retrieved which m=
+ight
+not be defined at that time.</p>
+<p>To avoid this issue define the following setting to circumvent the impor=
+t
+error:</p>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"n">SOCIAL_AUTH_ADMIN_USER_SEARCH_FIELDS</span> =
+<span class=3D"o">=3D</span> <span class=3D"p">[</span><span class=3D"s1">'=
+field1'</span><span class=3D"p">,</span> <span class=3D"s1">'field2'</span>=
+<span class=3D"p">]</span>
+</pre></div>
+</div>
+<p>For example:</p>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"n">SOCIAL_AUTH_ADMIN_USER_SEARCH_FIELDS</span> =
+<span class=3D"o">=3D</span> <span class=3D"p">[</span><span class=3D"s1">'=
+username'</span><span class=3D"p">,</span> <span class=3D"s1">'first_name'<=
+/span><span class=3D"p">,</span> <span class=3D"s1">'email'</span><span cla=
+ss=3D"p">]</span>
+</pre></div>
+</div>
+<p>The fields listed <strong>must</strong> be user models fields.</p>
+<p>It=E2=80=99s also possible to define more search fields, not directly re=
+lated
+to the user model by definig the following setting:</p>
+<div class=3D"highlight-default notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"n">SOCIAL_AUTH_ADMIN_SEARCH_FIELDS</span> <span=
+ class=3D"o">=3D</span> <span class=3D"p">[</span><span class=3D"s1">'field=
+1'</span><span class=3D"p">,</span> <span class=3D"s1">'field2'</span><span=
+ class=3D"p">]</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+        <div class=3D"raised adaptive-css loaded" data-ea-type=3D"text" dat=
+a-ea-manual=3D"true" data-ea-publisher=3D"readthedocs" data-ea-keywords=3D"=
+python|readthedocs-project-78457|readthedocs-project-python-social-auth" da=
+ta-ea-campaign-types=3D"community|house|paid" id=3D"readthedocs-ea-text-nos=
+tyle-sphinx"><div class=3D"ea-placement ea-type-text"><div class=3D"ea-cont=
+ent"><div class=3D"ea-text"><a href=3D"https://server.ethicalads.io/proxy/c=
+lick/9072/019938a9-d955-7193-8a19-b992ca618c18/" rel=3D"nofollow noopener s=
+ponsored" target=3D"_blank"><strong class=3D"ea-headline">75GB Bandwidth | =
+20,000 Uploads | 50,000 Transformations | 50GB Storage </strong><span class=
+=3D"ea-body">&gt;&gt;</span><strong class=3D"ea-cta"> Get Started Free.</st=
+rong></a></div></div><div class=3D"ea-callout"><a rel=3D"nofollow noopener"=
+ target=3D"_blank" href=3D"https://www.ethicalads.io/advertisers/topics/bac=
+kend-web/?ref=3Dea-text">Ads by EthicalAds</a></div></div></div></article>
+      </div>
+      <footer>
+       =20
+        <div class=3D"related-pages">
+          <a class=3D"next-page" href=3D"https://python-social-auth.readthe=
+docs.io/en/latest/configuration/flask.html">
+              <div class=3D"page-info">
+                <div class=3D"context">
+                  <span>Next</span>
+                </div>
+                <div class=3D"title">Flask Framework</div>
+              </div>
+              <svg class=3D"furo-related-icon"><use href=3D"#svg-arrow-righ=
+t"></use></svg>
+            </a>
+          <a class=3D"prev-page" href=3D"https://python-social-auth.readthe=
+docs.io/en/latest/configuration/settings.html">
+              <svg class=3D"furo-related-icon"><use href=3D"#svg-arrow-righ=
+t"></use></svg>
+              <div class=3D"page-info">
+                <div class=3D"context">
+                  <span>Previous</span>
+                </div>
+               =20
+                <div class=3D"title">Configuration</div>
+               =20
+              </div>
+            </a>
+        </div>
+        <div class=3D"bottom-of-page">
+          <div class=3D"left-details">
+            <div class=3D"copyright">
+                <a href=3D"https://python-social-auth.readthedocs.io/en/lat=
+est/copyright.html">Copyright</a> =C2=A9 Python Social Auth team
+            </div>
+            Made with <a href=3D"https://www.sphinx-doc.org/">Sphinx</a> an=
+d <a class=3D"muted-link" href=3D"https://pradyunsg.me/">@pradyunsg</a>'s
+           =20
+            <a href=3D"https://github.com/pradyunsg/furo">Furo</a>
+           =20
+          </div>
+          <div class=3D"right-details">
+           =20
+          </div>
+        </div>
+       =20
+      </footer>
+    </div>
+    <aside class=3D"toc-drawer">
+     =20
+     =20
+      <div class=3D"toc-sticky toc-scroll">
+        <div class=3D"toc-title-container">
+          <span class=3D"toc-title">
+            On this page
+          </span>
+        </div>
+        <div class=3D"toc-tree-container">
+          <div class=3D"toc-tree">
+            <ul>
+<li><a class=3D"reference internal" href=3D"https://python-social-auth.read=
+thedocs.io/en/latest/configuration/django.html#">Django Framework</a><ul>
+<li><a class=3D"reference internal" href=3D"https://python-social-auth.read=
+thedocs.io/en/latest/configuration/django.html#installing">Installing</a></=
+li>
+<li><a class=3D"reference internal" href=3D"https://python-social-auth.read=
+thedocs.io/en/latest/configuration/django.html#register-the-application">Re=
+gister the application</a></li>
+<li><a class=3D"reference internal" href=3D"https://python-social-auth.read=
+thedocs.io/en/latest/configuration/django.html#database">Database</a></li>
+<li><a class=3D"reference internal" href=3D"https://python-social-auth.read=
+thedocs.io/en/latest/configuration/django.html#authentication-backends">Aut=
+hentication backends</a></li>
+<li><a class=3D"reference internal" href=3D"https://python-social-auth.read=
+thedocs.io/en/latest/configuration/django.html#urls-entries">URLs entries</=
+a></li>
+<li><a class=3D"reference internal" href=3D"https://python-social-auth.read=
+thedocs.io/en/latest/configuration/django.html#requiring-post-only-login">R=
+equiring POST only login</a></li>
+<li><a class=3D"reference internal" href=3D"https://python-social-auth.read=
+thedocs.io/en/latest/configuration/django.html#templates">Templates</a></li=
+>
+<li><a class=3D"reference internal" href=3D"https://python-social-auth.read=
+thedocs.io/en/latest/configuration/django.html#template-context-processors"=
+>Template Context Processors</a></li>
+<li><a class=3D"reference internal" href=3D"https://python-social-auth.read=
+thedocs.io/en/latest/configuration/django.html#personalized-configuration">=
+Personalized Configuration</a></li>
+<li><a class=3D"reference internal" href=3D"https://python-social-auth.read=
+thedocs.io/en/latest/configuration/django.html#orms">ORMs</a></li>
+<li><a class=3D"reference internal" href=3D"https://python-social-auth.read=
+thedocs.io/en/latest/configuration/django.html#json-field-support">JSON fie=
+ld support</a></li>
+<li><a class=3D"reference internal" href=3D"https://python-social-auth.read=
+thedocs.io/en/latest/configuration/django.html#exceptions-middleware">Excep=
+tions Middleware</a></li>
+<li><a class=3D"reference internal" href=3D"https://python-social-auth.read=
+thedocs.io/en/latest/configuration/django.html#django-admin">Django Admin</=
+a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+     =20
+     =20
+    </aside>
+  </div>
+</div>
+   =20
+   =20
+   =20
+   =20
+<readthedocs-flyout><template shadowmode=3D"open"><!---->
+      <div class=3D" floating container bottom-right ">
+        <!--?lit$114655017$-->
+      <header>
+        <img class=3D"logo" alt=3D"Read the Docs" src=3D"data:image/svg+xml=
+;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5=
+vIj8+Cjxzdmc6c3ZnCiAgIHZlcnNpb249IjEuMSIKICAgaWQ9InN2ZyIKICAgeD0iMHB4IgogIC=
+B5PSIwcHgiCiAgIHZpZXdCb3g9IjY5NCAxOTcgMzQ2LjY5ODU1IDM5OS45ODQ3NyIKICAgc29ka=
+XBvZGk6ZG9jbmFtZT0ibG9nby1saWdodC5zdmciCiAgIHdpZHRoPSIzNDYuNjk4NTUiCiAgIGhl=
+aWdodD0iMzk5Ljk4NDc3IgogICBpbmtzY2FwZTp2ZXJzaW9uPSIxLjMuMiAoMDkxZTIwZWYwZiw=
+gMjAyMy0xMS0yNSwgY3VzdG9tKSIKICAgeG1sbnM6aW5rc2NhcGU9Imh0dHA6Ly93d3cuaW5rc2=
+NhcGUub3JnL25hbWVzcGFjZXMvaW5rc2NhcGUiCiAgIHhtbG5zOnNvZGlwb2RpPSJodHRwOi8vc=
+29kaXBvZGkuc291cmNlZm9yZ2UubmV0L0RURC9zb2RpcG9kaS0wLmR0ZCIKICAgeG1sbnM6c3Zn=
+PSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPHN2ZzpkZWZzCiAgICAgaWQ9ImRlZnM=
+xMiIgLz4KICA8c29kaXBvZGk6bmFtZWR2aWV3CiAgICAgaWQ9Im5hbWVkdmlldzEyIgogICAgIH=
+BhZ2Vjb2xvcj0iI2ZmZmZmZiIKICAgICBib3JkZXJjb2xvcj0iIzAwMDAwMCIKICAgICBib3JkZ=
+XJvcGFjaXR5PSIwLjI1IgogICAgIGlua3NjYXBlOnNob3dwYWdlc2hhZG93PSIyIgogICAgIGlu=
+a3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgICAgaW5rc2NhcGU6cGFnZWNoZWNrZXJib2FyZD0=
+iMCIKICAgICBpbmtzY2FwZTpkZXNrY29sb3I9IiNkMWQxZDEiCiAgICAgaW5rc2NhcGU6em9vbT=
+0iMS4yNTIiCiAgICAgaW5rc2NhcGU6Y3g9Ijk5OC40MDI1NiIKICAgICBpbmtzY2FwZTpjeT0iM=
+Tk5LjY4MDUxIgogICAgIGlua3NjYXBlOndpbmRvdy13aWR0aD0iMzQ0MCIKICAgICBpbmtzY2Fw=
+ZTp3aW5kb3ctaGVpZ2h0PSIxMzg5IgogICAgIGlua3NjYXBlOndpbmRvdy14PSIwIgogICAgIGl=
+ua3NjYXBlOndpbmRvdy15PSIyNyIKICAgICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIxIg=
+ogICAgIGlua3NjYXBlOmN1cnJlbnQtbGF5ZXI9InN2ZyIgLz4KICA8c3ZnOmcKICAgICBpZD0ib=
+G9nbyIKICAgICB0cmFuc2Zvcm09Im1hdHJpeCgwLjU1NzUzNjQ0LDAsMCwwLjU1NzUzNjQ0LDY2=
+LjUzMTgxMiwxMDUwLjEyNjIpIj4KICAgIDxzdmc6cGF0aAogICAgICAgc3R5bGU9ImZpbGw6I2Z=
+jZmNmYyIKICAgICAgIGQ9Im0gMTQwOC4xLC0xMTgxLjcgYyAtNy41LDEgLTEyLjcsNy44IC0xMS=
+43LDE1LjMgMC43LDUuNCA0LjYsOS45IDkuOSwxMS4zIDAsMCAzMy4yLDExIDg5LjcsMTUuNiA0N=
+S40LDMuNyA5Ni45LC0zLjIgOTYuOSwtMy4yIDcuNSwtMC4yIDEzLjUsLTYuNSAxMy4yLC0xNCAt=
+MC4zLC03LjUgLTYuNSwtMTMuNSAtMTQsLTEzLjIgLTAuOSwwIC0xLjgsMC4xIC0yLjYsMC4zIDA=
+sMCAtNTAuNCw2LjIgLTkxLjMsMi45IC01NCwtNC40IC04My40LC0xNC4zIC04My40LC0xNC4zIC=
+0yLjIsLTAuNyAtNC41LC0xIC02LjcsLTAuNyB6IG0gMCwtNjcuNiBjIC03LjUsMSAtMTIuNyw3L=
+jggLTExLjcsMTUuMyAwLjcsNS40IDQuNiw5LjkgOS45LDExLjMgMCwwIDMzLjIsMTEgODkuNywx=
+NS42IDQ1LjQsMy43IDk2LjksLTMuMiA5Ni45LC0zLjIgNy41LC0wLjIgMTMuNSwtNi41IDEzLjI=
+sLTE0IC0wLjMsLTcuNSAtNi41LC0xMy41IC0xNCwtMTMuMiAtMC45LDAgLTEuOCwwLjEgLTIuNi=
+wwLjMgMCwwIC01MC40LDYuMiAtOTEuMywyLjkgLTU0LC00LjQgLTgzLjQsLTE0LjMgLTgzLjQsL=
+TE0LjMgLTIuMiwtMC43IC00LjUsLTEgLTYuNywtMC43IHogbSAwLC02Ny42IGMgLTcuNSwxIC0x=
+Mi43LDcuOCAtMTEuNywxNS4zIDAuNyw1LjQgNC42LDkuOSA5LjksMTEuMyAwLDAgMzMuMiwxMSA=
+4OS43LDE1LjYgNDUuNCwzLjcgOTYuOSwtMy4yIDk2LjksLTMuMiA3LjUsLTAuMiAxMy41LC02Lj=
+UgMTMuMiwtMTQgLTAuMywtNy41IC02LjUsLTEzLjUgLTE0LC0xMy4yIC0wLjksMCAtMS44LDAuM=
+SAtMi42LDAuMyAwLDAgLTUwLjQsNi4yIC05MS4zLDIuOSAtNTQsLTQuNCAtODMuNCwtMTQuMyAt=
+ODMuNCwtMTQuMyAtMi4yLC0wLjcgLTQuNSwtMSAtNi43LC0wLjcgeiBtIDAsLTY3LjUgYyAtNy4=
+1LDEgLTEyLjcsNy44IC0xMS43LDE1LjMgMC43LDUuNCA0LjYsOS45IDkuOSwxMS4zIDAsMCAzMy=
+4yLDExIDg5LjcsMTUuNiA0NS40LDMuNyA5Ni45LC0zLjIgOTYuOSwtMy4yIDcuNSwtMC4yIDEzL=
+jUsLTYuNSAxMy4yLC0xNCAtMC4zLC03LjUgLTYuNSwtMTMuNSAtMTQsLTEzLjIgLTAuOSwwIC0x=
+LjgsMC4xIC0yLjYsMC4zIDAsMCAtNTAuNCw2LjIgLTkxLjMsMi45IC01NCwtNC40IC04My40LC0=
+xNC4zIC04My40LC0xNC4zIC0yLjIsLTAuOCAtNC41LC0xIC02LjcsLTAuNyB6IG0gLTk0LjcsLT=
+cxLjMgYyAtNzEsMC41IC05Ny41LDIyLjMgLTk3LjUsMjIuMyB2IDUzMC4zIGMgMCwwIDI1LjgsL=
+TIyLjMgMTA5LC0xOC45IDgzLjIsMy40IDEwMC4zLDMyLjYgMjAyLjUsMzQuNiAxMDIuMiwyLjEg=
+MTI3LjksLTE1LjcgMTI3LjksLTE1LjcgbCAxLjUsLTU0MC42IGMgMCwwIC00NiwxMyAtMTM1LjU=
+sMTMuNyAtODkuNSwwLjcgLTExMSwtMjIuOCAtMTkzLjIsLTI1LjUgLTUuMSwtMC4xIC0xMCwtMC=
+4yIC0xNC43LC0wLjIgeiBtIDU5LjQsMzQuNiBjIDAsMCA0MywxNC4yIDEyMi41LDE4LjIgNjcuM=
+iwzLjMgMTM0LjUsLTYuNiAxMzQuNSwtNi42IFYgLTkyOSBjIDAsMCAtMzQuMSwxNy45IC0xMTku=
+MywxMS44IC02NiwtNC43IC0xMzguNywtMjkuNyAtMTM4LjcsLTI5LjcgeiBtIC00MS41LDEyLjU=
+gYyA3LjYsMCAxMy43LDYuMiAxMy43LDEzLjcgMCw3LjUgLTYuMiwxMy43IC0xMy43LDEzLjcgMC=
+wwIC0yMi4zLDAuMSAtMzUuOCwxLjUgLTIyLjgsMi4zIC0zOC4zLDEwLjYgLTM4LjMsMTAuNiAtN=
+i43LDMuNSAtMTUsMSAtMTguNSwtNS43IC0zLjUsLTYuNyAtMSwtMTUgNS43LC0xOC41IDAsMCAw=
+LDAgMCwwIDAsMCAyMC4yLC0xMC43IDQ4LjQsLTEzLjUgMTYuMywtMS43IDM4LjUsLTEuOCAzOC4=
+1LC0xLjggeiBtIC0xMy4yLDY3LjggYyA3LjYsLTAuMiAxMy4zLDAgMTMuMywwIDcuNSwwLjkgMT=
+IuOSw3LjggMTIsMTUuMyAtMC44LDYuMyAtNS43LDExLjIgLTEyLDEyIDAsMCAtMjIuMywwLjEgL=
+TM1LjgsMS41IC0yMi44LDIuMyAtMzguMywxMC42IC0zOC4zLDEwLjYgLTYuNywzLjUgLTE1LDAu=
+OSAtMTguNSwtNS44IC0zLjUsLTYuNyAtMC45LC0xNSA1LjgsLTE4LjUgMCwwIDIwLjIsLTEwLjc=
+gNDguNCwtMTMuNSA3LjksLTAuOSAxNy41LC0xLjQgMjUuMSwtMS42IHogbSAxMy4yLDY3LjUgYy=
+A3LjYsMCAxMy43LDYuMiAxMy43LDEzLjcgMCw3LjYgLTYuMiwxMy43IC0xMy43LDEzLjcgMCwwI=
+C0yMi4zLC0wLjEgLTM1LjgsMS4yIC0yMi44LDIuMyAtMzguMywxMC42IC0zOC4zLDEwLjYgLTYu=
+NywzLjUgLTE1LDAuOSAtMTguNSwtNS44IC0zLjUsLTYuNyAtMC45LC0xNSA1LjgsLTE4LjUgMCw=
+wIDIwLjIsLTEwLjcgNDguNCwtMTMuNSAxNi4yLC0xLjUgMzguNCwtMS40IDM4LjQsLTEuNCB6Ig=
+ogICAgICAgaWQ9InBhdGgxIiAvPgogIDwvc3ZnOmc+CiAgPGRpdgogICAgIGlkPSJzYWthLWd1a=
+S1yb290Ij4KICAgIDxkaXY+CiAgICAgIDxkaXY+CiAgICAgICAgPHN0eWxlIC8+CiAgICAgIDwv=
+ZGl2PgogICAgPC9kaXY+CiAgPC9kaXY+Cjwvc3ZnOnN2Zz4K">
+        <!--?lit$114655017$--> <!--?lit$114655017$--><span class=3D"version=
+">
+        <!--?lit$114655017$--><svg data-prefix=3D"fas" data-icon=3D"code-br=
+anch" class=3D"svg-inline--fa fa-code-branch icon" role=3D"img" viewBox=3D"=
+0 0 448 512" aria-hidden=3D"true"><path fill=3D"currentColor" d=3D"M80 104a=
+24 24 0 1 0 0-48 24 24 0 1 0 0 48zm80-24c0 32.8-19.7 61-48 73.3l0 70.7 176 =
+0c26.5 0 48-21.5 48-48l0-22.7c-28.3-12.3-48-40.5-48-73.3 0-44.2 35.8-80 80-=
+80s80 35.8 80 80c0 32.8-19.7 61-48 73.3l0 22.7c0 61.9-50.1 112-112 112l-176=
+ 0 0 70.7c28.3 12.3 48 40.5 48 73.3 0 44.2-35.8 80-80 80S0 476.2 0 432c0-32=
+.8 19.7-61 48-73.3l0-205.3C19.7 141 0 112.8 0 80 0 35.8 35.8 0 80 0s80 35.8=
+ 80 80zm232 0a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zM80 456a24 24 0 1 0 0-48 2=
+4 24 0 1 0 0 48z"></path></svg> <!--?lit$114655017$-->latest
+      </span>=20
+        <span class=3D"caret"><!--?lit$114655017$--><svg data-prefix=3D"fas=
+" data-icon=3D"caret-down" class=3D"svg-inline--fa fa-caret-down icon" role=
+=3D"img" viewBox=3D"0 0 384 512" aria-hidden=3D"true"><path fill=3D"current=
+Color" d=3D"M352 160c12.9 0 24.6 7.8 29.6 19.8s2.2 25.7-6.9 34.9l-160 160c-=
+12.5 12.5-32.8 12.5-45.3 0l-160-160c-9.2-9.2-11.9-22.9-6.9-34.9S19.1 160 32=
+ 160l320 0z"></path></svg></span>
+      </header>
+   =20
+        <main class=3D" closed ">
+          <!--?lit$114655017$--> <!--?lit$114655017$-->
+      <dl class=3D"versions">
+        <dt>Versions</dt>
+        <!--?lit$114655017$--><!----><dd><!--?lit$114655017$--><strong><!--=
+?lit$114655017$--><a href=3D"https://python-social-auth.readthedocs.io/en/l=
+atest/configuration/django.html"><!--?lit$114655017$-->latest</a></strong><=
+/dd><!---->
+      </dl>
+   =20
+          <!--?lit$114655017$--> <!--?lit$114655017$-->
+      <dl>
+        <dt>On Read the Docs</dt>
+        <dd>
+          <a href=3D"https://app.readthedocs.org/projects/python-social-aut=
+h/?utm_source=3Dpython-social-auth&amp;utm_content=3Dflyout">Project Home</=
+a>
+        </dd>
+        <dd>
+          <a href=3D"https://app.readthedocs.org/projects/python-social-aut=
+h/builds/?utm_source=3Dpython-social-auth&amp;utm_content=3Dflyout">Builds<=
+/a>
+        </dd>
+      </dl>
+   =20
+          <!--?lit$114655017$--> <!--?lit$114655017$-->
+        <dl>
+          <dt>Search</dt>
+          <dd>
+            <form id=3D"flyout-search-form">
+              <input type=3D"text" name=3D"q" aria-label=3D"Search docs" pl=
+aceholder=3D"Search docs">
+            </form>
+          </dd>
+        </dl>
+     =20
+          <hr>
+          <!--?lit$114655017$-->
+      <small>
+        <span>
+          <a href=3D"https://docs.readthedocs.io/page/addons.html?utm_sourc=
+e=3Dpython-social-auth&amp;utm_content=3Dflyout">Addons documentation</a></=
+span>
+        <span> =E2=80=95 </span>
+        <span>Hosted by
+          <a href=3D"https://about.readthedocs.com/?utm_source=3Dpython-soc=
+ial-auth&amp;utm_content=3Dflyout">Read the Docs</a></span>
+      </small>
+   =20
+        </main>
+      </div>
+    </template></readthedocs-flyout><readthedocs-notification class=3D"rais=
+ed toast"><template shadowmode=3D"open"><!----></template></readthedocs-not=
+ification><readthedocs-search class=3D"raised floating"><template shadowmod=
+e=3D"open"><!---->
+     =20
+    </template></readthedocs-search><readthedocs-hotkeys><template shadowmo=
+de=3D"open"><!----></template></readthedocs-hotkeys></body></html>
+------MultipartBoundary--SyvZrJuMJQk0mnBkmdEiuqZufT44G9gy9prYi72FBz----
+Content-Type: image/svg+xml
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://python-social-auth.readthedocs.io/en/latest/_static/logo.svg
+
+<?xml version=3D"1.0" encoding=3D"UTF-8" standalone=3D"no"?>
+<svg
+   viewBox=3D"0 0 24 24"
+   version=3D"1.1"
+   id=3D"svg52"
+   sodipodi:docname=3D"shield-lock-open.svg"
+   inkscape:version=3D"1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape=3D"http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi=3D"http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns=3D"http://www.w3.org/2000/svg"
+   xmlns:svg=3D"http://www.w3.org/2000/svg">
+  <defs
+     id=3D"defs56" />
+  <sodipodi:namedview
+     id=3D"namedview54"
+     pagecolor=3D"#ffffff"
+     bordercolor=3D"#666666"
+     borderopacity=3D"1.0"
+     inkscape:showpageshadow=3D"2"
+     inkscape:pageopacity=3D"0.0"
+     inkscape:pagecheckerboard=3D"0"
+     inkscape:deskcolor=3D"#d1d1d1"
+     showgrid=3D"false"
+     inkscape:zoom=3D"39.958333"
+     inkscape:cx=3D"7.270073"
+     inkscape:cy=3D"11.987487"
+     inkscape:window-width=3D"1920"
+     inkscape:window-height=3D"1131"
+     inkscape:window-x=3D"0"
+     inkscape:window-y=3D"32"
+     inkscape:window-maximized=3D"1"
+     inkscape:current-layer=3D"svg52" />
+  <path
+     d=3D"M12 1L3 5V11C3 16.5 6.8 21.7 12 23C17.2 21.7 21 16.5 21 11V5L12 1=
+M16 15.8C16 16.4 15.4 17 14.7 17H9.2C8.6 17 8 16.4 8 15.7V12.2C8 11.6 8.6 1=
+1 9.2 11V8.5C9.2 7.1 10.6 6 12 6S14.8 7.1 14.8 8.5V9H13.5V8.5C13.5 7.7 12.8=
+ 7.2 12 7.2S10.5 7.7 10.5 8.5V11H14.8C15.4 11 16 11.6 16 12.3V15.8Z"
+     id=3D"path50"
+     style=3D"fill:#1fa385;fill-opacity:1" />
+</svg>=0A
+------MultipartBoundary--SyvZrJuMJQk0mnBkmdEiuqZufT44G9gy9prYi72FBz----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://python-social-auth.readthedocs.io/en/latest/_static/styles/furo-extensions.css?v=8dab3a3b
+
+@charset "utf-8";
+
+#furo-sidebar-ad-placement { padding: var(--sidebar-item-spacing-vertical) =
+var(--sidebar-item-spacing-horizontal); }
+
+#furo-sidebar-ad-placement .ethical-sidebar { background: var(--color-backg=
+round-secondary); border: none; box-shadow: none; }
+
+#furo-sidebar-ad-placement .ethical-sidebar:hover { background: var(--color=
+-background-hover); }
+
+#furo-sidebar-ad-placement .ethical-sidebar a { color: var(--color-foregrou=
+nd-primary); }
+
+#furo-sidebar-ad-placement .ethical-callout a { color: var(--color-foregrou=
+nd-secondary) !important; }
+
+#furo-readthedocs-versions { background: transparent; display: block; posit=
+ion: static; width: 100%; }
+
+#furo-readthedocs-versions .rst-versions { background: rgb(26, 28, 30); }
+
+#furo-readthedocs-versions .rst-current-version { background: var(--color-s=
+idebar-item-background); cursor: unset; }
+
+#furo-readthedocs-versions .rst-current-version:hover { background: var(--c=
+olor-sidebar-item-background); }
+
+#furo-readthedocs-versions .rst-current-version .fa-book { color: var(--col=
+or-foreground-primary); }
+
+#furo-readthedocs-versions > .rst-other-versions { padding: 0px; }
+
+#furo-readthedocs-versions > .rst-other-versions small { opacity: 1; }
+
+#furo-readthedocs-versions .injected .rst-versions { position: unset; }
+
+#furo-readthedocs-versions:focus-within, #furo-readthedocs-versions:hover {=
+ box-shadow: 0 0 0 1px var(--color-sidebar-background-border); }
+
+#furo-readthedocs-versions:focus-within .rst-current-version, #furo-readthe=
+docs-versions:hover .rst-current-version { background: rgb(26, 28, 30); fon=
+t-size: inherit; height: auto; line-height: inherit; padding: 12px; text-al=
+ign: right; }
+
+#furo-readthedocs-versions:focus-within .rst-current-version .fa-book, #fur=
+o-readthedocs-versions:hover .rst-current-version .fa-book { color: rgb(255=
+, 255, 255); float: left; }
+
+#furo-readthedocs-versions:focus-within .fa-caret-down, #furo-readthedocs-v=
+ersions:hover .fa-caret-down { display: none; }
+
+#furo-readthedocs-versions:focus-within .injected, #furo-readthedocs-versio=
+ns:focus-within .rst-current-version, #furo-readthedocs-versions:focus-with=
+in .rst-other-versions, #furo-readthedocs-versions:hover .injected, #furo-r=
+eadthedocs-versions:hover .rst-current-version, #furo-readthedocs-versions:=
+hover .rst-other-versions { display: block; }
+
+#furo-readthedocs-versions:focus-within > .rst-current-version, #furo-readt=
+hedocs-versions:hover > .rst-current-version { display: none; }
+
+.highlight:hover button.copybtn { color: var(--color-code-foreground); }
+
+.highlight button.copybtn { align-items: center; background-color: var(--co=
+lor-code-background); border: none; color: var(--color-background-item); cu=
+rsor: pointer; height: 1.25em; right: 0.5rem; top: 0.625rem; transition: co=
+lor 0.3s, opacity 0.3s; width: 1.25em; }
+
+.highlight button.copybtn:hover { background-color: var(--color-code-backgr=
+ound); color: var(--color-brand-content); }
+
+.highlight button.copybtn::after { background-color: transparent; color: va=
+r(--color-code-foreground); display: none; }
+
+.highlight button.copybtn.success { color: rgb(34, 134, 58); transition: co=
+lor; }
+
+.highlight button.copybtn.success::after { display: block; }
+
+.highlight button.copybtn svg { padding: 0px; }
+
+body { --sd-color-primary: var(--color-brand-primary); --sd-color-primary-h=
+ighlight: var(--color-brand-content); --sd-color-primary-text: var(--color-=
+background-primary); --sd-color-shadow: rgba(0,0,0,.05); --sd-color-card-bo=
+rder: var(--color-card-border); --sd-color-card-border-hover: var(--color-b=
+rand-content); --sd-color-card-background: var(--color-card-background); --=
+sd-color-card-text: var(--color-foreground-primary); --sd-color-card-header=
+: var(--color-card-marginals-background); --sd-color-card-footer: var(--col=
+or-card-marginals-background); --sd-color-tabs-label-active: var(--color-br=
+and-content); --sd-color-tabs-label-hover: var(--color-foreground-muted); -=
+-sd-color-tabs-label-inactive: var(--color-foreground-muted); --sd-color-ta=
+bs-underline-active: var(--color-brand-content); --sd-color-tabs-underline-=
+hover: var(--color-foreground-border); --sd-color-tabs-underline-inactive: =
+var(--color-background-border); --sd-color-tabs-overline: var(--color-backg=
+round-border); --sd-color-tabs-underline: var(--color-background-border); }
+
+.sd-tab-content { box-shadow: 0 -2px var(--sd-color-tabs-overline),0 1px va=
+r(--sd-color-tabs-underline); }
+
+.sd-card { box-shadow: 0 .1rem .25rem var(--sd-color-shadow),0 0 .0625rem r=
+gba(0,0,0,.1); }
+
+.sd-shadow-sm { box-shadow: 0 .1rem .25rem var(--sd-color-shadow),0 0 .0625=
+rem rgba(0,0,0,.1) !important; }
+
+.sd-shadow-md { box-shadow: 0 .3rem .75rem var(--sd-color-shadow),0 0 .0625=
+rem rgba(0,0,0,.1) !important; }
+
+.sd-shadow-lg { box-shadow: 0 .6rem 1.5rem var(--sd-color-shadow),0 0 .0625=
+rem rgba(0,0,0,.1) !important; }
+
+.sd-card-hover:hover { transform: none; }
+
+.sd-cards-carousel { gap: 0.25rem; padding: 0.25rem; }
+
+body { --tabs--label-text: var(--color-foreground-muted); --tabs--label-tex=
+t--hover: var(--color-foreground-muted); --tabs--label-text--active: var(--=
+color-brand-content); --tabs--label-text--active--hover: var(--color-brand-=
+content); --tabs--label-background: transparent; --tabs--label-background--=
+hover: transparent; --tabs--label-background--active: transparent; --tabs--=
+label-background--active--hover: transparent; --tabs--padding-x: 0.25em; --=
+tabs--margin-x: 1em; --tabs--border: var(--color-background-border); --tabs=
+--label-border: transparent; --tabs--label-border--hover: var(--color-foreg=
+round-muted); --tabs--label-border--active: var(--color-brand-content); --t=
+abs--label-border--active--hover: var(--color-brand-content); }
+
+[role=3D"main"] .container { max-width: none; padding-left: 0px; padding-ri=
+ght: 0px; }
+
+.shadow.docutils { border: none; box-shadow: rgba(0, 0, 0, 0.05) 0px 0.2rem=
+ 0.5rem, rgba(0, 0, 0, 0.1) 0px 0px 0.0625rem !important; }
+
+.sphinx-bs .card { background-color: var(--color-background-secondary); col=
+or: var(--color-foreground); }
+------MultipartBoundary--SyvZrJuMJQk0mnBkmdEiuqZufT44G9gy9prYi72FBz----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://python-social-auth.readthedocs.io/en/latest/_static/styles/furo.css?v=25af2a20
+
+@charset "utf-8";
+
+html { line-height: 1.15; text-size-adjust: 100%; }
+
+body { margin: 0px; }
+
+main { display: block; }
+
+h1 { font-size: 2em; margin: 0.67em 0px; }
+
+hr { box-sizing: content-box; height: 0px; overflow: visible; }
+
+pre { font-family: monospace, monospace; font-size: 1em; }
+
+a { background-color: transparent; }
+
+abbr[title] { border-bottom: none; text-decoration: underline dotted; }
+
+b, strong { font-weight: bolder; }
+
+code, kbd, samp { font-family: monospace, monospace; font-size: 1em; }
+
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-ali=
+gn: baseline; }
+
+sub { bottom: -0.25em; }
+
+sup { top: -0.5em; }
+
+img { border-style: none; }
+
+button, input, optgroup, select, textarea { font-family: inherit; font-size=
+: 100%; line-height: 1.15; margin: 0px; }
+
+button, input { overflow: visible; }
+
+button, select { text-transform: none; }
+
+[type=3D"button"], [type=3D"reset"], [type=3D"submit"], button { appearance=
+: button; }
+
+fieldset { padding: 0.35em 0.75em 0.625em; }
+
+legend { box-sizing: border-box; color: inherit; display: table; max-width:=
+ 100%; padding: 0px; white-space: normal; }
+
+progress { vertical-align: baseline; }
+
+textarea { overflow: auto; }
+
+[type=3D"checkbox"], [type=3D"radio"] { box-sizing: border-box; padding: 0p=
+x; }
+
+[type=3D"number"]::-webkit-inner-spin-button, [type=3D"number"]::-webkit-ou=
+ter-spin-button { height: auto; }
+
+[type=3D"search"] { appearance: textfield; outline-offset: -2px; }
+
+[type=3D"search"]::-webkit-search-decoration { appearance: none; }
+
+::-webkit-file-upload-button { appearance: button; font: inherit; }
+
+details { display: block; }
+
+summary { display: list-item; }
+
+[hidden], template { display: none; }
+
+@media print {
+  .content-icon-container, .headerlink, .mobile-header, .related-pages { di=
+splay: none !important; }
+  .highlight { border: .1pt solid var(--color-foreground-border); }
+  a, blockquote, dl, ol, p, pre, table, ul { break-inside: avoid; }
+  caption, figure, h1, h2, h3, h4, h5, h6, img { break-after: avoid; break-=
+inside: avoid; }
+  dl, ol, ul { break-before: avoid; }
+}
+
+.visually-hidden { background: var(--color-background-primary); color: var(=
+--color-foreground-primary); height: 1px !important; margin: -1px !importan=
+t; overflow: hidden !important; padding: 0px !important; position: absolute=
+ !important; width: 1px !important; clip: rect(0px, 0px, 0px, 0px) !importa=
+nt; border: 0px !important; white-space: nowrap !important; }
+
+body { --font-stack: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Ar=
+ial,sans-serif,Apple Color Emoji,Segoe UI Emoji; --font-stack--monospace: "=
+SFMono-Regular",Menlo,Consolas,Monaco,Liberation Mono,Lucida Console,monosp=
+ace; --font-stack--headings: var(--font-stack); --font-size--normal: 100%; =
+--font-size--small: 87.5%; --font-size--small--2: 81.25%; --font-size--smal=
+l--3: 75%; --font-size--small--4: 62.5%; --sidebar-caption-font-size: var(-=
+-font-size--small--2); --sidebar-item-font-size: var(--font-size--small); -=
+-sidebar-search-input-font-size: var(--font-size--small); --toc-font-size: =
+var(--font-size--small--3); --toc-font-size--mobile: var(--font-size--norma=
+l); --toc-title-font-size: var(--font-size--small--4); --admonition-font-si=
+ze: 0.8125rem; --admonition-title-font-size: 0.8125rem; --code-font-size: v=
+ar(--font-size--small--2); --api-font-size: var(--font-size--small); --head=
+er-height: calc(var(--sidebar-item-line-height) + var(--sidebar-item-spacin=
+g-vertical)*4); --header-padding: 0.5rem; --sidebar-tree-space-above: 1.5re=
+m; --sidebar-caption-space-above: 1rem; --sidebar-item-line-height: 1rem; -=
+-sidebar-item-spacing-vertical: 0.5rem; --sidebar-item-spacing-horizontal: =
+1rem; --sidebar-item-height: calc(var(--sidebar-item-line-height) + var(--s=
+idebar-item-spacing-vertical)*2); --sidebar-expander-width: var(--sidebar-i=
+tem-height); --sidebar-search-space-above: 0.5rem; --sidebar-search-input-s=
+pacing-vertical: 0.5rem; --sidebar-search-input-spacing-horizontal: 0.5rem;=
+ --sidebar-search-input-height: 1rem; --sidebar-search-icon-size: var(--sid=
+ebar-search-input-height); --toc-title-padding: 0.25rem 0; --toc-spacing-ve=
+rtical: 1.5rem; --toc-spacing-horizontal: 1.5rem; --toc-item-spacing-vertic=
+al: 0.4rem; --toc-item-spacing-horizontal: 1rem; --icon-search: url('data:i=
+mage/svg+xml;charset=3Dutf-8,<svg xmlns=3D"http://www.w3.org/2000/svg" fill=
+=3D"none" stroke=3D"currentColor" stroke-linecap=3D"round" stroke-linejoin=
+=3D"round" stroke-width=3D"1.5" viewBox=3D"0 0 24 24"><path stroke=3D"none"=
+ d=3D"M0 0h24v24H0z"/><circle cx=3D"10" cy=3D"10" r=3D"7"/><path d=3D"m21 2=
+1-6-6"/></svg>'); --icon-pencil: url('data:image/svg+xml;charset=3Dutf-8,<s=
+vg xmlns=3D"http://www.w3.org/2000/svg" viewBox=3D"0 0 24 24"><path d=3D"M2=
+0.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 =
+1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75z"/></svg>'); --icon-ab=
+stract: url('data:image/svg+xml;charset=3Dutf-8,<svg xmlns=3D"http://www.w3=
+.org/2000/svg" viewBox=3D"0 0 24 24"><path d=3D"M4 5h16v2H4zm0 4h16v2H4zm0 =
+4h16v2H4zm0 4h10v2H4z"/></svg>'); --icon-info: url('data:image/svg+xml;char=
+set=3Dutf-8,<svg xmlns=3D"http://www.w3.org/2000/svg" viewBox=3D"0 0 24 24"=
+><path d=3D"M13 9h-2V7h2m0 10h-2v-6h2m-1-9A10 10 0 0 0 2 12a10 10 0 0 0 10 =
+10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"/></svg>'); --icon-flame: url('data:i=
+mage/svg+xml;charset=3Dutf-8,<svg xmlns=3D"http://www.w3.org/2000/svg" view=
+Box=3D"0 0 24 24"><path d=3D"M17.55 11.2c-.23-.3-.5-.56-.76-.82-.65-.6-1.4-=
+1.03-2.03-1.66C13.3 7.26 13 4.85 13.91 3c-.91.23-1.75.75-2.45 1.32-2.54 2.0=
+8-3.54 5.75-2.34 8.9.04.1.08.2.08.33 0 .22-.15.42-.35.5-.22.1-.46.04-.64-.1=
+2a.8.8 0 0 1-.15-.17c-1.1-1.43-1.28-3.48-.53-5.12C5.89 10 5 12.3 5.14 14.47=
+c.04.5.1 1 .27 1.5.14.6.4 1.2.72 1.73 1.04 1.73 2.87 2.97 4.84 3.22 2.1.27 =
+4.35-.12 5.96-1.6 1.8-1.66 2.45-4.32 1.5-6.6l-.13-.26c-.2-.46-.47-.87-.8-1.=
+25zm-3.1 6.3c-.28.24-.73.5-1.08.6-1.1.4-2.2-.16-2.87-.82 1.19-.28 1.89-1.16=
+ 2.09-2.05.17-.8-.14-1.46-.27-2.23-.12-.74-.1-1.37.18-2.06.17.38.37.76.6 1.=
+06.76 1 1.95 1.44 2.2 2.8.04.14.06.28.06.43.03.82-.32 1.72-.92 2.27z"/></sv=
+g>'); --icon-question: url('data:image/svg+xml;charset=3Dutf-8,<svg xmlns=
+=3D"http://www.w3.org/2000/svg" viewBox=3D"0 0 24 24"><path d=3D"m15.07 11.=
+25-.9.92C13.45 12.89 13 13.5 13 15h-2v-.5c0-1.11.45-2.11 1.17-2.83l1.24-1.2=
+6c.37-.36.59-.86.59-1.41a2 2 0 0 0-2-2 2 2 0 0 0-2 2H8a4 4 0 0 1 4-4 4 4 0 =
+0 1 4 4 3.2 3.2 0 0 1-.93 2.25M13 19h-2v-2h2M12 2A10 10 0 0 0 2 12a10 10 0 =
+0 0 10 10 10 10 0 0 0 10-10c0-5.53-4.5-10-10-10"/></svg>'); --icon-warning:=
+ url('data:image/svg+xml;charset=3Dutf-8,<svg xmlns=3D"http://www.w3.org/20=
+00/svg" viewBox=3D"0 0 24 24"><path d=3D"M13 14h-2v-4h2m0 8h-2v-2h2M1 21h22=
+L12 2z"/></svg>'); --icon-failure: url('data:image/svg+xml;charset=3Dutf-8,=
+<svg xmlns=3D"http://www.w3.org/2000/svg" viewBox=3D"0 0 24 24"><path d=3D"=
+M12 2c5.53 0 10 4.47 10 10s-4.47 10-10 10S2 17.53 2 12 6.47 2 12 2m3.59 5L1=
+2 10.59 8.41 7 7 8.41 10.59 12 7 15.59 8.41 17 12 13.41 15.59 17 17 15.59 1=
+3.41 12 17 8.41z"/></svg>'); --icon-spark: url('data:image/svg+xml;charset=
+=3Dutf-8,<svg xmlns=3D"http://www.w3.org/2000/svg" viewBox=3D"0 0 24 24"><p=
+ath d=3D"m11.5 20 4.86-9.73H13V4l-5 9.73h3.5zM12 2c2.75 0 5.1 1 7.05 2.95S2=
+2 9.25 22 12s-1 5.1-2.95 7.05S14.75 22 12 22s-5.1-1-7.05-2.95S2 14.75 2 12s=
+1-5.1 2.95-7.05S9.25 2 12 2"/></svg>'); --color-admonition-title--caution: =
+#ff9100; --color-admonition-title-background--caution: rgba(255,145,0,.2); =
+--color-admonition-title--warning: #ff9100; --color-admonition-title-backgr=
+ound--warning: rgba(255,145,0,.2); --color-admonition-title--danger: #ff525=
+2; --color-admonition-title-background--danger: rgba(255,82,82,.2); --color=
+-admonition-title--attention: #ff5252; --color-admonition-title-background-=
+-attention: rgba(255,82,82,.2); --color-admonition-title--error: #ff5252; -=
+-color-admonition-title-background--error: rgba(255,82,82,.2); --color-admo=
+nition-title--hint: #00c852; --color-admonition-title-background--hint: rgb=
+a(0,200,82,.2); --color-admonition-title--tip: #00c852; --color-admonition-=
+title-background--tip: rgba(0,200,82,.2); --color-admonition-title--importa=
+nt: #00bfa5; --color-admonition-title-background--important: rgba(0,191,165=
+,.2); --color-admonition-title--note: #00b0ff; --color-admonition-title-bac=
+kground--note: rgba(0,176,255,.2); --color-admonition-title--seealso: #448a=
+ff; --color-admonition-title-background--seealso: rgba(68,138,255,.2); --co=
+lor-admonition-title--admonition-todo: grey; --color-admonition-title-backg=
+round--admonition-todo: hsla(0,0%,50%,.2); --color-admonition-title: #651ff=
+f; --color-admonition-title-background: rgba(101,31,255,.2); --icon-admonit=
+ion-default: var(--icon-abstract); --color-topic-title: #14b8a6; --color-to=
+pic-title-background: rgba(20,184,166,.2); --icon-topic-default: var(--icon=
+-pencil); --color-problematic: #b30000; --color-foreground-primary: #000; -=
+-color-foreground-secondary: #5a5c63; --color-foreground-muted: #6b6f76; --=
+color-foreground-border: #878787; --color-background-primary: #fff; --color=
+-background-secondary: #f8f9fb; --color-background-hover: #efeff4; --color-=
+background-hover--transparent: #efeff400; --color-background-border: #eeebe=
+e; --color-background-item: #ccc; --color-announcement-background: #000000d=
+d; --color-announcement-text: #eeebee; --color-brand-primary: #0a4bff; --co=
+lor-brand-content: #2757dd; --color-brand-visited: #872ee0; --color-api-bac=
+kground: var(--color-background-hover--transparent); --color-api-background=
+-hover: var(--color-background-hover); --color-api-overall: var(--color-for=
+eground-secondary); --color-api-name: var(--color-problematic); --color-api=
+-pre-name: var(--color-problematic); --color-api-paren: var(--color-foregro=
+und-secondary); --color-api-keyword: var(--color-foreground-primary); --col=
+or-api-added: #21632c; --color-api-added-border: #38a84d; --color-api-chang=
+ed: #046172; --color-api-changed-border: #06a1bc; --color-api-deprecated: #=
+605706; --color-api-deprecated-border: #f0d90f; --color-api-removed: #b3000=
+0; --color-api-removed-border: #ff5c5c; --color-highlight-on-target: #ffc; =
+--color-inline-code-background: var(--color-background-secondary); --color-=
+highlighted-background: #def; --color-highlighted-text: var(--color-foregro=
+und-primary); --color-guilabel-background: #ddeeff80; --color-guilabel-bord=
+er: #bedaf580; --color-guilabel-text: var(--color-foreground-primary); --co=
+lor-admonition-background: transparent; --color-table-header-background: va=
+r(--color-background-secondary); --color-table-border: var(--color-backgrou=
+nd-border); --color-card-border: var(--color-background-secondary); --color=
+-card-background: transparent; --color-card-marginals-background: var(--col=
+or-background-secondary); --color-header-background: var(--color-background=
+-primary); --color-header-border: var(--color-background-border); --color-h=
+eader-text: var(--color-foreground-primary); --color-sidebar-background: va=
+r(--color-background-secondary); --color-sidebar-background-border: var(--c=
+olor-background-border); --color-sidebar-brand-text: var(--color-foreground=
+-primary); --color-sidebar-caption-text: var(--color-foreground-muted); --c=
+olor-sidebar-link-text: var(--color-foreground-secondary); --color-sidebar-=
+link-text--top-level: var(--color-brand-primary); --color-sidebar-item-back=
+ground: var(--color-sidebar-background); --color-sidebar-item-background--c=
+urrent: var( --color-sidebar-item-background ); --color-sidebar-item-backgr=
+ound--hover: linear-gradient(90deg,var(--color-background-hover--transparen=
+t) 0%,var(--color-background-hover) var(--sidebar-item-spacing-horizontal),=
+var(--color-background-hover) 100%); --color-sidebar-item-expander-backgrou=
+nd: transparent; --color-sidebar-item-expander-background--hover: var( --co=
+lor-background-hover ); --color-sidebar-search-text: var(--color-foreground=
+-primary); --color-sidebar-search-background: var(--color-background-second=
+ary); --color-sidebar-search-background--focus: var(--color-background-prim=
+ary); --color-sidebar-search-border: var(--color-background-border); --colo=
+r-sidebar-search-icon: var(--color-foreground-muted); --color-toc-backgroun=
+d: var(--color-background-primary); --color-toc-title-text: var(--color-for=
+eground-muted); --color-toc-item-text: var(--color-foreground-secondary); -=
+-color-toc-item-text--hover: var(--color-foreground-primary); --color-toc-i=
+tem-text--active: var(--color-brand-primary); --color-content-foreground: v=
+ar(--color-foreground-primary); --color-content-background: transparent; --=
+color-link: var(--color-brand-content); --color-link-underline: var(--color=
+-background-border); --color-link--hover: var(--color-brand-content); --col=
+or-link-underline--hover: var(--color-foreground-border); --color-link--vis=
+ited: var(--color-brand-visited); --color-link-underline--visited: var(--co=
+lor-background-border); --color-link--visited--hover: var(--color-brand-vis=
+ited); --color-link-underline--visited--hover: var(--color-foreground-borde=
+r); }
+
+.only-light { display: block !important; }
+
+html body .only-dark { display: none !important; }
+
+@media not print {
+  body[data-theme=3D"dark"] { --color-problematic: #ee5151; --color-foregro=
+und-primary: #cfd0d0; --color-foreground-secondary: #9ca0a5; --color-foregr=
+ound-muted: #81868d; --color-foreground-border: #666; --color-background-pr=
+imary: #131416; --color-background-secondary: #1a1c1e; --color-background-h=
+over: #1e2124; --color-background-hover--transparent: #1e212400; --color-ba=
+ckground-border: #303335; --color-background-item: #444; --color-announceme=
+nt-background: #000000dd; --color-announcement-text: #eeebee; --color-brand=
+-primary: #3d94ff; --color-brand-content: #5ca5ff; --color-brand-visited: #=
+b27aeb; --color-highlighted-background: #083563; --color-guilabel-backgroun=
+d: #08356380; --color-guilabel-border: #13395f80; --color-api-keyword: var(=
+--color-foreground-secondary); --color-highlight-on-target: #330; --color-a=
+pi-added: #3db854; --color-api-added-border: #267334; --color-api-changed: =
+#09b0ce; --color-api-changed-border: #056d80; --color-api-deprecated: #b1a1=
+0b; --color-api-deprecated-border: #6e6407; --color-api-removed: #ff7575; -=
+-color-api-removed-border: #b03b3b; --color-admonition-background: #18181a;=
+ --color-card-border: var(--color-background-secondary); --color-card-backg=
+round: #18181a; --color-card-marginals-background: var(--color-background-h=
+over); }
+  html body[data-theme=3D"dark"] .only-light { display: none !important; }
+  body[data-theme=3D"dark"] .only-dark { display: block !important; }
+  @media (prefers-color-scheme: dark) {
+  body:not([data-theme=3D"light"]) { --color-problematic: #ee5151; --color-=
+foreground-primary: #cfd0d0; --color-foreground-secondary: #9ca0a5; --color=
+-foreground-muted: #81868d; --color-foreground-border: #666; --color-backgr=
+ound-primary: #131416; --color-background-secondary: #1a1c1e; --color-backg=
+round-hover: #1e2124; --color-background-hover--transparent: #1e212400; --c=
+olor-background-border: #303335; --color-background-item: #444; --color-ann=
+ouncement-background: #000000dd; --color-announcement-text: #eeebee; --colo=
+r-brand-primary: #3d94ff; --color-brand-content: #5ca5ff; --color-brand-vis=
+ited: #b27aeb; --color-highlighted-background: #083563; --color-guilabel-ba=
+ckground: #08356380; --color-guilabel-border: #13395f80; --color-api-keywor=
+d: var(--color-foreground-secondary); --color-highlight-on-target: #330; --=
+color-api-added: #3db854; --color-api-added-border: #267334; --color-api-ch=
+anged: #09b0ce; --color-api-changed-border: #056d80; --color-api-deprecated=
+: #b1a10b; --color-api-deprecated-border: #6e6407; --color-api-removed: #ff=
+7575; --color-api-removed-border: #b03b3b; --color-admonition-background: #=
+18181a; --color-card-border: var(--color-background-secondary); --color-car=
+d-background: #18181a; --color-card-marginals-background: var(--color-backg=
+round-hover); }
+  html body:not([data-theme=3D"light"]) .only-light { display: none !import=
+ant; }
+  body:not([data-theme=3D"light"]) .only-dark { display: block !important; =
+}
+}
+}
+
+body[data-theme=3D"auto"] .theme-toggle svg.theme-icon-when-auto-light { di=
+splay: block; }
+
+@media (prefers-color-scheme: dark) {
+  body[data-theme=3D"auto"] .theme-toggle svg.theme-icon-when-auto-dark { d=
+isplay: block; }
+  body[data-theme=3D"auto"] .theme-toggle svg.theme-icon-when-auto-light { =
+display: none; }
+}
+
+body[data-theme=3D"dark"] .theme-toggle svg.theme-icon-when-dark, body[data=
+-theme=3D"light"] .theme-toggle svg.theme-icon-when-light { display: block;=
+ }
+
+body { font-family: var(--font-stack); }
+
+code, kbd, pre, samp { font-family: var(--font-stack--monospace); }
+
+body { -webkit-font-smoothing: antialiased; }
+
+article { line-height: 1.5; }
+
+h1, h2, h3, h4, h5, h6 { border-radius: 0.5rem; font-family: var(--font-sta=
+ck--headings); font-weight: 700; line-height: 1.25; margin: 0.5rem -0.5rem;=
+ padding-left: 0.5rem; padding-right: 0.5rem; }
+
+h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p { margin-top: 0px; }
+
+h1 { font-size: 2.5em; margin-bottom: 1rem; }
+
+h1, h2 { margin-top: 1.75rem; }
+
+h2 { font-size: 2em; }
+
+h3 { font-size: 1.5em; }
+
+h4 { font-size: 1.25em; }
+
+h5 { font-size: 1.125em; }
+
+h6 { font-size: 1em; }
+
+small { font-size: 80%; opacity: 0.75; }
+
+p { margin-bottom: 0.75rem; margin-top: 0.5rem; }
+
+hr.docutils { background-color: var(--color-background-border); border: 0px=
+; height: 1px; margin: 2rem 0px; padding: 0px; }
+
+.centered { text-align: center; }
+
+a { color: var(--color-link); text-decoration-line: underline; text-decorat=
+ion-thickness: initial; text-decoration-style: initial; text-decoration-col=
+or: var(--color-link-underline); }
+
+a:visited { color: var(--color-link--visited); text-decoration-color: var(-=
+-color-link-underline--visited); }
+
+a:visited:hover { color: var(--color-link--visited--hover); text-decoration=
+-color: var(--color-link-underline--visited--hover); }
+
+a:hover { color: var(--color-link--hover); text-decoration-color: var(--col=
+or-link-underline--hover); }
+
+a.muted-link { color: inherit; }
+
+a.muted-link:hover { color: var(--color-link--hover); text-decoration-color=
+: var(--color-link-underline--hover); }
+
+a.muted-link:hover:visited { color: var(--color-link--visited--hover); text=
+-decoration-color: var(--color-link-underline--visited--hover); }
+
+html { overflow: hidden scroll; scroll-behavior: smooth; }
+
+.sidebar-scroll, .toc-scroll, article[role=3D"main"] * { scrollbar-color: v=
+ar(--color-foreground-border) transparent; scrollbar-width: thin; }
+
+.sidebar-scroll::-webkit-scrollbar, .toc-scroll::-webkit-scrollbar, article=
+[role=3D"main"] ::-webkit-scrollbar { height: 0.25rem; width: 0.25rem; }
+
+.sidebar-scroll::-webkit-scrollbar-thumb, .toc-scroll::-webkit-scrollbar-th=
+umb, article[role=3D"main"] ::-webkit-scrollbar-thumb { background-color: v=
+ar(--color-foreground-border); border-radius: 0.125rem; }
+
+body, html { height: 100%; }
+
+.skip-to-content, body, html { background: var(--color-background-primary);=
+ color: var(--color-foreground-primary); }
+
+.skip-to-content { border-radius: 1rem; left: 0.25rem; padding: 1rem; posit=
+ion: fixed; top: 0.25rem; transform: translateY(-200%); transition: transfo=
+rm 0.3s ease-in-out; z-index: 40; }
+
+.skip-to-content:focus-within { transform: translateY(0px); }
+
+article { background: var(--color-content-background); color: var(--color-c=
+ontent-foreground); overflow-wrap: break-word; }
+
+.page { display: flex; min-height: 100%; }
+
+.mobile-header { background-color: var(--color-header-background); border-b=
+ottom: 1px solid var(--color-header-border); color: var(--color-header-text=
+); display: none; height: var(--header-height); width: 100%; z-index: 10; }
+
+.mobile-header.scrolled { border-bottom: none; box-shadow: rgba(0, 0, 0, 0.=
+1) 0px 0px 0.2rem, rgba(0, 0, 0, 0.2) 0px 0.2rem 0.4rem; }
+
+.mobile-header .header-center a { color: var(--color-header-text); text-dec=
+oration: none; }
+
+.main { display: flex; flex: 1 1 0%; }
+
+.sidebar-drawer { background: var(--color-sidebar-background); border-right=
+: 1px solid var(--color-sidebar-background-border); box-sizing: border-box;=
+ display: flex; justify-content: flex-end; min-width: 15em; width: calc(50%=
+ - 26em); }
+
+.sidebar-container, .toc-drawer { box-sizing: border-box; width: 15em; }
+
+.toc-drawer { background: var(--color-toc-background); padding-right: 1rem;=
+ }
+
+.sidebar-sticky, .toc-sticky { display: flex; flex-direction: column; heigh=
+t: 100vh; position: sticky; top: 0px; }
+
+.sidebar-scroll, .toc-scroll { flex-grow: 1; flex-shrink: 1; overflow: auto=
+; scroll-behavior: smooth; }
+
+.content { display: flex; flex-direction: column; justify-content: space-be=
+tween; padding: 0px 3em; width: 46em; }
+
+.icon { display: inline-block; height: 1rem; width: 1rem; }
+
+.icon svg { height: 100%; width: 100%; }
+
+.announcement { align-items: center; background-color: var(--color-announce=
+ment-background); color: var(--color-announcement-text); display: flex; hei=
+ght: var(--header-height); overflow-x: auto; }
+
+.announcement + .page { min-height: calc(100% - var(--header-height)); }
+
+.announcement-content { box-sizing: border-box; min-width: 100%; padding: 0=
+.5rem; text-align: center; white-space: nowrap; }
+
+.announcement-content a { color: var(--color-announcement-text); text-decor=
+ation-color: var(--color-announcement-text); }
+
+.announcement-content a:hover { color: var(--color-announcement-text); text=
+-decoration-color: var(--color-link--hover); }
+
+.no-js .theme-toggle-container { display: none; }
+
+.theme-toggle-container { display: flex; }
+
+.theme-toggle { background: transparent; border: none; cursor: pointer; dis=
+play: flex; padding: 0px; }
+
+.theme-toggle svg { color: var(--color-foreground-primary); display: none; =
+height: 1.25rem; width: 1.25rem; }
+
+.theme-toggle-header { align-items: center; display: flex; justify-content:=
+ center; }
+
+.nav-overlay-icon, .toc-overlay-icon { cursor: pointer; display: none; }
+
+.nav-overlay-icon .icon, .toc-overlay-icon .icon { color: var(--color-foreg=
+round-secondary); height: 1.5rem; width: 1.5rem; }
+
+.nav-overlay-icon, .toc-header-icon { align-items: center; justify-content:=
+ center; }
+
+.toc-content-icon { height: 1.5rem; width: 1.5rem; }
+
+.content-icon-container { display: flex; float: right; gap: 0.5rem; margin-=
+bottom: 1rem; margin-left: 1rem; margin-top: 1.5rem; }
+
+.content-icon-container .edit-this-page svg, .content-icon-container .view-=
+this-page svg { color: inherit; height: 1.25rem; width: 1.25rem; }
+
+.sidebar-toggle { display: none; position: absolute; }
+
+.sidebar-toggle[name=3D"__toc"] { left: 20px; }
+
+.sidebar-toggle:checked { left: 40px; }
+
+.overlay { background-color: rgba(0, 0, 0, 0.54); height: 0px; opacity: 0; =
+position: fixed; top: 0px; transition: width, height, opacity 0.25s ease-ou=
+t; width: 0px; }
+
+.sidebar-overlay { z-index: 20; }
+
+.toc-overlay { z-index: 40; }
+
+.sidebar-drawer { transition: left 0.25s ease-in-out; z-index: 30; }
+
+.toc-drawer { transition: right 0.25s ease-in-out; z-index: 50; }
+
+#__navigation:checked ~ .sidebar-overlay { height: 100%; opacity: 1; width:=
+ 100%; }
+
+#__navigation:checked ~ .page .sidebar-drawer { left: 0px; top: 0px; }
+
+#__toc:checked ~ .toc-overlay { height: 100%; opacity: 1; width: 100%; }
+
+#__toc:checked ~ .page .toc-drawer { right: 0px; top: 0px; }
+
+.back-to-top { background: var(--color-background-primary); border-radius: =
+1rem; box-shadow: rgba(0, 0, 0, 0.05) 0px 0.2rem 0.5rem, rgba(107, 114, 128=
+, 0.5) 0px 0px 1px 0px; display: none; font-size: 0.8125rem; left: 0px; mar=
+gin-left: 50%; padding: 0.5rem 0.75rem 0.5rem 0.5rem; position: fixed; text=
+-decoration: none; top: 1rem; transform: translateX(-50%); z-index: 10; }
+
+.back-to-top svg { height: 1rem; width: 1rem; fill: currentcolor; display: =
+inline-block; }
+
+.back-to-top span { margin-left: 0.25rem; }
+
+.show-back-to-top .back-to-top { align-items: center; display: flex; }
+
+@media (min-width: 97em) {
+  html { font-size: 110%; }
+}
+
+@media (max-width: 82em) {
+  .toc-content-icon { display: flex; }
+  .toc-drawer { border-left: 1px solid var(--color-background-muted); heigh=
+t: 100vh; position: fixed; right: -15em; top: 0px; }
+  .toc-tree { border-left: none; font-size: var(--toc-font-size--mobile); }
+  .sidebar-drawer { width: calc(50% - 18.5em); }
+}
+
+@media (max-width: 67em) {
+  .content { margin-left: auto; margin-right: auto; padding: 0px 1em; }
+}
+
+@media (max-width: 63em) {
+  .nav-overlay-icon { display: flex; }
+  .sidebar-drawer { height: 100vh; left: -15em; position: fixed; top: 0px; =
+width: 15em; }
+  .theme-toggle-header, .toc-header-icon { display: flex; }
+  .theme-toggle-content, .toc-content-icon { display: none; }
+  .mobile-header { align-items: center; display: flex; justify-content: spa=
+ce-between; position: sticky; top: 0px; }
+  .mobile-header .header-left, .mobile-header .header-right { display: flex=
+; height: var(--header-height); padding: 0 var(--header-padding); }
+  .mobile-header .header-left label, .mobile-header .header-right label { h=
+eight: 100%; user-select: none; width: 100%; }
+  .nav-overlay-icon .icon, .theme-toggle svg { height: 1.5rem; width: 1.5re=
+m; }
+  :target { scroll-margin-top: calc(var(--header-height) + 2.5rem); }
+  .back-to-top { top: calc(var(--header-height) + .5rem); }
+  .page { flex-direction: column; justify-content: center; }
+}
+
+@media (max-width: 48em) {
+  .content { overflow-x: auto; width: 100%; }
+}
+
+@media (max-width: 46em) {
+  article[role=3D"main"] aside.sidebar { float: none; margin: 1rem 0px; wid=
+th: 100%; }
+}
+
+.admonition, .topic { background: var(--color-admonition-background); borde=
+r-radius: 0.2rem; box-shadow: rgba(0, 0, 0, 0.05) 0px 0.2rem 0.5rem, rgba(0=
+, 0, 0, 0.1) 0px 0px 0.0625rem; font-size: var(--admonition-font-size); mar=
+gin: 1rem auto; overflow: hidden; padding: 0px 0.5rem 0.5rem; break-inside:=
+ avoid; }
+
+.admonition > :nth-child(2), .topic > :nth-child(2) { margin-top: 0px; }
+
+.admonition > :last-child, .topic > :last-child { margin-bottom: 0px; }
+
+.admonition p.admonition-title, p.topic-title { font-size: var(--admonition=
+-title-font-size); font-weight: 500; line-height: 1.3; margin: 0px -0.5rem =
+0.5rem; padding: 0.4rem 0.5rem 0.4rem 2rem; position: relative; }
+
+.admonition p.admonition-title::before, p.topic-title::before { content: ""=
+; height: 1rem; left: 0.5rem; position: absolute; width: 1rem; }
+
+p.admonition-title { background-color: var(--color-admonition-title-backgro=
+und); }
+
+p.admonition-title::before { background-color: var(--color-admonition-title=
+); mask-image: var(--icon-admonition-default); mask-repeat: no-repeat; }
+
+p.topic-title { background-color: var(--color-topic-title-background); }
+
+p.topic-title::before { background-color: var(--color-topic-title); mask-im=
+age: var(--icon-topic-default); mask-repeat: no-repeat; }
+
+.admonition { border-left: .2rem solid var(--color-admonition-title); }
+
+.admonition.caution { border-left-color: var(--color-admonition-title--caut=
+ion); }
+
+.admonition.caution > .admonition-title { background-color: var(--color-adm=
+onition-title-background--caution); }
+
+.admonition.caution > .admonition-title::before { background-color: var(--c=
+olor-admonition-title--caution); mask-image: var(--icon-spark); }
+
+.admonition.warning { border-left-color: var(--color-admonition-title--warn=
+ing); }
+
+.admonition.warning > .admonition-title { background-color: var(--color-adm=
+onition-title-background--warning); }
+
+.admonition.warning > .admonition-title::before { background-color: var(--c=
+olor-admonition-title--warning); mask-image: var(--icon-warning); }
+
+.admonition.danger { border-left-color: var(--color-admonition-title--dange=
+r); }
+
+.admonition.danger > .admonition-title { background-color: var(--color-admo=
+nition-title-background--danger); }
+
+.admonition.danger > .admonition-title::before { background-color: var(--co=
+lor-admonition-title--danger); mask-image: var(--icon-spark); }
+
+.admonition.attention { border-left-color: var(--color-admonition-title--at=
+tention); }
+
+.admonition.attention > .admonition-title { background-color: var(--color-a=
+dmonition-title-background--attention); }
+
+.admonition.attention > .admonition-title::before { background-color: var(-=
+-color-admonition-title--attention); mask-image: var(--icon-warning); }
+
+.admonition.error { border-left-color: var(--color-admonition-title--error)=
+; }
+
+.admonition.error > .admonition-title { background-color: var(--color-admon=
+ition-title-background--error); }
+
+.admonition.error > .admonition-title::before { background-color: var(--col=
+or-admonition-title--error); mask-image: var(--icon-failure); }
+
+.admonition.hint { border-left-color: var(--color-admonition-title--hint); =
+}
+
+.admonition.hint > .admonition-title { background-color: var(--color-admoni=
+tion-title-background--hint); }
+
+.admonition.hint > .admonition-title::before { background-color: var(--colo=
+r-admonition-title--hint); mask-image: var(--icon-question); }
+
+.admonition.tip { border-left-color: var(--color-admonition-title--tip); }
+
+.admonition.tip > .admonition-title { background-color: var(--color-admonit=
+ion-title-background--tip); }
+
+.admonition.tip > .admonition-title::before { background-color: var(--color=
+-admonition-title--tip); mask-image: var(--icon-info); }
+
+.admonition.important { border-left-color: var(--color-admonition-title--im=
+portant); }
+
+.admonition.important > .admonition-title { background-color: var(--color-a=
+dmonition-title-background--important); }
+
+.admonition.important > .admonition-title::before { background-color: var(-=
+-color-admonition-title--important); mask-image: var(--icon-flame); }
+
+.admonition.note { border-left-color: var(--color-admonition-title--note); =
+}
+
+.admonition.note > .admonition-title { background-color: var(--color-admoni=
+tion-title-background--note); }
+
+.admonition.note > .admonition-title::before { background-color: var(--colo=
+r-admonition-title--note); mask-image: var(--icon-pencil); }
+
+.admonition.seealso { border-left-color: var(--color-admonition-title--seea=
+lso); }
+
+.admonition.seealso > .admonition-title { background-color: var(--color-adm=
+onition-title-background--seealso); }
+
+.admonition.seealso > .admonition-title::before { background-color: var(--c=
+olor-admonition-title--seealso); mask-image: var(--icon-info); }
+
+.admonition.admonition-todo { border-left-color: var(--color-admonition-tit=
+le--admonition-todo); }
+
+.admonition.admonition-todo > .admonition-title { background-color: var(--c=
+olor-admonition-title-background--admonition-todo); }
+
+.admonition.admonition-todo > .admonition-title::before { background-color:=
+ var(--color-admonition-title--admonition-todo); mask-image: var(--icon-pen=
+cil); }
+
+.admonition-todo > .admonition-title { text-transform: uppercase; }
+
+dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.glossary):=
+not(.simple) dd { margin-left: 2rem; }
+
+dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.glossary):=
+not(.simple) dd > :first-child { margin-top: 0.125rem; }
+
+dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.glossary):=
+not(.simple) .field-list, dl[class]:not(.option-list):not(.field-list):not(=
+.footnote):not(.glossary):not(.simple) dd > :last-child { margin-bottom: 0.=
+75rem; }
+
+dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.glossary):=
+not(.simple) .field-list > dt { font-size: var(--font-size--small); text-tr=
+ansform: uppercase; }
+
+dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.glossary):=
+not(.simple) .field-list dd:empty { margin-bottom: 0.5rem; }
+
+dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.glossary):=
+not(.simple) .field-list dd > ul { margin-left: -1.2rem; }
+
+dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.glossary):=
+not(.simple) .field-list dd > ul > li > p:nth-child(2) { margin-top: 0px; }
+
+dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.glossary):=
+not(.simple) .field-list dd > ul > li > p + p:last-child:empty { margin-bot=
+tom: 0px; margin-top: 0px; }
+
+dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.glossary):=
+not(.simple) > dt { color: var(--color-api-overall); }
+
+.sig:not(.sig-inline) { background: var(--color-api-background); border-rad=
+ius: 0.25rem; font-family: var(--font-stack--monospace); font-size: var(--a=
+pi-font-size); font-weight: 700; margin-left: -0.25rem; margin-right: -0.25=
+rem; padding: 0.25rem 0.5rem 0.25rem 3em; text-indent: -2.5em; transition: =
+background 0.1s ease-out; }
+
+.sig:not(.sig-inline):hover { background: var(--color-api-background-hover)=
+; }
+
+.sig:not(.sig-inline) a.reference .viewcode-link { font-weight: 400; width:=
+ 4.25rem; }
+
+em.property { font-style: normal; }
+
+em.property:first-child { color: var(--color-api-keyword); }
+
+.sig-name { color: var(--color-api-name); }
+
+.sig-prename { color: var(--color-api-pre-name); font-weight: 400; }
+
+.sig-paren { color: var(--color-api-paren); }
+
+.sig-param { font-style: normal; }
+
+div.deprecated, div.versionadded, div.versionchanged, div.versionremoved { =
+border-left: 0.1875rem solid; border-radius: 0.125rem; padding-left: 0.75re=
+m; }
+
+div.deprecated p, div.versionadded p, div.versionchanged p, div.versionremo=
+ved p { margin-bottom: 0.125rem; margin-top: 0.125rem; }
+
+div.versionadded { border-color: var(--color-api-added-border); }
+
+div.versionadded .versionmodified { color: var(--color-api-added); }
+
+div.versionchanged { border-color: var(--color-api-changed-border); }
+
+div.versionchanged .versionmodified { color: var(--color-api-changed); }
+
+div.deprecated { border-color: var(--color-api-deprecated-border); }
+
+div.deprecated .versionmodified { color: var(--color-api-deprecated); }
+
+div.versionremoved { border-color: var(--color-api-removed-border); }
+
+div.versionremoved .versionmodified { color: var(--color-api-removed); }
+
+.viewcode-back, .viewcode-link { float: right; text-align: right; }
+
+.line-block { margin-bottom: 0.75rem; margin-top: 0.5rem; }
+
+.line-block .line-block { margin-bottom: 0px; margin-top: 0px; padding-left=
+: 1rem; }
+
+.code-block-caption, article p.caption, table > caption { font-size: var(--=
+font-size--small); text-align: center; }
+
+.toctree-wrapper.compound .caption, .toctree-wrapper.compound :not(.caption=
+) > .caption-text { font-size: var(--font-size--small); margin-bottom: 0px;=
+ text-align: initial; text-transform: uppercase; }
+
+.toctree-wrapper.compound > ul { margin-bottom: 0px; margin-top: 0px; }
+
+.sig-inline, code.literal { background: var(--color-inline-code-background)=
+; border-radius: 0.2em; font-size: var(--font-size--small--2); padding: 0.1=
+em 0.2em; }
+
+pre.literal-block .sig-inline, pre.literal-block code.literal { font-size: =
+inherit; padding: 0px; }
+
+p .sig-inline, p code.literal { border: 1px solid var(--color-background-bo=
+rder); }
+
+.sig-inline { font-family: var(--font-stack--monospace); }
+
+div[class*=3D" highlight-"], div[class^=3D"highlight-"] { display: flex; ma=
+rgin: 1em 0px; }
+
+div[class*=3D" highlight-"] .table-wrapper, div[class^=3D"highlight-"] .tab=
+le-wrapper, pre { margin: 0px; padding: 0px; }
+
+pre { overflow: auto; }
+
+article[role=3D"main"] .highlight pre { line-height: 1.5; }
+
+.highlight pre, pre.literal-block { font-size: var(--code-font-size); paddi=
+ng: 0.625rem 0.875rem; }
+
+pre.literal-block { background-color: var(--color-code-background); border-=
+radius: 0.2rem; color: var(--color-code-foreground); margin-bottom: 1rem; m=
+argin-top: 1rem; }
+
+.highlight { border-radius: 0.2rem; width: 100%; }
+
+.highlight .gp, .highlight span.linenos { pointer-events: none; user-select=
+: none; }
+
+.highlight .hll { display: block; margin-left: -0.875rem; margin-right: -0.=
+875rem; padding-left: 0.875rem; padding-right: 0.875rem; }
+
+.code-block-caption { background-color: var(--color-code-background); borde=
+r-bottom-width: 1px; border-bottom-style: solid; border-radius: 0.25rem 0.2=
+5rem 0px 0px; border-color: var(--color-background-border); color: var(--co=
+lor-code-foreground); display: flex; font-weight: 300; padding: 0.625rem 0.=
+875rem; }
+
+.code-block-caption + div[class] { margin-top: 0px; }
+
+.code-block-caption + div[class] > .highlight { border-top-left-radius: 0px=
+; border-top-right-radius: 0px; }
+
+.highlighttable { display: block; width: 100%; }
+
+.highlighttable tbody { display: block; }
+
+.highlighttable tr { display: flex; }
+
+.highlighttable td.linenos { background-color: var(--color-code-background)=
+; border-bottom-left-radius: 0.2rem; border-top-left-radius: 0.2rem; color:=
+ var(--color-code-foreground); padding: 0.625rem 0px 0.625rem 0.875rem; }
+
+.highlighttable .linenodiv { box-shadow: -.0625rem 0 var(--color-foreground=
+-border) inset; font-size: var(--code-font-size); padding-right: 0.875rem; =
+}
+
+.highlighttable td.code { display: block; flex: 1 1 0%; overflow: hidden; p=
+adding: 0px; }
+
+.highlighttable td.code .highlight { border-bottom-left-radius: 0px; border=
+-top-left-radius: 0px; }
+
+.highlight span.linenos { box-shadow: -.0625rem 0 var(--color-foreground-bo=
+rder) inset; display: inline-block; margin-right: 0.875rem; padding-left: 0=
+px; padding-right: 0.875rem; }
+
+.footnote-reference { font-size: var(--font-size--small--4); vertical-align=
+: super; }
+
+dl.footnote.brackets { color: var(--color-foreground-secondary); display: g=
+rid; font-size: var(--font-size--small); grid-template-columns: max-content=
+ auto; }
+
+dl.footnote.brackets dt { margin: 0px; }
+
+dl.footnote.brackets dt > .fn-backref { margin-left: 0.25rem; }
+
+dl.footnote.brackets dt::after { content: ":"; }
+
+dl.footnote.brackets dt .brackets::before { content: "["; }
+
+dl.footnote.brackets dt .brackets::after { content: "]"; }
+
+dl.footnote.brackets dd { margin: 0px; padding: 0px 1rem; }
+
+aside.footnote { color: var(--color-foreground-secondary); font-size: var(-=
+-font-size--small); }
+
+aside.footnote > span, div.citation > span { float: left; font-weight: 500;=
+ padding-right: 0.25rem; }
+
+aside.footnote > :not(span), div.citation > p { margin-left: 2rem; }
+
+img { box-sizing: border-box; height: auto; max-width: 100%; }
+
+article .figure, article figure { border-radius: 0.2rem; margin: 0px; }
+
+article .figure :last-child, article figure :last-child { margin-bottom: 0p=
+x; }
+
+article .align-left { clear: left; float: left; margin: 0px 1rem 1rem; }
+
+article .align-right { clear: right; float: right; margin: 0px 1rem 1rem; }
+
+article .align-center, article .align-default { display: block; margin-left=
+: auto; margin-right: auto; text-align: center; }
+
+article table.align-default { display: table; text-align: initial; }
+
+.domainindex-jumpbox, .genindex-jumpbox { border-bottom: 1px solid var(--co=
+lor-background-border); border-top: 1px solid var(--color-background-border=
+); padding: 0.25rem; }
+
+.domainindex-section h2, .genindex-section h2 { margin-bottom: 0.5rem; marg=
+in-top: 0.75rem; }
+
+.domainindex-section ul, .genindex-section ul { margin-bottom: 0px; margin-=
+top: 0px; }
+
+ol, ul { margin-bottom: 1rem; margin-top: 1rem; padding-left: 1.2rem; }
+
+ol li > p:first-child, ul li > p:first-child { margin-bottom: 0.25rem; marg=
+in-top: 0.25rem; }
+
+ol li > p:last-child, ul li > p:last-child { margin-top: 0.25rem; }
+
+ol li > ol, ol li > ul, ul li > ol, ul li > ul { margin-bottom: 0.5rem; mar=
+gin-top: 0.5rem; }
+
+ol.arabic { list-style: decimal; }
+
+ol.loweralpha { list-style: lower-alpha; }
+
+ol.upperalpha { list-style: upper-alpha; }
+
+ol.lowerroman { list-style: lower-roman; }
+
+ol.upperroman { list-style: upper-roman; }
+
+.simple li > ol, .simple li > ul, .toctree-wrapper li > ol, .toctree-wrappe=
+r li > ul { margin-bottom: 0px; margin-top: 0px; }
+
+.field-list dt, .option-list dt, dl.footnote dt, dl.glossary dt, dl.simple =
+dt, dl:not([class]) dt { font-weight: 500; margin-top: 0.25rem; }
+
+.field-list dt + dt, .option-list dt + dt, dl.footnote dt + dt, dl.glossary=
+ dt + dt, dl.simple dt + dt, dl:not([class]) dt + dt { margin-top: 0px; }
+
+.field-list dt .classifier::before, .option-list dt .classifier::before, dl=
+.footnote dt .classifier::before, dl.glossary dt .classifier::before, dl.si=
+mple dt .classifier::before, dl:not([class]) dt .classifier::before { conte=
+nt: ":"; margin-left: 0.2rem; margin-right: 0.2rem; }
+
+.field-list dd ul, .field-list dd > p:first-child, .option-list dd ul, .opt=
+ion-list dd > p:first-child, dl.footnote dd ul, dl.footnote dd > p:first-ch=
+ild, dl.glossary dd ul, dl.glossary dd > p:first-child, dl.simple dd ul, dl=
+.simple dd > p:first-child, dl:not([class]) dd ul, dl:not([class]) dd > p:f=
+irst-child { margin-top: 0.125rem; }
+
+.field-list dd ul, .option-list dd ul, dl.footnote dd ul, dl.glossary dd ul=
+, dl.simple dd ul, dl:not([class]) dd ul { margin-bottom: 0.125rem; }
+
+.math-wrapper { overflow-x: auto; width: 100%; }
+
+div.math { position: relative; text-align: center; }
+
+div.math .headerlink, div.math:focus .headerlink { display: none; }
+
+div.math:hover .headerlink { display: inline-block; }
+
+div.math span.eqno { position: absolute; right: 0.5rem; top: 50%; transform=
+: translateY(-50%); z-index: 1; }
+
+abbr[title] { cursor: help; }
+
+.problematic { color: var(--color-problematic); }
+
+kbd:not(.compound) { background-color: var(--color-background-secondary); b=
+order: 1px solid var(--color-foreground-border); border-radius: 0.2rem; box=
+-shadow: 0 .0625rem 0 rgba(0,0,0,.2),inset 0 0 0 .125rem var(--color-backgr=
+ound-primary); color: var(--color-foreground-primary); display: inline-bloc=
+k; font-size: var(--font-size--small--3); margin: 0px 0.2rem; padding: 0px =
+0.2rem; vertical-align: text-bottom; }
+
+blockquote { background: var(--color-background-secondary); border-left: 4p=
+x solid var(--color-background-border); margin-left: 0px; margin-right: 0px=
+; padding: 0.5rem 1rem; }
+
+blockquote .attribution { font-weight: 600; text-align: right; }
+
+blockquote.highlights, blockquote.pull-quote { font-size: 1.25em; }
+
+blockquote.epigraph, blockquote.pull-quote { border-left-width: 0px; border=
+-radius: 0.5rem; }
+
+blockquote.highlights { background: transparent; border-left-width: 0px; }
+
+p .reference img { vertical-align: middle; }
+
+p.rubric { font-size: 1.125em; font-weight: 700; line-height: 1.25; }
+
+dd p.rubric { font-size: var(--font-size--small); font-weight: inherit; lin=
+e-height: inherit; text-transform: uppercase; }
+
+article .sidebar { background-color: var(--color-background-secondary); bor=
+der: 1px solid var(--color-background-border); border-radius: 0.2rem; clear=
+: right; float: right; margin-left: 1rem; margin-right: 0px; width: 30%; }
+
+article .sidebar > * { padding-left: 1rem; padding-right: 1rem; }
+
+article .sidebar > ol, article .sidebar > ul { padding-left: 2.2rem; }
+
+article .sidebar .sidebar-title { border-bottom: 1px solid var(--color-back=
+ground-border); font-weight: 500; margin: 0px; padding: 0.5rem 1rem; }
+
+[role=3D"main"] .table-wrapper.container { margin-bottom: 0.5rem; margin-to=
+p: 1rem; overflow-x: auto; padding: 0.2rem 0.2rem 0.75rem; width: 100%; }
+
+table.docutils { border-collapse: collapse; border-radius: 0.2rem; border-s=
+pacing: 0px; box-shadow: rgba(0, 0, 0, 0.05) 0px 0.2rem 0.5rem, rgba(0, 0, =
+0, 0.1) 0px 0px 0.0625rem; }
+
+table.docutils th { background: var(--color-table-header-background); }
+
+table.docutils td, table.docutils th { border-bottom: 1px solid var(--color=
+-table-border); border-left: 1px solid var(--color-table-border); border-ri=
+ght: 1px solid var(--color-table-border); padding: 0px 0.25rem; }
+
+table.docutils td p, table.docutils th p { margin: 0.25rem; }
+
+table.docutils td:first-child, table.docutils th:first-child { border-left:=
+ none; }
+
+table.docutils td:last-child, table.docutils th:last-child { border-right: =
+none; }
+
+table.docutils td.text-left, table.docutils th.text-left { text-align: left=
+; }
+
+table.docutils td.text-right, table.docutils th.text-right { text-align: ri=
+ght; }
+
+table.docutils td.text-center, table.docutils th.text-center { text-align: =
+center; }
+
+:target { scroll-margin-top: 2.5rem; }
+
+@media (max-width: 67em) {
+  :target { scroll-margin-top: calc(2.5rem + var(--header-height)); }
+  section > span:target { scroll-margin-top: calc(2.8rem + var(--header-hei=
+ght)); }
+}
+
+.headerlink { font-weight: 100; user-select: none; }
+
+.code-block-caption > .headerlink, dl dt > .headerlink, figcaption p > .hea=
+derlink, h1 > .headerlink, h2 > .headerlink, h3 > .headerlink, h4 > .header=
+link, h5 > .headerlink, h6 > .headerlink, p.caption > .headerlink, table > =
+caption > .headerlink { margin-left: 0.5rem; visibility: hidden; }
+
+.code-block-caption:hover > .headerlink, dl dt:hover > .headerlink, figcapt=
+ion p:hover > .headerlink, h1:hover > .headerlink, h2:hover > .headerlink, =
+h3:hover > .headerlink, h4:hover > .headerlink, h5:hover > .headerlink, h6:=
+hover > .headerlink, p.caption:hover > .headerlink, table > caption:hover >=
+ .headerlink { visibility: visible; }
+
+.code-block-caption > .toc-backref, dl dt > .toc-backref, figcaption p > .t=
+oc-backref, h1 > .toc-backref, h2 > .toc-backref, h3 > .toc-backref, h4 > .=
+toc-backref, h5 > .toc-backref, h6 > .toc-backref, p.caption > .toc-backref=
+, table > caption > .toc-backref { color: inherit; text-decoration-line: no=
+ne; }
+
+figure:hover > figcaption > p > .headerlink, table:hover > caption > .heade=
+rlink { visibility: visible; }
+
+:target > h1:first-of-type, :target > h2:first-of-type, :target > h3:first-=
+of-type, :target > h4:first-of-type, :target > h5:first-of-type, :target > =
+h6:first-of-type, span:target ~ h1:first-of-type, span:target ~ h2:first-of=
+-type, span:target ~ h3:first-of-type, span:target ~ h4:first-of-type, span=
+:target ~ h5:first-of-type, span:target ~ h6:first-of-type { background-col=
+or: var(--color-highlight-on-target); }
+
+:target > h1:first-of-type code.literal, :target > h2:first-of-type code.li=
+teral, :target > h3:first-of-type code.literal, :target > h4:first-of-type =
+code.literal, :target > h5:first-of-type code.literal, :target > h6:first-o=
+f-type code.literal, span:target ~ h1:first-of-type code.literal, span:targ=
+et ~ h2:first-of-type code.literal, span:target ~ h3:first-of-type code.lit=
+eral, span:target ~ h4:first-of-type code.literal, span:target ~ h5:first-o=
+f-type code.literal, span:target ~ h6:first-of-type code.literal { backgrou=
+nd-color: transparent; }
+
+.literal-block-wrapper:target .code-block-caption, .this-will-duplicate-inf=
+ormation-and-it-is-still-useful-here li :target, figure:target, table:targe=
+t > caption { background-color: var(--color-highlight-on-target); }
+
+dt:target { background-color: var(--color-highlight-on-target) !important; =
+}
+
+.footnote-reference:target, .footnote > dt:target + dd { background-color: =
+var(--color-highlight-on-target); }
+
+.guilabel { background-color: var(--color-guilabel-background); border: 1px=
+ solid var(--color-guilabel-border); border-radius: 0.5em; color: var(--col=
+or-guilabel-text); font-size: 0.9em; padding: 0px 0.3em; }
+
+footer { display: flex; flex-direction: column; font-size: var(--font-size-=
+-small); margin-top: 2rem; }
+
+.bottom-of-page { align-items: center; border-top: 1px solid var(--color-ba=
+ckground-border); color: var(--color-foreground-secondary); display: flex; =
+justify-content: space-between; line-height: 1.5; margin-top: 1rem; padding=
+-bottom: 1rem; padding-top: 1rem; }
+
+@media (max-width: 46em) {
+  .bottom-of-page { flex-direction: column-reverse; gap: 0.25rem; text-alig=
+n: center; }
+}
+
+.bottom-of-page .left-details { font-size: var(--font-size--small); }
+
+.bottom-of-page .right-details { display: flex; flex-direction: column; gap=
+: 0.25rem; text-align: right; }
+
+.bottom-of-page .icons { display: flex; font-size: 1rem; gap: 0.25rem; just=
+ify-content: flex-end; }
+
+.bottom-of-page .icons a { text-decoration: none; }
+
+.bottom-of-page .icons img, .bottom-of-page .icons svg { font-size: 1.125re=
+m; height: 1em; width: 1em; }
+
+.related-pages a { align-items: center; display: flex; text-decoration: non=
+e; }
+
+.related-pages a:hover .page-info .title { color: var(--color-link); text-d=
+ecoration-line: underline; text-decoration-thickness: initial; text-decorat=
+ion-style: initial; text-decoration-color: var(--color-link-underline); }
+
+.related-pages a svg.furo-related-icon, .related-pages a svg.furo-related-i=
+con > use { color: var(--color-foreground-border); flex-shrink: 0; height: =
+0.75rem; margin: 0px 0.5rem; width: 0.75rem; }
+
+.related-pages a.next-page { clear: right; float: right; max-width: 50%; te=
+xt-align: right; }
+
+.related-pages a.prev-page { clear: left; float: left; max-width: 50%; }
+
+.related-pages a.prev-page svg { transform: rotate(180deg); }
+
+.page-info { display: flex; flex-direction: column; overflow-wrap: anywhere=
+; }
+
+.next-page .page-info { align-items: flex-end; }
+
+.page-info .context { align-items: center; color: var(--color-foreground-mu=
+ted); display: flex; font-size: var(--font-size--small); padding-bottom: 0.=
+1rem; text-decoration: none; }
+
+ul.search { list-style: none; padding-left: 0px; }
+
+ul.search li { border-bottom: 1px solid var(--color-background-border); pad=
+ding: 1rem 0px; }
+
+[role=3D"main"] .highlighted { background-color: var(--color-highlighted-ba=
+ckground); color: var(--color-highlighted-text); }
+
+.sidebar-brand { display: flex; flex-direction: column; flex-shrink: 0; pad=
+ding: var(--sidebar-item-spacing-vertical) var(--sidebar-item-spacing-horiz=
+ontal); text-decoration: none; }
+
+.sidebar-brand-text { color: var(--color-sidebar-brand-text); font-size: 1.=
+5rem; overflow-wrap: break-word; }
+
+.sidebar-brand-text, .sidebar-logo-container { margin: var(--sidebar-item-s=
+pacing-vertical) 0; }
+
+.sidebar-logo { display: block; margin: 0px auto; max-width: 100%; }
+
+.sidebar-search-container { align-items: center; background: var(--color-si=
+debar-search-background); display: flex; margin-top: var(--sidebar-search-s=
+pace-above); position: relative; }
+
+.sidebar-search-container:focus-within, .sidebar-search-container:hover { b=
+ackground: var(--color-sidebar-search-background--focus); }
+
+.sidebar-search-container::before { background-color: var(--color-sidebar-s=
+earch-icon); content: ""; height: var(--sidebar-search-icon-size); left: va=
+r(--sidebar-item-spacing-horizontal); mask-image: var(--icon-search); posit=
+ion: absolute; width: var(--sidebar-search-icon-size); }
+
+.sidebar-search { background: transparent; border-right: none; border-left:=
+ none; border-image: initial; border-bottom: 1px solid var(--color-sidebar-=
+search-border); border-top: 1px solid var(--color-sidebar-search-border); b=
+ox-sizing: border-box; color: var(--color-sidebar-search-foreground); paddi=
+ng: var(--sidebar-search-input-spacing-vertical) var(--sidebar-search-input=
+-spacing-horizontal) var(--sidebar-search-input-spacing-vertical) calc(var(=
+--sidebar-item-spacing-horizontal) + var(--sidebar-search-input-spacing-hor=
+izontal) + var(--sidebar-search-icon-size)); width: 100%; z-index: 10; }
+
+.sidebar-search:focus { outline: none; }
+
+.sidebar-search::placeholder { font-size: var(--sidebar-search-input-font-s=
+ize); }
+
+#searchbox .highlight-link { margin: 0px; padding: var(--sidebar-item-spaci=
+ng-vertical) var(--sidebar-item-spacing-horizontal) 0; text-align: center; =
+}
+
+#searchbox .highlight-link a { color: var(--color-sidebar-search-icon); fon=
+t-size: var(--font-size--small--2); }
+
+.sidebar-tree { font-size: var(--sidebar-item-font-size); margin-bottom: va=
+r(--sidebar-item-spacing-vertical); margin-top: var(--sidebar-tree-space-ab=
+ove); }
+
+.sidebar-tree ul { display: flex; flex-direction: column; list-style: none;=
+ margin-bottom: 0px; margin-top: 0px; padding: 0px; }
+
+.sidebar-tree li { margin: 0px; position: relative; }
+
+.sidebar-tree li > ul { margin-left: var(--sidebar-item-spacing-horizontal)=
+; }
+
+.sidebar-tree .icon, .sidebar-tree .reference { color: var(--color-sidebar-=
+link-text); }
+
+.sidebar-tree .reference { box-sizing: border-box; display: inline-block; h=
+eight: 100%; line-height: var(--sidebar-item-line-height); overflow-wrap: a=
+nywhere; padding: var(--sidebar-item-spacing-vertical) var(--sidebar-item-s=
+pacing-horizontal); text-decoration: none; width: 100%; }
+
+.sidebar-tree .reference:hover { background: var(--color-sidebar-item-backg=
+round--hover); color: var(--color-sidebar-link-text); }
+
+.sidebar-tree .reference.external::after { color: var(--color-sidebar-link-=
+text); content: url("data:image/svg+xml;charset=3Dutf-8,%3Csvg xmlns=3D'htt=
+p://www.w3.org/2000/svg' width=3D'12' height=3D'12' fill=3D'none' stroke=3D=
+'%23607d8b' stroke-linecap=3D'round' stroke-linejoin=3D'round' stroke-width=
+=3D'1.5' viewBox=3D'0 0 24 24'%3E%3Cpath stroke=3D'none' d=3D'M0 0h24v24H0z=
+'/%3E%3Cpath d=3D'M11 7H6a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2v-5M=
+10 14 20 4M15 4h5v5'/%3E%3C/svg%3E"); margin: 0px 0.25rem; vertical-align: =
+middle; }
+
+.sidebar-tree .current-page > .reference { font-weight: 700; }
+
+.sidebar-tree label { align-items: center; cursor: pointer; display: flex; =
+height: var(--sidebar-item-height); justify-content: center; position: abso=
+lute; right: 0px; top: 0px; user-select: none; width: var(--sidebar-expande=
+r-width); }
+
+.sidebar-tree .caption, .sidebar-tree :not(.caption) > .caption-text { colo=
+r: var(--color-sidebar-caption-text); font-size: var(--sidebar-caption-font=
+-size); font-weight: 700; margin: var(--sidebar-caption-space-above) 0 0 0;=
+ padding: var(--sidebar-item-spacing-vertical) var(--sidebar-item-spacing-h=
+orizontal); text-transform: uppercase; }
+
+.sidebar-tree li.has-children > .reference { padding-right: var(--sidebar-e=
+xpander-width); }
+
+.sidebar-tree .toctree-l1 > .reference, .sidebar-tree .toctree-l1 > label .=
+icon { color: var(--color-sidebar-link-text--top-level); }
+
+.sidebar-tree label { background: var(--color-sidebar-item-expander-backgro=
+und); }
+
+.sidebar-tree label:hover { background: var(--color-sidebar-item-expander-b=
+ackground--hover); }
+
+.sidebar-tree .current > .reference { background: var(--color-sidebar-item-=
+background--current); }
+
+.sidebar-tree .current > .reference:hover { background: var(--color-sidebar=
+-item-background--hover); }
+
+.toctree-checkbox { display: none; position: absolute; }
+
+.toctree-checkbox ~ ul { display: none; }
+
+.toctree-checkbox ~ label .icon svg { transform: rotate(90deg); }
+
+.toctree-checkbox:checked ~ ul { display: block; }
+
+.toctree-checkbox:checked ~ label .icon svg { transform: rotate(-90deg); }
+
+.toc-title-container { padding-right: ; padding-bottom: ; padding-left: ; p=
+adding-top: var(--toc-spacing-vertical); }
+
+.toc-title { color: var(--color-toc-title-text); font-size: var(--toc-title=
+-font-size); padding-left: var(--toc-spacing-horizontal); text-transform: u=
+ppercase; }
+
+.no-toc { display: none; }
+
+.toc-tree-container { padding-bottom: var(--toc-spacing-vertical); }
+
+.toc-tree { border-left: 1px solid var(--color-background-border); font-siz=
+e: var(--toc-font-size); line-height: 1.3; padding-left: calc(var(--toc-spa=
+cing-horizontal) - var(--toc-item-spacing-horizontal)); }
+
+.toc-tree > ul > li:first-child { padding-top: 0px; }
+
+.toc-tree > ul > li:first-child > ul { padding-left: 0px; }
+
+.toc-tree > ul > li:first-child > a { display: none; }
+
+.toc-tree ul { list-style-type: none; margin-bottom: 0px; margin-top: 0px; =
+padding-left: var(--toc-item-spacing-horizontal); }
+
+.toc-tree li { padding-top: var(--toc-item-spacing-vertical); }
+
+.toc-tree li.scroll-current > .reference { color: var(--color-toc-item-text=
+--active); font-weight: 700; }
+
+.toc-tree a.reference { color: var(--color-toc-item-text); overflow-wrap: a=
+nywhere; text-decoration: none; }
+
+.toc-scroll { max-height: 100vh; overflow-y: scroll; }
+
+.contents:not(.this-will-duplicate-information-and-it-is-still-useful-here)=
+ { background: rgba(255, 0, 0, 0.25); color: var(--color-problematic); }
+
+.contents:not(.this-will-duplicate-information-and-it-is-still-useful-here)=
+::before { content: "ERROR: Adding a table of contents in Furo-based docume=
+ntation is unnecessary, and does not work well with existing styling. Add a=
+ 'this-will-duplicate-information-and-it-is-still-useful-here' class, if yo=
+u want an escape hatch."; }
+
+.text-align\:left > p { text-align: left; }
+
+.text-align\:center > p { text-align: center; }
+
+.text-align\:right > p { text-align: right; }
+------MultipartBoundary--SyvZrJuMJQk0mnBkmdEiuqZufT44G9gy9prYi72FBz----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://python-social-auth.readthedocs.io/en/latest/_static/pygments.css?v=03e43079
+
+@charset "utf-8";
+
+.highlight pre { line-height: 125%; }
+
+.highlight td.linenos .normal { color: inherit; background-color: transpare=
+nt; padding-left: 5px; padding-right: 5px; }
+
+.highlight span.linenos { color: inherit; background-color: transparent; pa=
+dding-left: 5px; padding-right: 5px; }
+
+.highlight td.linenos .special { color: rgb(0, 0, 0); background-color: rgb=
+(255, 255, 192); padding-left: 5px; padding-right: 5px; }
+
+.highlight span.linenos.special { color: rgb(0, 0, 0); background-color: rg=
+b(255, 255, 192); padding-left: 5px; padding-right: 5px; }
+
+.highlight .hll { background-color: rgb(255, 255, 204); }
+
+.highlight { background: rgb(238, 255, 204); }
+
+.highlight .c { color: rgb(64, 128, 144); font-style: italic; }
+
+.highlight .err { border: 1px solid rgb(255, 0, 0); }
+
+.highlight .k { color: rgb(0, 112, 32); font-weight: bold; }
+
+.highlight .o { color: rgb(102, 102, 102); }
+
+.highlight .ch { color: rgb(64, 128, 144); font-style: italic; }
+
+.highlight .cm { color: rgb(64, 128, 144); font-style: italic; }
+
+.highlight .cp { color: rgb(0, 112, 32); }
+
+.highlight .cpf { color: rgb(64, 128, 144); font-style: italic; }
+
+.highlight .c1 { color: rgb(64, 128, 144); font-style: italic; }
+
+.highlight .cs { color: rgb(64, 128, 144); background-color: rgb(255, 240, =
+240); }
+
+.highlight .gd { color: rgb(160, 0, 0); }
+
+.highlight .ge { font-style: italic; }
+
+.highlight .ges { font-weight: bold; font-style: italic; }
+
+.highlight .gr { color: rgb(255, 0, 0); }
+
+.highlight .gh { color: rgb(0, 0, 128); font-weight: bold; }
+
+.highlight .gi { color: rgb(0, 160, 0); }
+
+.highlight .go { color: rgb(51, 51, 51); }
+
+.highlight .gp { color: rgb(198, 93, 9); font-weight: bold; }
+
+.highlight .gs { font-weight: bold; }
+
+.highlight .gu { color: rgb(128, 0, 128); font-weight: bold; }
+
+.highlight .gt { color: rgb(0, 68, 221); }
+
+.highlight .kc { color: rgb(0, 112, 32); font-weight: bold; }
+
+.highlight .kd { color: rgb(0, 112, 32); font-weight: bold; }
+
+.highlight .kn { color: rgb(0, 112, 32); font-weight: bold; }
+
+.highlight .kp { color: rgb(0, 112, 32); }
+
+.highlight .kr { color: rgb(0, 112, 32); font-weight: bold; }
+
+.highlight .kt { color: rgb(144, 32, 0); }
+
+.highlight .m { color: rgb(32, 128, 80); }
+
+.highlight .s { color: rgb(64, 112, 160); }
+
+.highlight .na { color: rgb(64, 112, 160); }
+
+.highlight .nb { color: rgb(0, 112, 32); }
+
+.highlight .nc { color: rgb(14, 132, 181); font-weight: bold; }
+
+.highlight .no { color: rgb(96, 173, 213); }
+
+.highlight .nd { color: rgb(85, 85, 85); font-weight: bold; }
+
+.highlight .ni { color: rgb(213, 85, 55); font-weight: bold; }
+
+.highlight .ne { color: rgb(0, 112, 32); }
+
+.highlight .nf { color: rgb(6, 40, 126); }
+
+.highlight .nl { color: rgb(0, 32, 112); font-weight: bold; }
+
+.highlight .nn { color: rgb(14, 132, 181); font-weight: bold; }
+
+.highlight .nt { color: rgb(6, 40, 115); font-weight: bold; }
+
+.highlight .nv { color: rgb(187, 96, 213); }
+
+.highlight .ow { color: rgb(0, 112, 32); font-weight: bold; }
+
+.highlight .w { color: rgb(187, 187, 187); }
+
+.highlight .mb { color: rgb(32, 128, 80); }
+
+.highlight .mf { color: rgb(32, 128, 80); }
+
+.highlight .mh { color: rgb(32, 128, 80); }
+
+.highlight .mi { color: rgb(32, 128, 80); }
+
+.highlight .mo { color: rgb(32, 128, 80); }
+
+.highlight .sa { color: rgb(64, 112, 160); }
+
+.highlight .sb { color: rgb(64, 112, 160); }
+
+.highlight .sc { color: rgb(64, 112, 160); }
+
+.highlight .dl { color: rgb(64, 112, 160); }
+
+.highlight .sd { color: rgb(64, 112, 160); font-style: italic; }
+
+.highlight .s2 { color: rgb(64, 112, 160); }
+
+.highlight .se { color: rgb(64, 112, 160); font-weight: bold; }
+
+.highlight .sh { color: rgb(64, 112, 160); }
+
+.highlight .si { color: rgb(112, 160, 208); font-style: italic; }
+
+.highlight .sx { color: rgb(198, 93, 9); }
+
+.highlight .sr { color: rgb(35, 83, 136); }
+
+.highlight .s1 { color: rgb(64, 112, 160); }
+
+.highlight .ss { color: rgb(81, 121, 24); }
+
+.highlight .bp { color: rgb(0, 112, 32); }
+
+.highlight .fm { color: rgb(6, 40, 126); }
+
+.highlight .vc { color: rgb(187, 96, 213); }
+
+.highlight .vg { color: rgb(187, 96, 213); }
+
+.highlight .vi { color: rgb(187, 96, 213); }
+
+.highlight .vm { color: rgb(187, 96, 213); }
+
+.highlight .il { color: rgb(32, 128, 80); }
+
+@media not print {
+  body[data-theme=3D"dark"] .highlight pre { line-height: 125%; }
+  body[data-theme=3D"dark"] .highlight td.linenos .normal { color: inherit;=
+ background-color: transparent; padding-left: 5px; padding-right: 5px; }
+  body[data-theme=3D"dark"] .highlight span.linenos { color: inherit; backg=
+round-color: transparent; padding-left: 5px; padding-right: 5px; }
+  body[data-theme=3D"dark"] .highlight td.linenos .special { color: rgb(0, =
+0, 0); background-color: rgb(255, 255, 192); padding-left: 5px; padding-rig=
+ht: 5px; }
+  body[data-theme=3D"dark"] .highlight span.linenos.special { color: rgb(0,=
+ 0, 0); background-color: rgb(255, 255, 192); padding-left: 5px; padding-ri=
+ght: 5px; }
+  body[data-theme=3D"dark"] .highlight .hll { background-color: rgba(255, 2=
+17, 0, 0.18); }
+  body[data-theme=3D"dark"] .highlight { background: rgb(43, 43, 43); color=
+: rgb(248, 248, 242); }
+  body[data-theme=3D"dark"] .highlight .c { color: rgb(212, 208, 171); }
+  body[data-theme=3D"dark"] .highlight .err { color: rgb(255, 160, 122); }
+  body[data-theme=3D"dark"] .highlight .k { color: rgb(220, 198, 224); }
+  body[data-theme=3D"dark"] .highlight .l { color: rgb(245, 171, 53); }
+  body[data-theme=3D"dark"] .highlight .n { color: rgb(248, 248, 242); }
+  body[data-theme=3D"dark"] .highlight .o { color: rgb(171, 227, 56); }
+  body[data-theme=3D"dark"] .highlight .p { color: rgb(248, 248, 242); }
+  body[data-theme=3D"dark"] .highlight .ch { color: rgb(212, 208, 171); }
+  body[data-theme=3D"dark"] .highlight .cm { color: rgb(212, 208, 171); }
+  body[data-theme=3D"dark"] .highlight .cp { color: rgb(212, 208, 171); }
+  body[data-theme=3D"dark"] .highlight .cpf { color: rgb(212, 208, 171); }
+  body[data-theme=3D"dark"] .highlight .c1 { color: rgb(212, 208, 171); }
+  body[data-theme=3D"dark"] .highlight .cs { color: rgb(212, 208, 171); }
+  body[data-theme=3D"dark"] .highlight .gd { color: rgb(0, 224, 224); }
+  body[data-theme=3D"dark"] .highlight .ge { font-style: italic; }
+  body[data-theme=3D"dark"] .highlight .gh { color: rgb(0, 224, 224); }
+  body[data-theme=3D"dark"] .highlight .gs { font-weight: bold; }
+  body[data-theme=3D"dark"] .highlight .gu { color: rgb(0, 224, 224); }
+  body[data-theme=3D"dark"] .highlight .kc { color: rgb(220, 198, 224); }
+  body[data-theme=3D"dark"] .highlight .kd { color: rgb(220, 198, 224); }
+  body[data-theme=3D"dark"] .highlight .kn { color: rgb(220, 198, 224); }
+  body[data-theme=3D"dark"] .highlight .kp { color: rgb(220, 198, 224); }
+  body[data-theme=3D"dark"] .highlight .kr { color: rgb(220, 198, 224); }
+  body[data-theme=3D"dark"] .highlight .kt { color: rgb(245, 171, 53); }
+  body[data-theme=3D"dark"] .highlight .ld { color: rgb(245, 171, 53); }
+  body[data-theme=3D"dark"] .highlight .m { color: rgb(245, 171, 53); }
+  body[data-theme=3D"dark"] .highlight .s { color: rgb(171, 227, 56); }
+  body[data-theme=3D"dark"] .highlight .na { color: rgb(255, 215, 0); }
+  body[data-theme=3D"dark"] .highlight .nb { color: rgb(245, 171, 53); }
+  body[data-theme=3D"dark"] .highlight .nc { color: rgb(0, 224, 224); }
+  body[data-theme=3D"dark"] .highlight .no { color: rgb(0, 224, 224); }
+  body[data-theme=3D"dark"] .highlight .nd { color: rgb(245, 171, 53); }
+  body[data-theme=3D"dark"] .highlight .ni { color: rgb(171, 227, 56); }
+  body[data-theme=3D"dark"] .highlight .ne { color: rgb(220, 198, 224); }
+  body[data-theme=3D"dark"] .highlight .nf { color: rgb(0, 224, 224); }
+  body[data-theme=3D"dark"] .highlight .nl { color: rgb(245, 171, 53); }
+  body[data-theme=3D"dark"] .highlight .nn { color: rgb(248, 248, 242); }
+  body[data-theme=3D"dark"] .highlight .nx { color: rgb(248, 248, 242); }
+  body[data-theme=3D"dark"] .highlight .py { color: rgb(0, 224, 224); }
+  body[data-theme=3D"dark"] .highlight .nt { color: rgb(0, 224, 224); }
+  body[data-theme=3D"dark"] .highlight .nv { color: rgb(255, 160, 122); }
+  body[data-theme=3D"dark"] .highlight .ow { color: rgb(220, 198, 224); }
+  body[data-theme=3D"dark"] .highlight .pm { color: rgb(248, 248, 242); }
+  body[data-theme=3D"dark"] .highlight .w { color: rgb(248, 248, 242); }
+  body[data-theme=3D"dark"] .highlight .mb { color: rgb(245, 171, 53); }
+  body[data-theme=3D"dark"] .highlight .mf { color: rgb(245, 171, 53); }
+  body[data-theme=3D"dark"] .highlight .mh { color: rgb(245, 171, 53); }
+  body[data-theme=3D"dark"] .highlight .mi { color: rgb(245, 171, 53); }
+  body[data-theme=3D"dark"] .highlight .mo { color: rgb(245, 171, 53); }
+  body[data-theme=3D"dark"] .highlight .sa { color: rgb(171, 227, 56); }
+  body[data-theme=3D"dark"] .highlight .sb { color: rgb(171, 227, 56); }
+  body[data-theme=3D"dark"] .highlight .sc { color: rgb(171, 227, 56); }
+  body[data-theme=3D"dark"] .highlight .dl { color: rgb(171, 227, 56); }
+  body[data-theme=3D"dark"] .highlight .sd { color: rgb(171, 227, 56); }
+  body[data-theme=3D"dark"] .highlight .s2 { color: rgb(171, 227, 56); }
+  body[data-theme=3D"dark"] .highlight .se { color: rgb(171, 227, 56); }
+  body[data-theme=3D"dark"] .highlight .sh { color: rgb(171, 227, 56); }
+  body[data-theme=3D"dark"] .highlight .si { color: rgb(171, 227, 56); }
+  body[data-theme=3D"dark"] .highlight .sx { color: rgb(171, 227, 56); }
+  body[data-theme=3D"dark"] .highlight .sr { color: rgb(255, 160, 122); }
+  body[data-theme=3D"dark"] .highlight .s1 { color: rgb(171, 227, 56); }
+  body[data-theme=3D"dark"] .highlight .ss { color: rgb(0, 224, 224); }
+  body[data-theme=3D"dark"] .highlight .bp { color: rgb(245, 171, 53); }
+  body[data-theme=3D"dark"] .highlight .fm { color: rgb(0, 224, 224); }
+  body[data-theme=3D"dark"] .highlight .vc { color: rgb(255, 160, 122); }
+  body[data-theme=3D"dark"] .highlight .vg { color: rgb(255, 160, 122); }
+  body[data-theme=3D"dark"] .highlight .vi { color: rgb(255, 160, 122); }
+  body[data-theme=3D"dark"] .highlight .vm { color: rgb(245, 171, 53); }
+  body[data-theme=3D"dark"] .highlight .il { color: rgb(245, 171, 53); }
+  @media (prefers-color-scheme: dark) {
+  body:not([data-theme=3D"light"]) .highlight pre { line-height: 125%; }
+  body:not([data-theme=3D"light"]) .highlight td.linenos .normal { color: i=
+nherit; background-color: transparent; padding-left: 5px; padding-right: 5p=
+x; }
+  body:not([data-theme=3D"light"]) .highlight span.linenos { color: inherit=
+; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+  body:not([data-theme=3D"light"]) .highlight td.linenos .special { color: =
+rgb(0, 0, 0); background-color: rgb(255, 255, 192); padding-left: 5px; padd=
+ing-right: 5px; }
+  body:not([data-theme=3D"light"]) .highlight span.linenos.special { color:=
+ rgb(0, 0, 0); background-color: rgb(255, 255, 192); padding-left: 5px; pad=
+ding-right: 5px; }
+  body:not([data-theme=3D"light"]) .highlight .hll { background-color: rgba=
+(255, 217, 0, 0.18); }
+  body:not([data-theme=3D"light"]) .highlight { background: rgb(43, 43, 43)=
+; color: rgb(248, 248, 242); }
+  body:not([data-theme=3D"light"]) .highlight .c { color: rgb(212, 208, 171=
+); }
+  body:not([data-theme=3D"light"]) .highlight .err { color: rgb(255, 160, 1=
+22); }
+  body:not([data-theme=3D"light"]) .highlight .k { color: rgb(220, 198, 224=
+); }
+  body:not([data-theme=3D"light"]) .highlight .l { color: rgb(245, 171, 53)=
+; }
+  body:not([data-theme=3D"light"]) .highlight .n { color: rgb(248, 248, 242=
+); }
+  body:not([data-theme=3D"light"]) .highlight .o { color: rgb(171, 227, 56)=
+; }
+  body:not([data-theme=3D"light"]) .highlight .p { color: rgb(248, 248, 242=
+); }
+  body:not([data-theme=3D"light"]) .highlight .ch { color: rgb(212, 208, 17=
+1); }
+  body:not([data-theme=3D"light"]) .highlight .cm { color: rgb(212, 208, 17=
+1); }
+  body:not([data-theme=3D"light"]) .highlight .cp { color: rgb(212, 208, 17=
+1); }
+  body:not([data-theme=3D"light"]) .highlight .cpf { color: rgb(212, 208, 1=
+71); }
+  body:not([data-theme=3D"light"]) .highlight .c1 { color: rgb(212, 208, 17=
+1); }
+  body:not([data-theme=3D"light"]) .highlight .cs { color: rgb(212, 208, 17=
+1); }
+  body:not([data-theme=3D"light"]) .highlight .gd { color: rgb(0, 224, 224)=
+; }
+  body:not([data-theme=3D"light"]) .highlight .ge { font-style: italic; }
+  body:not([data-theme=3D"light"]) .highlight .gh { color: rgb(0, 224, 224)=
+; }
+  body:not([data-theme=3D"light"]) .highlight .gs { font-weight: bold; }
+  body:not([data-theme=3D"light"]) .highlight .gu { color: rgb(0, 224, 224)=
+; }
+  body:not([data-theme=3D"light"]) .highlight .kc { color: rgb(220, 198, 22=
+4); }
+  body:not([data-theme=3D"light"]) .highlight .kd { color: rgb(220, 198, 22=
+4); }
+  body:not([data-theme=3D"light"]) .highlight .kn { color: rgb(220, 198, 22=
+4); }
+  body:not([data-theme=3D"light"]) .highlight .kp { color: rgb(220, 198, 22=
+4); }
+  body:not([data-theme=3D"light"]) .highlight .kr { color: rgb(220, 198, 22=
+4); }
+  body:not([data-theme=3D"light"]) .highlight .kt { color: rgb(245, 171, 53=
+); }
+  body:not([data-theme=3D"light"]) .highlight .ld { color: rgb(245, 171, 53=
+); }
+  body:not([data-theme=3D"light"]) .highlight .m { color: rgb(245, 171, 53)=
+; }
+  body:not([data-theme=3D"light"]) .highlight .s { color: rgb(171, 227, 56)=
+; }
+  body:not([data-theme=3D"light"]) .highlight .na { color: rgb(255, 215, 0)=
+; }
+  body:not([data-theme=3D"light"]) .highlight .nb { color: rgb(245, 171, 53=
+); }
+  body:not([data-theme=3D"light"]) .highlight .nc { color: rgb(0, 224, 224)=
+; }
+  body:not([data-theme=3D"light"]) .highlight .no { color: rgb(0, 224, 224)=
+; }
+  body:not([data-theme=3D"light"]) .highlight .nd { color: rgb(245, 171, 53=
+); }
+  body:not([data-theme=3D"light"]) .highlight .ni { color: rgb(171, 227, 56=
+); }
+  body:not([data-theme=3D"light"]) .highlight .ne { color: rgb(220, 198, 22=
+4); }
+  body:not([data-theme=3D"light"]) .highlight .nf { color: rgb(0, 224, 224)=
+; }
+  body:not([data-theme=3D"light"]) .highlight .nl { color: rgb(245, 171, 53=
+); }
+  body:not([data-theme=3D"light"]) .highlight .nn { color: rgb(248, 248, 24=
+2); }
+  body:not([data-theme=3D"light"]) .highlight .nx { color: rgb(248, 248, 24=
+2); }
+  body:not([data-theme=3D"light"]) .highlight .py { color: rgb(0, 224, 224)=
+; }
+  body:not([data-theme=3D"light"]) .highlight .nt { color: rgb(0, 224, 224)=
+; }
+  body:not([data-theme=3D"light"]) .highlight .nv { color: rgb(255, 160, 12=
+2); }
+  body:not([data-theme=3D"light"]) .highlight .ow { color: rgb(220, 198, 22=
+4); }
+  body:not([data-theme=3D"light"]) .highlight .pm { color: rgb(248, 248, 24=
+2); }
+  body:not([data-theme=3D"light"]) .highlight .w { color: rgb(248, 248, 242=
+); }
+  body:not([data-theme=3D"light"]) .highlight .mb { color: rgb(245, 171, 53=
+); }
+  body:not([data-theme=3D"light"]) .highlight .mf { color: rgb(245, 171, 53=
+); }
+  body:not([data-theme=3D"light"]) .highlight .mh { color: rgb(245, 171, 53=
+); }
+  body:not([data-theme=3D"light"]) .highlight .mi { color: rgb(245, 171, 53=
+); }
+  body:not([data-theme=3D"light"]) .highlight .mo { color: rgb(245, 171, 53=
+); }
+  body:not([data-theme=3D"light"]) .highlight .sa { color: rgb(171, 227, 56=
+); }
+  body:not([data-theme=3D"light"]) .highlight .sb { color: rgb(171, 227, 56=
+); }
+  body:not([data-theme=3D"light"]) .highlight .sc { color: rgb(171, 227, 56=
+); }
+  body:not([data-theme=3D"light"]) .highlight .dl { color: rgb(171, 227, 56=
+); }
+  body:not([data-theme=3D"light"]) .highlight .sd { color: rgb(171, 227, 56=
+); }
+  body:not([data-theme=3D"light"]) .highlight .s2 { color: rgb(171, 227, 56=
+); }
+  body:not([data-theme=3D"light"]) .highlight .se { color: rgb(171, 227, 56=
+); }
+  body:not([data-theme=3D"light"]) .highlight .sh { color: rgb(171, 227, 56=
+); }
+  body:not([data-theme=3D"light"]) .highlight .si { color: rgb(171, 227, 56=
+); }
+  body:not([data-theme=3D"light"]) .highlight .sx { color: rgb(171, 227, 56=
+); }
+  body:not([data-theme=3D"light"]) .highlight .sr { color: rgb(255, 160, 12=
+2); }
+  body:not([data-theme=3D"light"]) .highlight .s1 { color: rgb(171, 227, 56=
+); }
+  body:not([data-theme=3D"light"]) .highlight .ss { color: rgb(0, 224, 224)=
+; }
+  body:not([data-theme=3D"light"]) .highlight .bp { color: rgb(245, 171, 53=
+); }
+  body:not([data-theme=3D"light"]) .highlight .fm { color: rgb(0, 224, 224)=
+; }
+  body:not([data-theme=3D"light"]) .highlight .vc { color: rgb(255, 160, 12=
+2); }
+  body:not([data-theme=3D"light"]) .highlight .vg { color: rgb(255, 160, 12=
+2); }
+  body:not([data-theme=3D"light"]) .highlight .vi { color: rgb(255, 160, 12=
+2); }
+  body:not([data-theme=3D"light"]) .highlight .vm { color: rgb(245, 171, 53=
+); }
+  body:not([data-theme=3D"light"]) .highlight .il { color: rgb(245, 171, 53=
+); }
+}
+}
+------MultipartBoundary--SyvZrJuMJQk0mnBkmdEiuqZufT44G9gy9prYi72FBz----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-9a7b4679-cbbd-47af-9dae-c2cecf6be8c2@mhtml.blink
+
+@charset "utf-8";
+
+@layer defaults {
+  :root { --ea-container-md: 720px; --ea-container-lg: 960px; --ea-containe=
+r-xl: 1040px; --ea-image-width: 120px; --ea-image-width-xs: 44px; --ea-imag=
+e-placement-width: 180px; --ea-image-placement-width-horizontal: 320px; --e=
+a-fixedheader-height: 50px; --ea-font-size: 14px; --ea-font-family: -apple-=
+system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto S=
+ans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto C=
+olor Emoji; --ea-bgcolor: rgba(0, 0, 0, 0.03); --ea-bgcolor-dark: rgba(255,=
+ 255, 255, 0.05); --ea-stylefixed-bgcolor: rgb(220, 220, 220); --ea-stylefi=
+xed-bgcolor-dark: rgb(80, 80, 80); --ea-color-link: rgb(80, 80, 80); --ea-c=
+olor-link-dark: rgb(220, 220, 220); --ea-color-link-active: rgb(54.5, 54.5,=
+ 54.5); --ea-color-link-dark-active: rgb(245.5, 245.5, 245.5); --ea-color-l=
+ink-callout: rgb(105.5, 105.5, 105.5); --ea-color-link-callout-dark: rgb(19=
+4.5, 194.5, 194.5); --ea-color-link-callout-active: #505050; --ea-color-lin=
+k-callout-dark-active: gainsboro; --ea-color-link-bold: #088cdb; --ea-color=
+-link-bold-dark: rgb(80.3788546256, 185.6299559471, 248.6211453744); --ea-c=
+olor-domain: rgb(156.5, 156.5, 156.5); --ea-color-domain-dark: rgb(143.5, 1=
+43.5, 143.5); }
+}
+
+[data-ea-publisher].loaded { font-size: var(--ea-font-size); font-family: v=
+ar(--ea-font-family); font-weight: normal; font-style: normal; letter-spaci=
+ng: 0px; vertical-align: baseline; line-height: 1.3em; }
+
+[data-ea-publisher].loaded a { text-decoration: none; }
+
+[data-ea-publisher].loaded .ea-pixel { display: none; }
+
+[data-ea-publisher].loaded .ea-content { margin: 1em 1em 0.5em; padding: 1e=
+m; background: var(--ea-bgcolor); color: var(--ea-color-link); }
+
+[data-ea-publisher].loaded .ea-content a:link { color: var(--ea-color-link)=
+; }
+
+[data-ea-publisher].loaded .ea-content a:visited { color: var(--ea-color-li=
+nk); }
+
+[data-ea-publisher].loaded .ea-content a:hover { color: var(--ea-color-link=
+-active); }
+
+[data-ea-publisher].loaded .ea-content a:active { color: var(--ea-color-lin=
+k-active); }
+
+[data-ea-publisher].loaded .ea-content a strong, [data-ea-publisher].loaded=
+ .ea-content a b { color: var(--ea-color-link-bold); }
+
+[data-ea-publisher].loaded .ea-callout { color: var(--ea-color-link-callout=
+); }
+
+[data-ea-publisher].loaded .ea-callout a { font-size: 0.8em; }
+
+[data-ea-publisher].loaded .ea-callout a:link { color: var(--ea-color-link-=
+callout); }
+
+[data-ea-publisher].loaded .ea-callout a:visited { color: var(--ea-color-li=
+nk-callout); }
+
+[data-ea-publisher].loaded .ea-callout a:hover { color: var(--ea-color-link=
+-callout-active); }
+
+[data-ea-publisher].loaded .ea-callout a:active { color: var(--ea-color-lin=
+k-callout-active); }
+
+[data-ea-publisher].loaded .ea-callout a strong, [data-ea-publisher].loaded=
+ .ea-callout a b { color: var(--ea-color-link-callout); }
+
+[data-ea-publisher].loaded .ea-domain { margin-top: 0.75em; font-size: 0.8e=
+m; text-align: center; color: var(--ea-color-domain); }
+
+[data-ea-publisher].loaded.dark { --ea-bgcolor: var(--ea-bgcolor-dark); --e=
+a-stylefixed-bgcolor: var(--ea-stylefixed-bgcolor-dark); --ea-color-link: v=
+ar(--ea-color-link-dark); --ea-color-link-active: var(--ea-color-link-dark-=
+active); --ea-color-link-callout: var(--ea-color-link-callout-dark); --ea-c=
+olor-link-callout-active: var(--ea-color-link-callout-dark-active); --ea-co=
+lor-link-bold: var(--ea-color-link-bold-dark); --ea-color-domain: var(--ea-=
+color-domain-dark); }
+
+@media (prefers-color-scheme: dark) {
+  [data-ea-publisher].loaded.adaptive { --ea-bgcolor: var(--ea-bgcolor-dark=
+); --ea-stylefixed-bgcolor: var(--ea-stylefixed-bgcolor-dark); --ea-color-l=
+ink: var(--ea-color-link-dark); --ea-color-link-active: var(--ea-color-link=
+-dark-active); --ea-color-link-callout: var(--ea-color-link-callout-dark); =
+--ea-color-link-callout-active: var(--ea-color-link-callout-dark-active); -=
+-ea-color-link-bold: var(--ea-color-link-bold-dark); --ea-color-domain: var=
+(--ea-color-domain-dark); }
+}
+
+html.dark [data-ea-publisher].loaded.adaptive-css, body.dark [data-ea-publi=
+sher].loaded.adaptive-css, html[data-theme=3D"dark"] [data-ea-publisher].lo=
+aded.adaptive-css, body[data-theme=3D"dark"] [data-ea-publisher].loaded.ada=
+ptive-css, html[data-bs-theme=3D"dark"] [data-ea-publisher].loaded.adaptive=
+-css, body[data-bs-theme=3D"dark"] [data-ea-publisher].loaded.adaptive-css =
+{ --ea-bgcolor: var(--ea-bgcolor-dark); --ea-stylefixed-bgcolor: var(--ea-s=
+tylefixed-bgcolor-dark); --ea-color-link: var(--ea-color-link-dark); --ea-c=
+olor-link-active: var(--ea-color-link-dark-active); --ea-color-link-callout=
+: var(--ea-color-link-callout-dark); --ea-color-link-callout-active: var(--=
+ea-color-link-callout-dark-active); --ea-color-link-bold: var(--ea-color-li=
+nk-bold-dark); --ea-color-domain: var(--ea-color-domain-dark); }
+
+@media (prefers-color-scheme: dark) {
+  html.auto [data-ea-publisher].loaded.adaptive-css, body.auto [data-ea-pub=
+lisher].loaded.adaptive-css, html.system [data-ea-publisher].loaded.adaptiv=
+e-css, body.system [data-ea-publisher].loaded.adaptive-css, html[data-theme=
+=3D"auto"] [data-ea-publisher].loaded.adaptive-css, body[data-theme=3D"auto=
+"] [data-ea-publisher].loaded.adaptive-css, html[data-bs-theme=3D"auto"] [d=
+ata-ea-publisher].loaded.adaptive-css, body[data-bs-theme=3D"auto"] [data-e=
+a-publisher].loaded.adaptive-css { --ea-bgcolor: var(--ea-bgcolor-dark); --=
+ea-stylefixed-bgcolor: var(--ea-stylefixed-bgcolor-dark); --ea-color-link: =
+var(--ea-color-link-dark); --ea-color-link-active: var(--ea-color-link-dark=
+-active); --ea-color-link-callout: var(--ea-color-link-callout-dark); --ea-=
+color-link-callout-active: var(--ea-color-link-callout-dark-active); --ea-c=
+olor-link-bold: var(--ea-color-link-bold-dark); --ea-color-domain: var(--ea=
+-color-domain-dark); }
+}
+
+[data-ea-publisher].loaded .ea-content { border: 0px; border-radius: 3px; b=
+ox-shadow: rgba(0, 0, 0, 0.15) 0px 2px 3px; }
+
+[data-ea-publisher].loaded.raised .ea-content { border: 0px; border-radius:=
+ 3px; box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 3px; }
+
+[data-ea-publisher].loaded.bordered .ea-content { border: 1px solid rgba(0,=
+ 0, 0, 0.04); border-radius: 3px; box-shadow: none; }
+
+[data-ea-publisher].loaded.bordered.dark .ea-content { border: 1px solid rg=
+ba(255, 255, 255, 0.07); }
+
+@media (prefers-color-scheme: dark) {
+  [data-ea-publisher].loaded.bordered.adaptive .ea-content { border: 1px so=
+lid rgba(255, 255, 255, 0.07); }
+}
+
+[data-ea-publisher].loaded.flat .ea-content { border: 0px; border-radius: 3=
+px; box-shadow: none; }
+
+[data-ea-type=3D"image"].loaded, [data-ea-publisher]:not([data-ea-type]).lo=
+aded, .ea-type-image { display: inline-block; }
+
+[data-ea-type=3D"image"].loaded .ea-content, [data-ea-publisher]:not([data-=
+ea-type]).loaded .ea-content, .ea-type-image .ea-content { max-width: var(-=
+-ea-image-placement-width); overflow: auto; text-align: center; }
+
+[data-ea-type=3D"image"].loaded .ea-content > a > img, [data-ea-publisher]:=
+not([data-ea-type]).loaded .ea-content > a > img, .ea-type-image .ea-conten=
+t > a > img { width: var(--ea-image-width); height: auto; display: inline-b=
+lock; }
+
+[data-ea-type=3D"image"].loaded .ea-content > .ea-text, [data-ea-publisher]=
+:not([data-ea-type]).loaded .ea-content > .ea-text, .ea-type-image .ea-cont=
+ent > .ea-text { margin-top: 1em; font-size: 1em; text-align: center; }
+
+[data-ea-type=3D"image"].loaded .ea-callout, [data-ea-publisher]:not([data-=
+ea-type]).loaded .ea-callout, .ea-type-image .ea-callout { max-width: var(-=
+-ea-image-placement-width); margin: 0em 1em 1em; padding-left: 1em; padding=
+-right: 1em; font-style: italic; text-align: right; }
+
+[data-ea-type=3D"image"].loaded.horizontal .ea-content, [data-ea-publisher]=
+:not([data-ea-type]).loaded.horizontal .ea-content, .ea-type-image.horizont=
+al .ea-content { max-width: var(--ea-image-placement-width-horizontal); }
+
+[data-ea-type=3D"image"].loaded.horizontal .ea-content > a > img, [data-ea-=
+publisher]:not([data-ea-type]).loaded.horizontal .ea-content > a > img, .ea=
+-type-image.horizontal .ea-content > a > img { float: left; margin-right: 1=
+em; }
+
+[data-ea-type=3D"image"].loaded.horizontal .ea-content .ea-text, [data-ea-p=
+ublisher]:not([data-ea-type]).loaded.horizontal .ea-content .ea-text, .ea-t=
+ype-image.horizontal .ea-content .ea-text { margin-top: 0em; text-align: le=
+ft; overflow: auto; }
+
+[data-ea-type=3D"image"].loaded.horizontal .ea-callout, [data-ea-publisher]=
+:not([data-ea-type]).loaded.horizontal .ea-callout, .ea-type-image.horizont=
+al .ea-callout { max-width: var(--ea-image-placement-width-horizontal); tex=
+t-align: right; }
+
+[data-ea-type=3D"text"].loaded, .ea-type-text { font-size: var(--ea-font-si=
+ze); }
+
+[data-ea-type=3D"text"].loaded .ea-content, .ea-type-text .ea-content { tex=
+t-align: left; }
+
+[data-ea-type=3D"text"].loaded .ea-callout, .ea-type-text .ea-callout { mar=
+gin: 0.5em 1em 1em; padding-left: 1em; padding-right: 1em; text-align: righ=
+t; font-style: italic; }
+
+[data-ea-style=3D"stickybox"].loaded { position: fixed; bottom: 20px; right=
+: 20px; z-index: 100; }
+
+[data-ea-style=3D"stickybox"].loaded .ea-type-image .ea-stickybox-hide { cu=
+rsor: pointer; position: absolute; top: 0.75em; right: 0.75em; background-c=
+olor: rgb(254, 254, 254); border: 1px solid rgb(8, 140, 219); border-radius=
+: 50%; color: rgb(8, 140, 219); font-size: 1em; text-align: center; height:=
+ 1.5em; width: 1.5em; line-height: 1.4; }
+
+[data-ea-style=3D"stickybox"].loaded .ea-type-text { display: none !importa=
+nt; }
+
+@media (max-width: 1300px) {
+  [data-ea-style=3D"stickybox"].loaded { position: static; bottom: 0px; rig=
+ht: 0px; margin: auto; text-align: center; }
+  [data-ea-style=3D"stickybox"].loaded .ea-stickybox-hide { display: none; =
+}
+}
+
+@media (min-width: 1301px) {
+  [data-ea-style=3D"stickybox"].loaded .ea-type-image .ea-content { backgro=
+und: var(--ea-stylefixed-bgcolor); }
+}
+
+[data-ea-style=3D"fixedfooter"].loaded { position: fixed; bottom: 0px; left=
+: 0px; z-index: 200; width: 100%; max-width: 100%; }
+
+[data-ea-style=3D"fixedfooter"].loaded .ea-type-text { width: 100%; max-wid=
+th: 100%; display: flex; z-index: 200; background: var(--ea-stylefixed-bgco=
+lor); }
+
+[data-ea-style=3D"fixedfooter"].loaded .ea-type-text .ea-content { border: =
+0px; border-radius: 3px; box-shadow: none; }
+
+[data-ea-style=3D"fixedfooter"].loaded .ea-type-text .ea-content { backgrou=
+nd-color: inherit; max-width: 100%; margin: 0px; padding: 1em; flex: 1 1 au=
+to; }
+
+[data-ea-style=3D"fixedfooter"].loaded .ea-type-text .ea-callout { max-widt=
+h: 100%; margin: 0px; padding: 1em; flex: initial; }
+
+@media (max-width: 576px) {
+  [data-ea-style=3D"fixedfooter"].loaded .ea-type-text .ea-callout { displa=
+y: none; }
+}
+
+[data-ea-style=3D"fixedfooter"].loaded .ea-type-text .ea-fixedfooter-hide {=
+ cursor: pointer; color: var(--ea-color-link); padding: 1em; flex: initial;=
+ margin: auto 0px; }
+
+[data-ea-style=3D"fixedfooter"].loaded .ea-type-text .ea-fixedfooter-hide s=
+pan { padding: 0.25em; font-size: 0.8em; font-weight: bold; border: .15em s=
+olid var(--ea-color-link); border-radius: 0.5em; white-space: nowrap; }
+
+[data-ea-style=3D"fixedfooter"].loaded .ea-type-image { display: none !impo=
+rtant; }
+
+[data-ea-style=3D"fixedheader"] { height: var(--ea-fixedheader-height); wid=
+th: 100%; max-width: 100%; background: var(--ea-stylefixed-bgcolor); border=
+-bottom: 1px solid var(--ea-background-color); }
+
+@media (max-width: 768px) {
+  [data-ea-style=3D"fixedheader"] { display: none !important; }
+}
+
+[data-ea-style=3D"fixedheader"].loaded .ea-type-image, [data-ea-style=3D"fi=
+xedheader"].loaded .ea-type-text { width: var(--ea-container-xl); margin: 0=
+px auto; display: flex; }
+
+@media (max-width: 992px) {
+  [data-ea-style=3D"fixedheader"].loaded .ea-type-image, [data-ea-style=3D"=
+fixedheader"].loaded .ea-type-text { width: var(--ea-container-md); }
+}
+
+@media (max-width: 1200px) {
+  [data-ea-style=3D"fixedheader"].loaded .ea-type-image, [data-ea-style=3D"=
+fixedheader"].loaded .ea-type-text { width: var(--ea-container-lg); }
+}
+
+[data-ea-style=3D"fixedheader"].loaded .ea-type-image .ea-content, [data-ea=
+-style=3D"fixedheader"].loaded .ea-type-text .ea-content { border: 0px; bor=
+der-radius: 3px; box-shadow: none; }
+
+[data-ea-style=3D"fixedheader"].loaded .ea-type-image .ea-content, [data-ea=
+-style=3D"fixedheader"].loaded .ea-type-text .ea-content { background-color=
+: inherit; max-width: 100%; margin: 0px; padding: 0px; flex: 1 1 auto; disp=
+lay: flex; }
+
+[data-ea-style=3D"fixedheader"].loaded .ea-type-image .ea-content .ea-text,=
+ [data-ea-style=3D"fixedheader"].loaded .ea-type-text .ea-content .ea-text =
+{ margin-top: 0px; padding: 1em; flex: 1 1 auto; text-align: left; }
+
+[data-ea-style=3D"fixedheader"].loaded .ea-type-image .ea-callout, [data-ea=
+-style=3D"fixedheader"].loaded .ea-type-text .ea-callout { max-width: 100%;=
+ margin: 0px; padding: 1em; flex: initial; }
+
+@media (max-width: 576px) {
+  [data-ea-style=3D"fixedheader"].loaded .ea-type-image .ea-callout, [data-=
+ea-style=3D"fixedheader"].loaded .ea-type-text .ea-callout { display: none;=
+ }
+}
+
+[data-ea-style=3D"fixedheader"].loaded .ea-type-image img { margin: 0.6em; =
+width: var(--ea-image-width-xs) !important; }
+
+[data-ea-style=3D"fixedheader"].loaded .ea-type-image .ea-domain { display:=
+ none; }
+------MultipartBoundary--SyvZrJuMJQk0mnBkmdEiuqZufT44G9gy9prYi72FBz----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-94c3ad8f-14c1-48df-b5f5-6fec14ecc2dc@mhtml.blink
+
+@charset "utf-8";
+
+body { --color-code-background: #eeffcc; --color-code-foreground: black; }
+
+@media not print {
+  body[data-theme=3D"dark"] { --color-code-background: #2b2b2b; --color-cod=
+e-foreground: #f8f8f2; }
+  @media (prefers-color-scheme: dark) {
+  body:not([data-theme=3D"light"]) { --color-code-background: #2b2b2b; --co=
+lor-code-foreground: #f8f8f2; }
+}
+}
+------MultipartBoundary--SyvZrJuMJQk0mnBkmdEiuqZufT44G9gy9prYi72FBz----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-760f157c-6b0b-4fca-8ed6-31a0bb6ed8b5@mhtml.blink
+
+@charset "utf-8";
+
+:root, :host { --fa-font-solid: normal 900 1em/1 "Font Awesome 7 Free"; --f=
+a-font-regular: normal 400 1em/1 "Font Awesome 7 Free"; --fa-font-light: no=
+rmal 300 1em/1 "Font Awesome 7 Pro"; --fa-font-thin: normal 100 1em/1 "Font=
+ Awesome 7 Pro"; --fa-font-duotone: normal 900 1em/1 "Font Awesome 7 Duoton=
+e"; --fa-font-duotone-regular: normal 400 1em/1 "Font Awesome 7 Duotone"; -=
+-fa-font-duotone-light: normal 300 1em/1 "Font Awesome 7 Duotone"; --fa-fon=
+t-duotone-thin: normal 100 1em/1 "Font Awesome 7 Duotone"; --fa-font-brands=
+: normal 400 1em/1 "Font Awesome 7 Brands"; --fa-font-sharp-solid: normal 9=
+00 1em/1 "Font Awesome 7 Sharp"; --fa-font-sharp-regular: normal 400 1em/1 =
+"Font Awesome 7 Sharp"; --fa-font-sharp-light: normal 300 1em/1 "Font Aweso=
+me 7 Sharp"; --fa-font-sharp-thin: normal 100 1em/1 "Font Awesome 7 Sharp";=
+ --fa-font-sharp-duotone-solid: normal 900 1em/1 "Font Awesome 7 Sharp Duot=
+one"; --fa-font-sharp-duotone-regular: normal 400 1em/1 "Font Awesome 7 Sha=
+rp Duotone"; --fa-font-sharp-duotone-light: normal 300 1em/1 "Font Awesome =
+7 Sharp Duotone"; --fa-font-sharp-duotone-thin: normal 100 1em/1 "Font Awes=
+ome 7 Sharp Duotone"; --fa-font-slab-regular: normal 400 1em/1 "Font Awesom=
+e 7 Slab"; --fa-font-slab-press-regular: normal 400 1em/1 "Font Awesome 7 S=
+lab Press"; --fa-font-whiteboard-semibold: normal 600 1em/1 "Font Awesome 7=
+ Whiteboard"; --fa-font-thumbprint-light: normal 300 1em/1 "Font Awesome 7 =
+Thumbprint"; --fa-font-notdog-solid: normal 900 1em/1 "Font Awesome 7 Notdo=
+g"; --fa-font-notdog-duo-solid: normal 900 1em/1 "Font Awesome 7 Notdog Duo=
+"; --fa-font-etch-solid: normal 900 1em/1 "Font Awesome 7 Etch"; --fa-font-=
+jelly-regular: normal 400 1em/1 "Font Awesome 7 Jelly"; --fa-font-jelly-fil=
+l-regular: normal 400 1em/1 "Font Awesome 7 Jelly Fill"; --fa-font-jelly-du=
+o-regular: normal 400 1em/1 "Font Awesome 7 Jelly Duo"; --fa-font-chisel-re=
+gular: normal 400 1em/1 "Font Awesome 7 Chisel"; }
+
+.svg-inline--fa { box-sizing: content-box; display: var(--fa-display, inlin=
+e-block); height: 1em; overflow: visible; vertical-align: -0.125em; width: =
+var(--fa-width, 1.25em); }
+
+.svg-inline--fa.fa-2xs { vertical-align: 0.1em; }
+
+.svg-inline--fa.fa-xs { vertical-align: 0em; }
+
+.svg-inline--fa.fa-sm { vertical-align: -0.0714286em; }
+
+.svg-inline--fa.fa-lg { vertical-align: -0.2em; }
+
+.svg-inline--fa.fa-xl { vertical-align: -0.25em; }
+
+.svg-inline--fa.fa-2xl { vertical-align: -0.3125em; }
+
+.svg-inline--fa.fa-pull-left, .svg-inline--fa .fa-pull-start { float: inlin=
+e-start; margin-inline-end: var(--fa-pull-margin, 0.3em); }
+
+.svg-inline--fa.fa-pull-right, .svg-inline--fa .fa-pull-end { float: inline=
+-end; margin-inline-start: var(--fa-pull-margin, 0.3em); }
+
+.svg-inline--fa.fa-li { width: var(--fa-li-width, 2em); inset-inline-start:=
+ calc(-1 * var(--fa-li-width, 2em)); inset-block-start: 0.25em; }
+
+.fa-layers-counter, .fa-layers-text { display: inline-block; position: abso=
+lute; text-align: center; }
+
+.fa-layers { display: inline-block; height: 1em; position: relative; text-a=
+lign: center; vertical-align: -0.125em; width: var(--fa-width, 1.25em); }
+
+.fa-layers .svg-inline--fa { inset: 0px; margin: auto; position: absolute; =
+transform-origin: center center; }
+
+.fa-layers-text { left: 50%; top: 50%; transform: translate(-50%, -50%); tr=
+ansform-origin: center center; }
+
+.fa-layers-counter { background-color: var(--fa-counter-background-color, #=
+ff253a); border-radius: var(--fa-counter-border-radius, 1em); box-sizing: b=
+order-box; color: var(--fa-inverse, #fff); line-height: var(--fa-counter-li=
+ne-height, 1); max-width: var(--fa-counter-max-width, 5em); min-width: var(=
+--fa-counter-min-width, 1.5em); overflow: hidden; padding: var(--fa-counter=
+-padding, 0.25em 0.5em); right: var(--fa-right, 0); text-overflow: ellipsis=
+; top: var(--fa-top, 0); transform: scale(var(--fa-counter-scale, 0.25)); t=
+ransform-origin: right top; }
+
+.fa-layers-bottom-right { bottom: var(--fa-bottom, 0); right: var(--fa-righ=
+t, 0); top: auto; transform: scale(var(--fa-layers-scale, 0.25)); transform=
+-origin: right bottom; }
+
+.fa-layers-bottom-left { bottom: var(--fa-bottom, 0); left: var(--fa-left, =
+0); right: auto; top: auto; transform: scale(var(--fa-layers-scale, 0.25));=
+ transform-origin: left bottom; }
+
+.fa-layers-top-right { top: var(--fa-top, 0); right: var(--fa-right, 0); tr=
+ansform: scale(var(--fa-layers-scale, 0.25)); transform-origin: right top; =
+}
+
+.fa-layers-top-left { left: var(--fa-left, 0); right: auto; top: var(--fa-t=
+op, 0); transform: scale(var(--fa-layers-scale, 0.25)); transform-origin: l=
+eft top; }
+
+.fa-1x { font-size: 1em; }
+
+.fa-2x { font-size: 2em; }
+
+.fa-3x { font-size: 3em; }
+
+.fa-4x { font-size: 4em; }
+
+.fa-5x { font-size: 5em; }
+
+.fa-6x { font-size: 6em; }
+
+.fa-7x { font-size: 7em; }
+
+.fa-8x { font-size: 8em; }
+
+.fa-9x { font-size: 9em; }
+
+.fa-10x { font-size: 10em; }
+
+.fa-2xs { font-size: calc(0.625em); line-height: calc(0.1em); vertical-alig=
+n: calc(0.225em); }
+
+.fa-xs { font-size: calc(0.75em); line-height: calc(0.0833333em); vertical-=
+align: calc(0.125em); }
+
+.fa-sm { font-size: calc(0.875em); line-height: calc(0.0714286em); vertical=
+-align: calc(0.0535714em); }
+
+.fa-lg { font-size: calc(1.25em); line-height: calc(0.05em); vertical-align=
+: calc(-0.075em); }
+
+.fa-xl { font-size: calc(1.5em); line-height: calc(0.0416667em); vertical-a=
+lign: calc(-0.125em); }
+
+.fa-2xl { font-size: calc(2em); line-height: calc(0.03125em); vertical-alig=
+n: calc(-0.1875em); }
+
+.fa-width-auto { --fa-width: auto; }
+
+.fa-fw, .fa-width-fixed { --fa-width: 1.25em; }
+
+.fa-ul { list-style-type: none; margin-inline-start: var(--fa-li-margin, 2.=
+5em); padding-inline-start: 0px; }
+
+.fa-ul > li { position: relative; }
+
+.fa-li { inset-inline-start: calc(-1 * var(--fa-li-width, 2em)); position: =
+absolute; text-align: center; width: var(--fa-li-width, 2em); line-height: =
+inherit; }
+
+.fa-border { border-color: var(--fa-border-color, #eee); border-radius: var=
+(--fa-border-radius, 0.1em); border-style: var(--fa-border-style, solid); b=
+order-width: var(--fa-border-width, 0.0625em); box-sizing: var(--fa-border-=
+box-sizing, content-box); padding: var(--fa-border-padding, 0.1875em 0.25em=
+); }
+
+.fa-pull-left, .fa-pull-start { float: inline-start; margin-inline-end: var=
+(--fa-pull-margin, 0.3em); }
+
+.fa-pull-right, .fa-pull-end { float: inline-end; margin-inline-start: var(=
+--fa-pull-margin, 0.3em); }
+
+.fa-beat { animation-name: fa-beat; animation-delay: var(--fa-animation-del=
+ay, 0s); animation-direction: var(--fa-animation-direction, normal); animat=
+ion-duration: var(--fa-animation-duration, 1s); animation-iteration-count: =
+var(--fa-animation-iteration-count, infinite); animation-timing-function: v=
+ar(--fa-animation-timing, ease-in-out); }
+
+.fa-bounce { animation-name: fa-bounce; animation-delay: var(--fa-animation=
+-delay, 0s); animation-direction: var(--fa-animation-direction, normal); an=
+imation-duration: var(--fa-animation-duration, 1s); animation-iteration-cou=
+nt: var(--fa-animation-iteration-count, infinite); animation-timing-functio=
+n: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1)); }
+
+.fa-fade { animation-name: fa-fade; animation-delay: var(--fa-animation-del=
+ay, 0s); animation-direction: var(--fa-animation-direction, normal); animat=
+ion-duration: var(--fa-animation-duration, 1s); animation-iteration-count: =
+var(--fa-animation-iteration-count, infinite); animation-timing-function: v=
+ar(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1)); }
+
+.fa-beat-fade { animation-name: fa-beat-fade; animation-delay: var(--fa-ani=
+mation-delay, 0s); animation-direction: var(--fa-animation-direction, norma=
+l); animation-duration: var(--fa-animation-duration, 1s); animation-iterati=
+on-count: var(--fa-animation-iteration-count, infinite); animation-timing-f=
+unction: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1)); }
+
+.fa-flip { animation-name: fa-flip; animation-delay: var(--fa-animation-del=
+ay, 0s); animation-direction: var(--fa-animation-direction, normal); animat=
+ion-duration: var(--fa-animation-duration, 1s); animation-iteration-count: =
+var(--fa-animation-iteration-count, infinite); animation-timing-function: v=
+ar(--fa-animation-timing, ease-in-out); }
+
+.fa-shake { animation-name: fa-shake; animation-delay: var(--fa-animation-d=
+elay, 0s); animation-direction: var(--fa-animation-direction, normal); anim=
+ation-duration: var(--fa-animation-duration, 1s); animation-iteration-count=
+: var(--fa-animation-iteration-count, infinite); animation-timing-function:=
+ var(--fa-animation-timing, linear); }
+
+.fa-spin { animation-name: fa-spin; animation-delay: var(--fa-animation-del=
+ay, 0s); animation-direction: var(--fa-animation-direction, normal); animat=
+ion-duration: var(--fa-animation-duration, 2s); animation-iteration-count: =
+var(--fa-animation-iteration-count, infinite); animation-timing-function: v=
+ar(--fa-animation-timing, linear); }
+
+.fa-spin-reverse { --fa-animation-direction: reverse; }
+
+.fa-pulse, .fa-spin-pulse { animation-name: fa-spin; animation-direction: v=
+ar(--fa-animation-direction, normal); animation-duration: var(--fa-animatio=
+n-duration, 1s); animation-iteration-count: var(--fa-animation-iteration-co=
+unt, infinite); animation-timing-function: var(--fa-animation-timing, steps=
+(8)); }
+
+@media (prefers-reduced-motion: reduce) {
+  .fa-beat, .fa-bounce, .fa-fade, .fa-beat-fade, .fa-flip, .fa-pulse, .fa-s=
+hake, .fa-spin, .fa-spin-pulse { animation: auto ease 0s 1 normal none runn=
+ing none !important; transition: none !important; }
+}
+
+@keyframes fa-beat {=20
+  0%, 90% { transform: scale(1); }
+  45% { transform: scale(var(--fa-beat-scale, 1.25)); }
+}
+
+@keyframes fa-bounce {=20
+  0% { transform: scale(1, 1) translateY(0px); }
+  10% { transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-boun=
+ce-start-scale-y, 0.9)) translateY(0); }
+  30% { transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounc=
+e-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em)); }
+  50% { transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-boun=
+ce-land-scale-y, 0.95)) translateY(0); }
+  57% { transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em=
+)); }
+  64% { transform: scale(1, 1) translateY(0px); }
+  100% { transform: scale(1, 1) translateY(0px); }
+}
+
+@keyframes fa-fade {=20
+  50% { opacity: var(--fa-fade-opacity, 0.4); }
+}
+
+@keyframes fa-beat-fade {=20
+  0%, 100% { opacity: var(--fa-beat-fade-opacity, 0.4); transform: scale(1)=
+; }
+  50% { opacity: 1; transform: scale(var(--fa-beat-fade-scale, 1.125)); }
+}
+
+@keyframes fa-flip {=20
+  50% { transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(-=
+-fa-flip-z, 0), var(--fa-flip-angle, -180deg)); }
+}
+
+@keyframes fa-shake {=20
+  0% { transform: rotate(-15deg); }
+  4% { transform: rotate(15deg); }
+  8%, 24% { transform: rotate(-18deg); }
+  12%, 28% { transform: rotate(18deg); }
+  16% { transform: rotate(-22deg); }
+  20% { transform: rotate(22deg); }
+  32% { transform: rotate(-12deg); }
+  36% { transform: rotate(12deg); }
+  40%, 100% { transform: rotate(0deg); }
+}
+
+@keyframes fa-spin {=20
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.fa-rotate-90 { transform: rotate(90deg); }
+
+.fa-rotate-180 { transform: rotate(180deg); }
+
+.fa-rotate-270 { transform: rotate(270deg); }
+
+.fa-flip-horizontal { transform: scale(-1, 1); }
+
+.fa-flip-vertical { transform: scale(1, -1); }
+
+.fa-flip-both, .fa-flip-horizontal.fa-flip-vertical { transform: scale(-1, =
+-1); }
+
+.fa-rotate-by { transform: rotate(var(--fa-rotate-angle, 0)); }
+
+.svg-inline--fa .fa-primary { fill: var(--fa-primary-color, currentColor); =
+opacity: var(--fa-primary-opacity, 1); }
+
+.svg-inline--fa .fa-secondary { fill: var(--fa-secondary-color, currentColo=
+r); opacity: var(--fa-secondary-opacity, 0.4); }
+
+.svg-inline--fa.fa-swap-opacity .fa-primary { opacity: var(--fa-secondary-o=
+pacity, 0.4); }
+
+.svg-inline--fa.fa-swap-opacity .fa-secondary { opacity: var(--fa-primary-o=
+pacity, 1); }
+
+.svg-inline--fa mask .fa-primary, .svg-inline--fa mask .fa-secondary { fill=
+: black; }
+
+.svg-inline--fa.fa-inverse { fill: var(--fa-inverse, #fff); }
+
+.fa-stack { display: inline-block; height: 2em; line-height: 2em; position:=
+ relative; vertical-align: middle; width: 2.5em; }
+
+.fa-inverse { color: var(--fa-inverse, #fff); }
+
+.svg-inline--fa.fa-stack-1x { --fa-width: 1.25em; height: 1em; width: var(-=
+-fa-width); }
+
+.svg-inline--fa.fa-stack-2x { --fa-width: 2.5em; height: 2em; width: var(--=
+fa-width); }
+
+.fa-stack-1x, .fa-stack-2x { inset: 0px; margin: auto; position: absolute; =
+z-index: var(--fa-stack-z-index, auto); }
+------MultipartBoundary--SyvZrJuMJQk0mnBkmdEiuqZufT44G9gy9prYi72FBz------

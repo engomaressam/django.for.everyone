@@ -1,0 +1,232 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://samples.dj4e.com/
+Subject: DJ4E Samples
+Date: Thu, 11 Sep 2025 15:02:20 +0300
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--6NoNemxZQ1RH3RTkQhjz6zHiwnEeMFTjtJuUx0sAiq----"
+
+
+------MultipartBoundary--6NoNemxZQ1RH3RTkQhjz6zHiwnEeMFTjtJuUx0sAiq----
+Content-Type: text/html
+Content-ID: <frame-E802EFFF77A8702B2C17137EBBADA22B@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://samples.dj4e.com/
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3DUTF-8">
+    <title>DJ4E Samples</title>
+    <!-- edit samples/settings.py and add APP_NAME=3D'DJ4E Samples' or simi=
+lar
+        Also make sure that home/context_processors.py exists and is includ=
+ed
+        settings.py context processors as 'home.context_processors.settings=
+' -->
+</head>
+<body>
+    <h1>Welcome to the DJ4E Samples</h1>
+    <p>
+    Here are some samples (Each will open in a new tab):
+    </p><ul>
+        <li><a href=3D"https://samples.dj4e.com/hello" target=3D"_blank">he=
+llo</a> - A very simple view
+          (<a href=3D"https://www.youtube.com/watch?v=3D5EUO_QK8lB4&amp;lis=
+t=3DPLlRFEj9H3Oj5e-EH0t3kXrcdygrL9-u-Z&amp;index=3D59" target=3D"_blank">Wa=
+lkthrough</a>)
+        </li>
+        <li><b>users</b> - One table model / SQL - uses the django shell
+            and <a href=3D"https://samples.dj4e.com/admin" target=3D"_blank=
+">admin</a></li>
+        <li><b>tracks</b> -  Many to one models / SQL - uses the django she=
+ll=20
+            and <a href=3D"https://samples.dj4e.com/admin" target=3D"_blank=
+">admin</a></li>
+        <li><b>many</b> -  Many to many models - Loading data from a script
+            and <a href=3D"https://samples.dj4e.com/admin" target=3D"_blank=
+">admin</a>
+            (<a href=3D"https://www.dj4e.com/assn/dj4e_load.md" target=3D"_=
+blank">Assignment</a>)
+        </li>
+<p>You can <a href=3D"https://samples.dj4e.com/accounts/login">Login</a> if=
+ you like.</p>
+        <li><a href=3D"https://samples.dj4e.com/site" target=3D"_blank">sit=
+e</a> - An example folder with HTML content</li>
+        <li><a href=3D"https://samples.dj4e.com/views" target=3D"_blank">vi=
+ews</a> - Looking at function and class views</li>
+        <li><a href=3D"https://samples.dj4e.com/tmpl" target=3D"_blank">tmp=
+l</a> - Using templates in views
+         (<a href=3D"https://docs.djangoproject.com/en/4.2/ref/templates/la=
+nguage/" target=3D"_blank">Documentation</a>)
+        </li>
+        <li><a href=3D"https://samples.dj4e.com/route" target=3D"_blank">ro=
+ute</a> - Using routes, namespaces, and reverse in urls.py
+         (<a href=3D"https://docs.djangoproject.com/en/4.2/topics/http/urls=
+/#reverse-resolution-of-urls" target=3D"_blank">Documentation</a>)
+        </li>
+        <li><a href=3D"https://samples.dj4e.com/gview" target=3D"_blank">gv=
+iew</a> - Understanding how the generic views work
+        (<a href=3D"https://samples.dj4e.com/admin" target=3D"_blank">admin=
+</a>)</li>
+        <li><a href=3D"https://samples.dj4e.com/session" target=3D"_blank">=
+session</a> - Cookies and sessions
+            (<a href=3D"https://www.dj4e.com/assn/dj4e_sessions.md" target=
+=3D"_blank">Assignment</a>)
+        </li>
+        <li><a href=3D"https://samples.dj4e.com/authz" target=3D"_blank">au=
+thz</a> - Using Django login
+        </li>
+        <li><a href=3D"https://samples.dj4e.com/getpost" target=3D"_blank">=
+getpost</a> - Exploring HTTP get / post / redirect and HTML forms</li>
+        <li><a href=3D"https://samples.dj4e.com/form" target=3D"_blank">for=
+m</a> - Using the Django forms library
+        </li>
+        <li><a href=3D"https://samples.dj4e.com/autos" target=3D"_blank">au=
+tos</a> - Autos CRUD
+            (<a href=3D"https://www.dj4e.com/assn/dj4e_autos.md" target=3D"=
+_blank">Assignment</a>,
+            <a href=3D"https://www.youtube.com/watch?v=3D3kHgAE-MidA&amp;li=
+st=3DPLlRFEj9H3Oj5e-EH0t3kXrcdygrL9-u-Z&amp;index=3D58" target=3D"_blank">W=
+alkthrough</a>)
+        </li>
+        <li><a href=3D"https://samples.dj4e.com/crispy" target=3D"_blank">c=
+rispy</a> - Using Crispy forms and messages libraries
+            (<a href=3D"https://django-crispy-forms.readthedocs.io/en/lates=
+t/install.html" target=3D"_blank">Installation</a>,
+            <a href=3D"https://django-crispy-forms.readthedocs.io/en/latest=
+/filters.html" target=3D"_blank">Crispy Filter</a>,
+            <a href=3D"https://www.youtube.com/watch?v=3DkQORvrIzsZs&amp;li=
+st=3DPLlRFEj9H3Oj5e-EH0t3kXrcdygrL9-u-Z&amp;index=3D67" target=3D"_blank">W=
+alkthrough</a>)
+        </li>
+        <li><a href=3D"https://samples.dj4e.com/myarts" target=3D"_blank">m=
+yarts</a> - Owning rows in a model
+            (<a href=3D"https://www.youtube.com/watch?v=3DiHvJZ_lvXB4&amp;l=
+ist=3DPLlRFEj9H3Oj5e-EH0t3kXrcdygrL9-u-Z&amp;index=3D65" target=3D"_blank">=
+Walkthrough</a>)
+        </li>
+        <li><a href=3D"https://samples.dj4e.com/menu" target=3D"_blank">men=
+u</a> - Making a bootstrap nav bar
+            (<a href=3D"https://getbootstrap.com/docs/5.0/components/navbar=
+/" target=3D"_blank">Bootstrap Navbar</a>,
+            <a href=3D"https://www.youtube.com/watch?v=3Dnuz_zXWoCo8&amp;li=
+st=3DPLlRFEj9H3Oj5e-EH0t3kXrcdygrL9-u-Z&amp;index=3D66" target=3D"_blank">W=
+alkthrough</a>)
+        </li>
+        <li><a href=3D"https://samples.dj4e.com/pics" target=3D"_blank">pic=
+s</a> - Storing small images in the database
+            (<a href=3D"https://www.youtube.com/watch?v=3Dtanl9CthvHE&amp;l=
+ist=3DPLlRFEj9H3Oj5e-EH0t3kXrcdygrL9-u-Z&amp;index=3D80" target=3D"_blank">=
+Walkthrough</a>)
+        </li>
+        <li><a href=3D"https://samples.dj4e.com/forums" target=3D"_blank">f=
+orums</a> - Many to many comment example
+            (<a href=3D"https://www.youtube.com/watch?v=3Dmgcj3V56X-A&amp;l=
+ist=3DPLlRFEj9H3Oj5e-EH0t3kXrcdygrL9-u-Z&amp;index=3D81" target=3D"_blank">=
+Walkthrough</a>)
+        </li>
+        <li><a href=3D"https://samples.dj4e.com/fetch" target=3D"_blank">fe=
+tch</a> - JSON and Fetch
+            (<a href=3D"https://www.youtube.com/watch?v=3DKcgPJYil5Do&amp;l=
+ist=3DPLlRFEj9H3Oj5e-EH0t3kXrcdygrL9-u-Z&amp;index=3D88" target=3D"_blank">=
+Walkthrough</a>)
+        </li>
+        <li><a href=3D"https://samples.dj4e.com/chat" target=3D"_blank">cha=
+t</a> - JSON and Chat
+            (<a href=3D"https://www.youtube.com/watch?v=3Dv5CKyLS701M&amp;l=
+ist=3DPLlRFEj9H3Oj5e-EH0t3kXrcdygrL9-u-Z&amp;index=3D90" target=3D"_blank">=
+Walkthrough</a>)
+        </li>
+        <li>Add a <a href=3D"https://samples.dj4e.com/favicon.ico" target=
+=3D"_blank">favicon</a>=20
+            in <b>samples/urls.py</b> and <b>home/static</b>
+            (<a href=3D"https://favicon.io/favicon-converter/" target=3D"_b=
+lank">Make your own</a>,
+            <a href=3D"https://www.youtube.com/watch?v=3DC1WGD5hFdT8&amp;li=
+st=3DPLlRFEj9H3Oj5e-EH0t3kXrcdygrL9-u-Z&amp;index=3D91" target=3D"_blank">W=
+alkthrough</a>)
+        </li>
+        <li><a href=3D"https://python-social-auth.readthedocs.io/en/latest/=
+configuration/django.html" target=3D"_blank">Django Social Login Documentat=
+ion</a>
+            (<a href=3D"https://www.youtube.com/watch?v=3DNctpQ-2Kdtw&amp;l=
+ist=3DPLlRFEj9H3Oj5e-EH0t3kXrcdygrL9-u-Z&amp;index=3D92" target=3D"_blank">=
+Walkthrough</a>)
+        </li>
+        <li><a href=3D"https://samples.dj4e.com/favs" target=3D"_blank">fav=
+s</a> - A few of my favorite / favourite things
+            (<a href=3D"https://www.youtube.com/watch?v=3D6cq-ehBHkwc&amp;l=
+ist=3DPLlRFEj9H3Oj5e-EH0t3kXrcdygrL9-u-Z&amp;index=3D93" target=3D"_blank">=
+Walkthrough</a>)
+        </li>
+        <!-- "well" is a play on "medium-well" and also a reference the the=
+ early bay-area BBS system -->
+        <li><a href=3D"https://samples.dj4e.com/well" target=3D"_blank">wel=
+l</a> - A multi-user blogging system
+            (<a href=3D"https://www.youtube.com/watch?v=3D4pOExZHnL9k&amp;l=
+ist=3DPLlRFEj9H3Oj5e-EH0t3kXrcdygrL9-u-Z&amp;index=3D94" target=3D"_blank">=
+Walkthrough</a>)
+        </li>
+        <li><a href=3D"https://samples.dj4e.com/tagme" target=3D"_blank">ta=
+gme</a> - Using the Django=20
+            <a href=3D"https://django-taggit.readthedocs.io/en/stable/" tar=
+get=3D"_blank">Taggit</a> library
+        </li>
+        <li><a href=3D"https://samples.dj4e.com/favwc" target=3D"_blank">fa=
+vwc</a> - A web components version of favs using=20
+            <a href=3D"https://lit.dev/" target=3D"_blank">LIT Element</a><=
+/li><a href=3D"https://lit.dev/" target=3D"_blank">
+        <!--  Not quite right
+        <li><a href=3D"favsql" target=3D"_blank">favsql</a> - An advanced v=
+ersion of favs using SQL directly</li>
+        -->
+        </a><li><a href=3D"https://lit.dev/" target=3D"_blank"></a><a href=
+=3D"https://samples.dj4e.com/rest" target=3D"_blank">rest</a> - Using the D=
+jango REST framework
+            (<a href=3D"https://www.django-rest-framework.org/" target=3D"_=
+blank">Django Rest Framework Documentation</a>)
+        </li>
+        <li><a href=3D"https://samples.dj4e.com/zip" target=3D"_blank">zip<=
+/a> - Upload and process ZIP files</li>
+    </ul>
+<p>
+
+</p><p>You can <a href=3D"https://samples.dj4e.com/accounts/login">Login</a=
+> if you like.</p>
+<p></p>
+Some of the samples will require a user login to be created.
+<p></p>
+<p>
+You can play with this code at
+<a href=3D"https://samples.dj4e.com/" target=3D"_blank">https://samples.dj4=
+e.com</a>.
+You
+might need an account and password to log in for certain features.  You mig=
+ht try this:
+</p><pre>Username: dj4e-samples
+Password: dj4e_nn_!
+</pre>
+The 'nn' is a part of this password that you need to guess.  But if you hav=
+e done your
+homework, it should only take you one guess (instead of 100 guesses).  It i=
+s also the
+number of Dr. Chuck's Dodge Neon when he races or the decimal ASCII value f=
+or the asterisk character.
+
+<p></p>
+
+    <p>The source code for these samples for Django 4.2 is is available at
+    <a href=3D"https://github.com/csev/dj4e-samples" target=3D"_blank">
+        https://github.com/csev/dj4e-samples</a>.  To install this code and=
+ its dependencies
+    on your system:
+    </p><pre>    git checkout  https://github.com/csev/dj4e-samples
+    cd dj4e-samples
+    </pre>
+    and follow the instructions in the <a href=3D"https://github.com/csev/d=
+j4e-samples/blob/main/README.md" target=3D"_blank">README.md</a> file.
+    <p></p>
+
+
+</body></html>
+------MultipartBoundary--6NoNemxZQ1RH3RTkQhjz6zHiwnEeMFTjtJuUx0sAiq------
